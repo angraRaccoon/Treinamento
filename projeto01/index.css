@@ -1,0 +1,5 @@
+/* Retirando o estilo padrão do Browser */
+html{
+    padding: 0%;
+    margin: 0%;
+}

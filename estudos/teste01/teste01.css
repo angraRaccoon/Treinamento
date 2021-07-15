@@ -4,6 +4,7 @@ header{
 h2{
     margin: 2% 0%;
     text-align: center;
+    
 }
 
 nav ul{
@@ -13,12 +14,21 @@ nav ul{
 
 }
 
-aside, main, footer{
+ main, footer{
     display: flex;
     justify-content: center;
 }
 
-aside,main{
+aside, main{
     margin: 10% 0%;
 }
 
+aside{
+    margin: 10% 3%
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly
+}
