@@ -1,8 +1,24 @@
+/*
+Requisitos:
+Desenvolvimento de um arquivo HTML e CSS a partir dos mockups apresentados;
+O menu deve continuar fixo a medida que usuário desce a tela;
+Não há necessidade de criação de nenhuma funcionalidade;
+Todos os botões devem ter uma mudança de cor para uma mais clara quando o usuário passa o mouse;
+Utilizar Roboto como a fonte principal;
+Seguir os padrões de desenvolvimento da Raccoon (container, encapsulamento e mobile-first);
+Os arquivos para execução do projeto encontram-se neste link.
+
+Desafio:
+Utilizar a metodologia BEM para nomenclatura das classes.
+
+*/
+
 /* Retirando o estilo padrão do Browser e realizando um CSS reset padrão*/
 html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 
 html{
  font-size: 12px;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 p{
@@ -63,24 +79,26 @@ p{
 /* Definindo a navbar  */
 
 header nav{
+    position: fixed;
     width: 100%;
-    height: 48px;
+    height: 7.5vh;
     background-color: #2571B7;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 /* Definindo o botão da navbar */
 nav button{
-    margin: 5% 0%;
-    margin-right: 2%;
+    margin: 2vh 0%;
+    margin-right: 4%;
     width: 30%;
-    height: 38%;
+    height: 4.3vh;
     background-color: #002050;
     border: none;
     color: white;
-    
+    box-sizing: border-box;
 }
 
 
@@ -91,7 +109,6 @@ nav button{
     color: white;
     border: none;
     cursor: pointer;
-    padding: 1em 45%;
     
 }
 
