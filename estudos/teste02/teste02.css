@@ -5,14 +5,14 @@ html, body{
 
 /* Testando visibility, opacity e display: none */
 .box-01{
-    
+    display: none;
     background-color: rgba(255, 0, 0, 1);
     padding: 0%;
     margin: 2% 0%;
     border: 2px solid black;
     height: 50vh;
     width: 90vw;
-    opacity: 0;
+    opacity: 1.0;
 }
 
 /* Testando overflow e opacity */
@@ -27,3 +27,20 @@ html, body{
     opacity: initial;
 }
 
+
+.box-03{
+    padding: 2vh 2vw;
+    margin: 0% 2vw;
+    width: 10vw;
+    height: 5vh;
+    background-color:rgba(128, 128, 128, 0.6)
+}
+
+.box-03 .color-box{
+    background-color: salmon;
+    width: 90%;
+    height: 80%;
+    border: none;
+    border-radius: 25%;
+    background-clip: padding-box;
+}
