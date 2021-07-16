@@ -1,0 +1,29 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Testando visibility, opacity e display: none */
+.box-01{
+    
+    background-color: rgba(255, 0, 0, 1);
+    padding: 0%;
+    margin: 2% 0%;
+    border: 2px solid black;
+    height: 50vh;
+    width: 90vw;
+    opacity: 0;
+}
+
+/* Testando overflow e opacity */
+.box-02{
+    background-position: bottom;
+    padding: 0%;
+    margin: 2% 0%;
+    border: 2px solid black;
+    height: 20vh;
+    width: 40vw;
+    overflow: auto;
+    opacity: initial;
+}
+
