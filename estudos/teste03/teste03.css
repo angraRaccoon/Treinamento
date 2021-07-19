@@ -1,0 +1,19 @@
+body {
+    background-color: #009966; 
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        background-color: purple;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: orange;
+    }
+
+}
