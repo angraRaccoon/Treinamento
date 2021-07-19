@@ -3,6 +3,10 @@ html, body{
     padding: 0%;
 }
 
+p{
+    font-size: larger;
+}
+
 /* Testando visibility, opacity e display: none */
 .box-01{
     display: none;
@@ -23,8 +27,8 @@ html, body{
     border: 2px solid black;
     height: 20vh;
     width: 40vw;
-    overflow: auto;
-    opacity: initial;
+    position: sticky;
+    top: 90vh
 }
 
 
