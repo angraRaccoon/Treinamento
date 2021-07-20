@@ -82,6 +82,14 @@ p{
 
 /* Mobile */
 
+/* Definindo o heading */
+
+h3{ 
+    font-size: 2rem;
+    text-align: center;
+    color: #2571B7;
+ }
+
 /* Definindo a navbar  */
 
 header nav{
@@ -170,11 +178,6 @@ section.first{
 
 .first h1{
     font-size: 3.5rem;
-}
-
-.first h3{
-    font-size: 2rem;
-    text-align: center; /* flex align-items não afetou, rever isso */
 }
 
 
@@ -271,10 +274,6 @@ section.third{
     color: #737373;
 }
 
-.third h3{
-    font-size: 2rem;
-    color: #2571B7;
-}
 
 /* Grupo de cards da terceira seção */
 
@@ -290,41 +289,41 @@ section.third{
 }
 
 .third .card-group hr{
+    background-color: #DEDEDE;
     margin: 2vh 2vw;
-    width: 100vw;
-    height: 0.46875vh;  
+    border: 0.25vh solid #DEDEDE;  
     border-radius: 0%;
 }
 
 /* Cards da terceira seção */
 
 
-.card h6{
+.third .card h6{
     font-size: 1.25rem;
     margin: 1vh 0;
 
 }
 
-.card p{
+.third .card p{
     color: #737373;
     height: 70px;
     width: 236px
 }
 
 
-.card img{
+.third .card img{
     width: 19.44vw;
     height: 10.9375vh;
     align-self: center;
 }
 
-.card .card-content{
+.third .card .card-content{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.card-content button{
+.third .card .card-content button{
     padding: 1vh 0;
     margin: 1vh 0;
     background-color: white;
@@ -349,3 +348,58 @@ section.third{
     color: #FFB900;
     border-color: #FFB900;
 }
+
+
+
+/* Quarta Seção */
+
+.fourth h3{
+    margin: 10vh 0;
+}
+
+.fourth .card-group{
+
+    margin:  5vw;
+
+}
+
+.fourth .card-group .card{
+    text-align: center;
+    border: 3px solid #DEDEDE;
+    color: #737373
+}
+
+.fourth .card h6{
+    font-size: 1.25rem;
+    color: #F25022;
+}
+
+.fourth .card p{
+    margin: 0% 3vw;
+    margin-bottom: 4vh;
+}
+
+
+/* Quinta Seção*/
+
+section.fifth{
+
+    width: 100vw;
+    height: 35vh;
+    background-image: url('./assets/Grupo\ 89.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifth h3{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    line-height: 5vh;
+    margin: 0% 4vw;
+}
+
+/* Sexta Seção */
