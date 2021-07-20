@@ -29,6 +29,7 @@ html, body{
 
 p{
     margin: 0;
+    color: #737373
 }
 
 
@@ -180,6 +181,10 @@ section.first{
     font-size: 3.5rem;
 }
 
+.first h3{
+    color: white;
+}
+
 
 .first button{
     border: none;
@@ -240,6 +245,7 @@ section.second{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: white;
 }
 
 .color-box img{
@@ -248,7 +254,6 @@ section.second{
 }
 
 .color-box  .text-box{
-    color: white;
     margin: 0% 1%;
 }
 
@@ -258,6 +263,7 @@ section.second{
 }
 
 .color-box  .text-box p{
+    color: white;
     font-size: 1rem;
 }
 
@@ -305,7 +311,6 @@ section.third{
 }
 
 .third .card p{
-    color: #737373;
     height: 70px;
     width: 236px
 }
@@ -403,3 +408,71 @@ section.fifth{
 }
 
 /* Sexta Seção */
+
+section.sixth{
+    margin: 5vh 5vw;
+}
+
+.sixth p{
+    margin: 0% 5vw;
+    font-size: 1.25rem;
+    text-align: center;
+} 
+
+/* Formulário */
+
+.sixth form{
+    margin: 5vh 0;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5% 5%;
+    color: #737373;
+}
+
+.sixth form input{
+
+    color: #737373;
+    font-size: 1.25rem;
+    border: 2px solid #E6E6E6;
+    height: 44px;
+    padding: 0 2vw;
+    margin: 2% 0%;
+    margin-bottom: 5vh;
+}
+
+.sixth form input:focus{
+    border: 2px solid #2571B7;
+    
+}
+
+.sixth form input:focus::before{
+
+    color: #2571B7;
+    
+}
+
+
+.sixth form button{
+    height: 8.125vh;
+    font-size: 1.75rem;
+    color: white;
+    border: none;
+    background-color: #00A4EF;
+
+
+}
+
+
+/* Rodapé */
+
+
+footer{
+    color: #B4B4B4;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    text-align: center;
+}
