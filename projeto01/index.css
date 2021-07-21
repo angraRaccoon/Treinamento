@@ -466,11 +466,14 @@ section.sixth{
 
 
 footer{
-    color: #B4B4B4;
     height: 10vh;
     margin: 2vh 0;
     display: flex;
     flex-direction: column;
     justify-content:  space-between;
     text-align: center;
+}
+
+footer p{
+    color: #B4B4B4
 }
