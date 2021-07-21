@@ -83,7 +83,6 @@ p{
 
 }
 
-
 /* Mobile */
 
 /* Definindo o heading */
@@ -121,6 +120,9 @@ nav button{
     box-sizing: border-box;
 }
 
+nav button:hover{
+    background-color: #144da1;
+}
 
 /* Definindo o menu collapse */
 
@@ -129,10 +131,11 @@ nav button{
     color: white;
     border: none;
     cursor: pointer;
+    padding: 0px 15px;
     
 }
 
-/* Talvez não seja o melhor jeito de definir as barras do dropdown menu, ver no próximo 1:1 */
+/* Talvez não seja o melhor jeito de definir as barras do dropdown menu */
 .mainmenubtn .collapse-border{
     width: 2rem;
     height: 0.2rem;
@@ -141,8 +144,8 @@ nav button{
 }
 
 .mainmenubtn:hover {
-    background-color: blue;
-    padding: 15px;
+    background-color: #2571B7;
+    padding: 0px 15px;
 }
 .dropdown {
     position: relative;
@@ -152,7 +155,7 @@ nav button{
     display: none;
     background-color: #2571B7;
     min-width: 200px;
-    border: 1px solid black;
+    border: 1px solid #2571B7;
 }
 .dropdown-child a {
     color: white;
@@ -162,6 +165,8 @@ nav button{
 }
 .dropdown:hover .dropdown-child {
     display: block;
+    position: relative;
+    bottom: 2vh;
 }
 
 
@@ -196,6 +201,10 @@ section.first{
     width: 52.22vw;
     height: 8.125vh;
     background-color: #00A4EF;
+}
+
+.first button:hover{
+    background-color: #53bbeb;
 }
 
 .first img{
@@ -459,6 +468,10 @@ section.sixth{
     background-color: #00A4EF;
 
 
+}
+
+.sixth form button:hover{
+    background-color: #53bbeb;
 }
 
 
