@@ -500,6 +500,17 @@ footer{
     text-align: center;
 }
 
+footer .footer-container{
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .footer-container img{
+    width: 45%;
+}
+
 footer p{
     color: #B4B4B4
 }
