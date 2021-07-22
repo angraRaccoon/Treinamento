@@ -69,20 +69,6 @@ p{
 
 }
 
-@media (min-width: 1440px) {
-    .container {
-        margin-right: calc((100vw - 1350px) / 2);
-        margin-left: calc((100vw - 1350px) / 2);
-    }
-
-    /* Desktop */
-    /* Verificar com o buddy se isso é bom, e quando na escala */
-    header nav{
-        height: 80px;
-    }
-
-}
-
 /* Mobile */
 
 /* Definindo o heading */
@@ -93,6 +79,10 @@ h3{
     color: #2571B7;
  }
 
+header{
+    height: 7.5vh;
+}
+
 /* Definindo a navbar  */
 
 header nav{
@@ -100,12 +90,16 @@ header nav{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 48px;  /*height: 7.5vh; */
+    height: 7.5vh;  /*height: 7.5vh; */
     background-color: #2571B7;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+nav .desktop-menu{
+    display: none;
 }
 
 /* Definindo o botão da navbar */
@@ -489,4 +483,93 @@ footer{
 
 footer p{
     color: #B4B4B4
+}
+
+@media (min-width: 1440px) {
+    /*
+    .container {
+        margin-right: calc((100vw - 1350px) / 2);
+        margin-left: calc((100vw - 1350px) / 2);
+    }
+    */
+    /* Desktop */
+
+    /*header */
+    header{
+        height: 8.89vh;
+        margin: 0%;
+    }
+
+    /* navbar */
+    header nav{
+        display: block;
+        margin: 0%;
+        height: 8.89vh;
+        box-sizing: initial;
+    }
+
+    nav .dropdown {
+        display: none;
+    }
+
+    nav .desktop-menu{
+        padding: 0;
+        margin: 0;
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav .desktop-menu img{
+        width: 70%;
+        height: 30%;
+    }
+
+    nav .desktop-menu .button-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        right: 0;
+        margin: 0%;
+        padding: 0%;
+
+    }
+
+    nav .desktop-menu .button-container button{
+        background-color: #2571B7;
+        position: static;
+    }
+
+    nav .desktop-menu .button-container button:hover{
+        background-color: #488ac7;
+    }
+
+    header nav button{
+        width: 9.95vw;
+        height: 4.11vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Primeira seção */
+
+    section.first{
+        width: 100vw;
+        background-size: contain;
+        align-items: flex-start;
+    }
+
+    .first h1, .first h3{
+        margin: 0% 10vw;
+        line-height: 6rem;
+    }
+
+    .first button{
+        margin: 0% 10vw;
+    }
+
 }
