@@ -171,7 +171,7 @@ section.first{
     background-position: 50% 0%;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -201,12 +201,21 @@ section.first{
     background-color: #53bbeb;
 }
 
-.first img{
+.first .img-container{
+    display: block;
+}
+
+.first .img-container .arrow{
+    display: none;
+}
+
+.first .img-container img{
     width: 36.3vw;
     height: 6.15vh;
     position: relative;
-    top: 22vh;
+    top: 18vh
 }
+
 
 
 /* Segunda seção */
@@ -559,17 +568,43 @@ footer p{
 
     section.first{
         width: 100vw;
-        background-size: contain;
+        background-size: 100vw;
         align-items: flex-start;
+        justify-content: center;
     }
 
     .first h1, .first h3{
-        margin: 0% 10vw;
-        line-height: 6rem;
+        margin: 1% 10vw;
     }
 
     .first button{
-        margin: 0% 10vw;
+        width: 18.47vw;
+        margin: 0 10vw;
+        margin-top: 3%
     }
+
+    .first .img-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .first .img-container .arrow{
+        position: relative;
+        top: 21vh;
+        left: 8vw;
+        display: block;
+        width: 3em;
+        height: 3em;
+        border-right: 0.2em solid white;
+        border-top: 0.2em solid white;
+        transform: rotate(135deg);
+    }
+
+    .first .img-container img{
+        margin-top: 5vh;
+    }
+
 
 }
