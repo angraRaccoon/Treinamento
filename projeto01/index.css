@@ -240,6 +240,10 @@ section.second{
     line-height: 2rem;
 }
 
+.second .text span{
+    color: #737373;
+}
+
 .second h3{
     color: #2571B7;
     font-size: 2rem;
@@ -251,6 +255,12 @@ section.second{
 }
 
 /* Estilizando as caixas de cores */
+
+
+.second .color-box-container{
+    display: flex;
+    flex-flow: column nowrap;
+}
 
 .second .color-box{
     padding: 2vh 0%;
@@ -606,5 +616,34 @@ footer p{
         margin-top: 5vh;
     }
 
+    /* Segunda seção */
+    .second h3{
+        font-size: 3.333rem;
+    }
+
+    p{
+        font-size: 1.6666rem;
+    }
+
+    .second .text span{
+        color: #F25022;
+    }
+
+
+    /* Estilizando as caixas de cores */
+
+    .second .color-box-container{
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+
+    .second .color-box{
+        width: 40vw;
+        height: 13.3333vh;
+        margin: 2vh 1vw;
+    }
+
+    /* Terceira seção */
 
 }
