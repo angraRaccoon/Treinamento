@@ -14,12 +14,10 @@ body{
 }
 
 h1{
-    color: white;
     font-size: 3.375rem;
 }
 
 p{
-    margin: 0;
     color: #B5B5B5
 }
 
@@ -33,6 +31,7 @@ button{
     margin: 2vh 0;
     color: white;
     font-size: 1.33rem;
+    border-radius: 5px;
 }
 
 button.orange{
@@ -45,26 +44,69 @@ button.black{
     border: 1px solid #FFFFFF;
 }
 
+section.second{
+    width: 100vw;
+    background: radial-gradient(#2C2C2C,#1A1A1A);
+}
+
+
+
 .text-box{
-    align-self: flex-start;
+    position: absolute;
+    left: 3vw;
     width: 30.71vw;
     height: 18.49vh;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
     font-size: 4rem;
-    text-align: center;
-    line-height: 25vh;
-    color: white
 }
 
-main h3{
-    padding: 0;
+.second h3{
+    margin-top: 9vh;
+    margin-left: 4vw;
+    width: 52vw;
+    height: 21.83vh;
     font-weight: normal;
-    line-height: 0;
     font-size: 4rem;
-    text-align: left;
     align-self: flex-start;
+}
+
+.second p{
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.second .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.second .card-container .card{
+    margin: 2vh 0;
+    width: 70.28vw;
+    height: 46vh;
+    border: 1px solid #6E6E6E;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img{
+    width: 27.5vw;
+    height: 16.9vh
+}
+
+.card p{
+    font-size: 1.34rem;
+}
+
+span.card-title{
+    color: #F89D24;
 }
 
 @media(min-width:768px){
@@ -103,6 +145,10 @@ main h3{
     }
 }
 
+
+/* mobile */
+
+/* Imagem do header */
 header img{
     width: 12.22vw;
     height: 6.34vh;
@@ -111,4 +157,9 @@ header img{
     top: 1.5vh
 }
 
-/* mobile */
+
+.container section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
