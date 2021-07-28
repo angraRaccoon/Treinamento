@@ -1,0 +1,215 @@
+/* Importando um arquivo CSS Reset */
+/* Standard CSS */
+
+html
+ font-size: 12px
+
+
+body
+    background-color: #0C0C0C
+    color: white
+
+
+h1
+    font-size: 3.375rem
+
+
+p
+    color: #B5B5B5
+
+
+h1, p
+    text-align: center
+
+
+/* mobile */
+
+/* Imagem do header */
+header img
+    width: 12.22vw
+    height: 6.34vh
+    position: relative
+    left: 1.5vw
+    top: 1.5vh
+
+
+
+.container section
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+
+
+button
+    width: 46.9vw
+    height: 9.86vh
+    margin: 2vh 0
+    color: white
+    font-size: 1.33rem
+    border-radius: 5px
+
+
+button.orange
+    background-color: #F89D24
+    border: 1px solid #F89D24
+
+
+button.black
+    background-color: #0C0C0C
+    border: 1px solid #FFFFFF
+
+
+/* Segunda Seção */
+
+section.second
+    width: 100vw
+    background: radial-gradient(#2C2C2C,#1A1A1A)
+
+
+
+
+.text-box
+    position: absolute
+    left: 3vw
+    width: 30.71vw
+    height: 18.49vh
+    background-color: inherit
+    border: 1px solid #FEC024
+    border-top: none
+    font-size: 4rem
+
+
+.second h3, .fourth h3
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: 4rem
+    align-self: flex-start
+
+
+.second p
+    margin-right: 20px
+    margin-left: 20px
+    text-align: justify
+    line-height: 1.8rem
+
+
+/* Container de cards da segunda seção */
+
+.second .card-container
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+
+.second .card-container .card
+    margin: 2vh 0
+    width: 70.28vw
+    height: 46vh
+    border: 1px solid #6E6E6E
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+.card img
+    width: 27.5vw
+    height: 16.9vh
+
+
+.card p
+    font-size: 1.34rem
+
+
+span.card-title
+    color: #F89D24
+
+
+
+/* Terceira seção */
+
+/* Lidando com os diferentes backgrounds da terceira seção */
+.third
+    width: 100vw
+
+.third h1
+    text-transform: capitalize
+    font-weight: normal
+
+
+
+/* Primeiro background */
+.third .box-01
+    height: 52.29vh
+    background-image: url('./assets/Grupo\ 34.svg')
+
+
+/* Segundo Background */
+.third .box-02
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100vw
+    height: 44.01vh
+    background-color: #F89D24
+
+
+.third .box-02 button
+    border: 1px solid white
+    background-color: white
+    color: #F89D24
+    width: 56.39vw
+
+
+/* */
+section.fourth
+    width: 100vw
+    background-image: url('./assets/teacher\ bnw.png')
+
+
+.fourth h3
+    width: 80vw
+    height: 21.83vh
+
+
+@media(min-width:768px)
+    html
+        font-size: 16px
+    
+ 
+
+
+.container 
+    margin-right: 20px
+    margin-left: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+@media (min-width: 768px) 
+    .container 
+        margin-right: 50px
+        margin-left: 50px
+    
+
+
+@media (min-width: 1024px) 
+    .container 
+        margin-right: 80px
+        margin-left: 80px
+    
+
+
+@media (min-width: 1440px) 
+    .container 
+        margin-right: calc((100vw - 1350px) / 2)
+        margin-left: calc((100vw - 1350px) / 2)
+    
+
