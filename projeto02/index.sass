@@ -2,58 +2,98 @@
 
 @use 'css_reset'
 
-/* Declarando variáveis */ 
+/* Declarando variáveis para o uso no sass */ 
 
 $font-size-normal:  12px
 $font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
 
 %flex-column
     display: flex
     flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
     align-items: center
 
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+%text-box-heading
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: $font-heading-medium
+    align-self: flex-start
 
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius: $card-border-radius
+
+%card-paragraph
+    margin: 0vh 4vw
+    font-size: 1.34rem
+    text-align: justify
 /* Standard CSS */
 
 html
  font-size:  $font-size-normal
 
-
 body
     background-color: #0C0C0C
     color: white
 
-
 h1
     font-size: 3.375rem
-
 
 p
     color: #B5B5B5
 
-
 h1, p
     text-align: center
+
+/* Texto que contém um 'U' nele */ 
+.text-box
+    position: absolute
+    left: 3vw
+    width: 30.71vw
+    height: 18.49vh
+    background-color: inherit
+    border: 1px solid #FEC024
+    border-top: none
+    font-size: $font-heading-medium
+
+.text-box-heading
+    @extend %text-box-heading
+
+span.card-title
+    color: #F89D24
 
 
 /* mobile */
 
 /* Imagem do header */
-header img
-    width: 12.22vw
-    height: 6.34vh
-    position: relative
-    left: 1.5vw
-    top: 1.5vh
-
-
+header 
+    img
+        width: 12.22vw
+        height: 6.34vh
+        position: relative
+        left: 1.5vw
+        top: 1.5vh
 
 .container 
+    margin-right: 20px
+    margin-left: 20px
+    @extend %flex-column-items-center
     section
-       @extend %flex-column
-
-
-
+        width: $full-width
+        @extend %flex-column-items-center
 
 button
     width: 46.9vw
@@ -61,7 +101,7 @@ button
     margin: 2vh 0
     color: white
     font-size: 1.33rem
-    border-radius: 5px
+    border-radius: $card-border-radius
 
 
 button.orange
@@ -73,113 +113,58 @@ button.black
     background-color: #0C0C0C
     border: 1px solid #FFFFFF
 
-
 /* Segunda Seção */
 
-section.second
-    width: 100vw
+section.second, section.seventh
+    width: $full-width
     background: radial-gradient(#2C2C2C,#1A1A1A)
 
-
-
-
-.text-box
-    position: absolute
-    left: 3vw
-    width: 30.71vw
-    height: 18.49vh
-    background-color: inherit
-    border: 1px solid #FEC024
-    border-top: none
-    font-size: $font-heading-medium
-
-
-.second h3, .fourth h3
-    margin-top: 9vh
-    margin-left: 4vw
-    width: 52vw
-    height: 21.83vh
-    font-weight: normal
-    font-size: $font-heading-medium
-    align-self: flex-start
-
-
 .second 
+    /* Container de cards da segunda seção */
+    .card-container
+        @extend %flex-column
+        justify-content: space-around
+
+        .card
+            margin: 2vh 0
+            width: 70.28vw
+            height: 46vh
+            @extend %card-border
+            @extend %flex-column-items-center
+            justify-content: space-evenly
+            img
+                width: 27.5vw
+                height: 16.9vh
+            p
+                @extend %card-paragraph
+    /* Parágrafo da segunda seção */
     p
         margin-right: 20px
         margin-left: 20px
         text-align: justify
         line-height: 1.8rem
 
-
-/* Container de cards da segunda seção */
-
-.second 
-    .card-container
-        display: flex
-        flex-direction: column
-        justify-content: space-around
-
-
-.second 
-    .card-container 
-        .card
-            margin: 2vh 0
-            width: 70.28vw
-            height: 46vh
-            border: 1px solid #6E6E6E
-            border-radius: 5px
-            @extend %flex-column
-
-
-.card 
-    img
-        width: 27.5vw
-        height: 16.9vh
-
-
-.card 
-    p
-        font-size: 1.3$font-heading-medium
-
-
-span.card-title
-    color: #F89D24
-
-
-
+  
 /* Terceira seção */
 
-/* Lidando com os diferentes backgrounds da terceira seção */
 .third
-    width: 100vw
-
-.third 
     h1
         text-transform: capitalize
         font-weight: normal
-
-
-
-/* Primeiro background */
-.third 
+    /* Lidando com os diferentes backgrounds da terceira seção */
+    /* Primeiro background */
     .box-01
         height: 52.29vh
         background-image: url('./assets/Grupo\ 34.svg')
 
-
-/* Segundo Background */
-.third 
+    /* Segundo Background */
     .box-02
-        @extend %flex-column
+        @extend %flex-column-items-center
         justify-content: center
-        width: 100vw
+        width: $full-width
         height: 44.01vh
         background-color: #F89D24
 
-
-.third 
-    .box-02 
         button
             border: 1px solid white
             background-color: white
@@ -187,9 +172,9 @@ span.card-title
             width: 56.39vw
 
 
-/* */
+/* Quarta seção  */
 section.fourth
-    width: 100vw
+    width: $full-width
     background-image: url('./assets/teacher\ bnw.png')
 
 
@@ -199,18 +184,33 @@ section.fourth
         height: 21.83vh
 
 
+/* Quinta Seção */
+
+.fifth
+    .card-container
+        @extend %flex-column-items-center
+        .card
+            margin-bottom: 3vh
+            width: 87.5vw
+            height: 89.96vh
+            @extend %card-border
+            @extend %flex-justified
+            img
+                width: 74.17vw
+                height: 41.2vh 
+            p
+                @extend %card-paragraph
+
+.sixth
+    background-image: url('./assets/opinion.png')
+    h5
+        font-size: 1.5rem
+        color: #F89D24
+
 @media(min-width:768px)
     html
         font-size: 16px
     
- 
-
-
-.container 
-    margin-right: 20px
-    margin-left: 20px
-    @extend %flex-column
-
 
 @media (min-width: 768px) 
     .container 
@@ -228,7 +228,7 @@ section.fourth
 
 @media (min-width: 1440px) 
     .container 
-        margin-right: calc((100vw - 1350px) / 2)
-        margin-left: calc((100vw - 1350px) / 2)
+        margin-right: calc(($full-width - 1350px) / 2)
+        margin-left: calc(($full-width - 1350px) / 2)
     
 

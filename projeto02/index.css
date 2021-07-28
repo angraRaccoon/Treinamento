@@ -158,11 +158,39 @@ template {
 }
 
 /* Importando um arquivo CSS Reset */
-/* Declarando variáveis */ 
-.container, .third .box-02, .second .card-container .card, .container section {
+/* Declarando variáveis para o uso no sass */ 
+.second .card-container, .fifth .card-container, .third .box-02, .second .card-container .card, .container section, .container, .fifth .card-container .card {
   display: flex;
   flex-direction: column;
+}
+
+.fifth .card-container, .third .box-02, .second .card-container .card, .container section, .container, .fifth .card-container .card {
   align-items: center;
+}
+
+.fifth .card-container .card {
+  justify-content: space-around;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+.fifth .card-container .card, .second .card-container .card {
+  border: 1px solid #6E6E6E;
+  border-radius: 5px;
+}
+
+.fifth .card-container .card p, .second .card-container .card p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
 }
 
 /* Standard CSS */
@@ -187,6 +215,22 @@ h1, p {
   text-align: center;
 }
 
+/* Texto que contém um 'U' nele */ 
+.text-box {
+  position: absolute;
+  left: 3vw;
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+span.card-title {
+  color: #F89D24;
+}
+
 /* mobile */
 /* Imagem do header */
 header img {
@@ -195,6 +239,14 @@ header img {
   position: relative;
   left: 1.5vw;
   top: 1.5vh;
+}
+
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.container section {
+  width: 100vw;
 }
 
 button {
@@ -217,32 +269,28 @@ button.black {
 }
 
 /* Segunda Seção */
-section.second {
+section.second, section.seventh {
   width: 100vw;
   background: radial-gradient(#2C2C2C, #1A1A1A);
 }
 
-.text-box {
-  position: absolute;
-  left: 3vw;
-  width: 30.71vw;
-  height: 18.49vh;
-  background-color: inherit;
-  border: 1px solid #FEC024;
-  border-top: none;
-  font-size: 4rem;
+.second {
+  /* Container de cards da segunda seção */
+  /* Parágrafo da segunda seção */
 }
-
-.second h3, .fourth h3 {
-  margin-top: 9vh;
-  margin-left: 4vw;
-  width: 52vw;
-  height: 21.83vh;
-  font-weight: normal;
-  font-size: 4rem;
-  align-self: flex-start;
+.second .card-container {
+  justify-content: space-around;
 }
-
+.second .card-container .card {
+  margin: 2vh 0;
+  width: 70.28vw;
+  height: 46vh;
+  justify-content: space-evenly;
+}
+.second .card-container .card img {
+  width: 27.5vw;
+  height: 16.9vh;
+}
 .second p {
   margin-right: 20px;
   margin-left: 20px;
@@ -250,59 +298,26 @@ section.second {
   line-height: 1.8rem;
 }
 
-/* Container de cards da segunda seção */
-.second .card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.second .card-container .card {
-  margin: 2vh 0;
-  width: 70.28vw;
-  height: 46vh;
-  border: 1px solid #6E6E6E;
-  border-radius: 5px;
-}
-
-.card img {
-  width: 27.5vw;
-  height: 16.9vh;
-}
-
-.card p {
-  font-size: 1.3 4rem;
-}
-
-span.card-title {
-  color: #F89D24;
-}
-
 /* Terceira seção */
-/* Lidando com os diferentes backgrounds da terceira seção */
 .third {
-  width: 100vw;
+  /* Lidando com os diferentes backgrounds da terceira seção */
+  /* Primeiro background */
+  /* Segundo Background */
 }
-
 .third h1 {
   text-transform: capitalize;
   font-weight: normal;
 }
-
-/* Primeiro background */
 .third .box-01 {
   height: 52.29vh;
   background-image: url("./assets/Grupo 34.svg");
 }
-
-/* Segundo Background */
 .third .box-02 {
   justify-content: center;
   width: 100vw;
   height: 44.01vh;
   background-color: #F89D24;
 }
-
 .third .box-02 button {
   border: 1px solid white;
   background-color: white;
@@ -310,7 +325,7 @@ span.card-title {
   width: 56.39vw;
 }
 
-/* */
+/* Quarta seção  */
 section.fourth {
   width: 100vw;
   background-image: url("./assets/teacher bnw.png");
@@ -321,16 +336,29 @@ section.fourth {
   height: 21.83vh;
 }
 
+/* Quinta Seção */
+.fifth .card-container .card {
+  margin-bottom: 3vh;
+  width: 87.5vw;
+  height: 89.96vh;
+}
+.fifth .card-container .card img {
+  width: 74.17vw;
+  height: 41.2vh;
+}
+.sixth {
+  background-image: url("./assets/opinion.png");
+}
+.sixth h5 {
+  font-size: 1.5rem;
+  color: #F89D24;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-.container {
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
 @media (min-width: 768px) {
   .container {
     margin-right: 50px;
@@ -345,8 +373,8 @@ section.fourth {
 }
 @media (min-width: 1440px) {
   .container {
-    margin-right: calc((100vw - 1350px) / 2);
-    margin-left: calc((100vw - 1350px) / 2);
+    margin-right: calc(($full-width - 1350px) / 2);
+    margin-left: calc(($full-width - 1350px) / 2);
   }
 }
 
