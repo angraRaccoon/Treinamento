@@ -17,3 +17,28 @@ Criar um automatizador de tarefas utilizando Gulp ou Webpack;
 Utilizar SASS como pré-processador de CSS.
 
 */
+
+
+// Colocando a função de collapsible
+
+const coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+    
+    coll[i].addEventListener("click", () => {
+    
+        if(coll[i].classList[1] == "active"){
+            coll[i].classList.remove("active")
+        }else{
+            coll[i].classList.add("active")
+        }
+
+        let content = coll[i].nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+
+    });
+}

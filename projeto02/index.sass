@@ -20,9 +20,11 @@ $card-border-radius:  5px
 %flex-justified
     @extend %flex-column-items-center
     justify-content: space-around
+
 %flex-between
     @extend %flex-column-items-center
     justify-content: space-between
+
 %text-box-heading
     margin-top: 9vh
     margin-left: 4vw
@@ -40,6 +42,8 @@ $card-border-radius:  5px
     margin: 0vh 4vw
     font-size: 1.34rem
     text-align: justify
+
+
 /* Standard CSS */
 
 html
@@ -182,6 +186,66 @@ section.fourth
     h3
         width: 80vw
         height: 21.83vh
+    .competence-container
+        @extend %flex-column-items-center
+        .collapsible
+            margin: 0
+            background-color: #686868
+            color: white
+            cursor: pointer
+            padding: 13px
+            width: 86.87vw
+            border: 1px solid #686868
+            border-radius: 0.5px
+            outline: none
+            text-align: left
+            font-size: 1.5rem
+
+        .collapsible::after 
+            content: ''
+            position: relative
+            bottom: 2.5vh
+            left: 70vw
+            display: block
+            width: 0.7825rem
+            height: 0.7825rem
+            border-right: 0.2rem solid white
+            border-top: 0.2rem solid white
+            transform: rotate(135deg)
+
+            /*
+                font-size: 13px
+                color: white
+                float: right
+                margin-left: 5px 
+                */
+
+        .active::after 
+            content: ''
+            border: none
+            transform: rotate(315deg) 
+        
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover 
+           background-color: #555
+        
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content 
+            width: 86.67vw
+            font-size: 1.5rem
+            text-align: justify
+            background-color: #262626
+            border: none
+            padding: 0 13px
+            max-height: 0
+            overflow: hidden
+            transition: max-height 0.2s ease-out
+        .active
+            .content 
+                border-top: 1px solid #FEC024
+                border-bottom: 1px solid #FEC024
 
 
 /* Quinta Seção */
@@ -201,11 +265,18 @@ section.fourth
             p
                 @extend %card-paragraph
 
+/* Sexta Seção */ 
 .sixth
     background-image: url('./assets/opinion.png')
     h5
         font-size: 1.5rem
         color: #F89D24
+
+/* Sétima Seção */
+.seventh
+    h3.text-box-heading
+        width: 69.45vw
+        height: 21.83vh
 
 @media(min-width:768px)
     html
@@ -223,7 +294,14 @@ section.fourth
     .container 
         margin-right: 80px
         margin-left: 80px
-    
+    header
+        height: 15vh
+        img
+            width: 8.49vw
+            height: 12.37vh
+            position: relative
+            left: 1.5vw
+            top: 1.5vh
 
 
 @media (min-width: 1440px) 

@@ -159,12 +159,12 @@ template {
 
 /* Importando um arquivo CSS Reset */
 /* Declarando variáveis para o uso no sass */ 
-.second .card-container, .fifth .card-container, .third .box-02, .second .card-container .card, .container section, .container, .fifth .card-container .card {
+.second .card-container, .fifth .card-container, .fourth .competence-container, .third .box-02, .second .card-container .card, .container section, .container, .fifth .card-container .card {
   display: flex;
   flex-direction: column;
 }
 
-.fifth .card-container, .third .box-02, .second .card-container .card, .container section, .container, .fifth .card-container .card {
+.fifth .card-container, .fourth .competence-container, .third .box-02, .second .card-container .card, .container section, .container, .fifth .card-container .card {
   align-items: center;
 }
 
@@ -335,6 +335,63 @@ section.fourth {
   width: 80vw;
   height: 21.83vh;
 }
+.fourth .competence-container {
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the collapsible content. Note: hidden by default */
+}
+.fourth .competence-container .collapsible {
+  margin: 0;
+  background-color: #686868;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  width: 86.87vw;
+  border: 1px solid #686868;
+  border-radius: 0.5px;
+  outline: none;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.fourth .competence-container .collapsible::after {
+  content: "";
+  position: relative;
+  bottom: 2.5vh;
+  left: 70vw;
+  display: block;
+  width: 0.7825rem;
+  height: 0.7825rem;
+  border-right: 0.2rem solid white;
+  border-top: 0.2rem solid white;
+  transform: rotate(135deg);
+  /*  font-size: 13px
+  *  color: white
+  *  float: right
+  *  margin-left: 5px 
+  *  */
+}
+.fourth .competence-container .active::after {
+  content: "";
+  border: none;
+  transform: rotate(315deg);
+}
+.fourth .competence-container .active, .fourth .competence-container .collapsible:hover {
+  background-color: #555;
+}
+.fourth .competence-container .content {
+  width: 86.67vw;
+  font-size: 1.5rem;
+  text-align: justify;
+  background-color: #262626;
+  border: none;
+  padding: 0 13px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.fourth .competence-container .active .content {
+  border-top: 1px solid #FEC024;
+  border-bottom: 1px solid #FEC024;
+}
 
 /* Quinta Seção */
 .fifth .card-container .card {
@@ -346,12 +403,19 @@ section.fourth {
   width: 74.17vw;
   height: 41.2vh;
 }
+/* Sexta Seção */ 
 .sixth {
   background-image: url("./assets/opinion.png");
 }
 .sixth h5 {
   font-size: 1.5rem;
   color: #F89D24;
+}
+
+/* Sétima Seção */
+.seventh h3.text-box-heading {
+  width: 69.45vw;
+  height: 21.83vh;
 }
 
 @media (min-width: 768px) {
@@ -369,6 +433,17 @@ section.fourth {
   .container {
     margin-right: 80px;
     margin-left: 80px;
+  }
+
+  header {
+    height: 15vh;
+  }
+  header img {
+    width: 8.49vw;
+    height: 12.37vh;
+    position: relative;
+    left: 1.5vw;
+    top: 1.5vh;
   }
 }
 @media (min-width: 1440px) {
