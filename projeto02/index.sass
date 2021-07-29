@@ -63,12 +63,14 @@ p
 h1, p
     text-align: center
 
-
-/* Container dos botões da página
-.button-container
-    display: block
-        
-
+/* Botão */
+button
+    width: 46.94vw
+    height: 9.86vh
+    margin: 2vh 0
+    color: white
+    font-size: 1.33rem
+    border-radius: $card-border-radius
 
 
 /* Texto que contém um 'U' nele */ 
@@ -97,8 +99,8 @@ header
         width: 12.22vw
         height: 6.34vh
         position: relative
-        left: 1.5vw
-        top: 1.5vh
+        left: 2.2vw
+        top: 1.8vh
 
 .container 
     margin-right: 20px
@@ -110,21 +112,6 @@ header
 
 .button-container
     @extend %flex-column-items-center
-    button
-        width: 46.9vw
-        height: 9.86vh
-        margin: 2vh 0
-        color: white
-        font-size: 1.33rem
-        border-radius: $card-border-radius
-
-button
-    width: 46.9vw
-    height: 9.86vh
-    margin: 2vh 0
-    color: white
-    font-size: 1.33rem
-    border-radius: $card-border-radius
 
 
 button.orange
@@ -354,6 +341,7 @@ footer
 
 @media (min-width: 1024px) 
 
+    /* Desktop */
     /* Container dos botões da página
     .button-container
         display: flex
@@ -364,6 +352,16 @@ footer
             width: 12.37vw
             height: 7.29vh
 
+    header
+        height: 15vh
+        img
+            width: 8.49vw
+            height: 12.37vh
+            position: relative
+            left: 1.5vw
+            top: 1.5vh
+
+    /* Primeira Seção */
     
     .first
         display: flex
@@ -380,14 +378,50 @@ footer
         p
             font-size: 1rem
             width: 30.45vw
-    header
-        height: 15vh
-        img
-            width: 8.49vw
-            height: 12.37vh
-            position: relative
-            left: 1.5vw
-            top: 1.5vh
+
+    // Segunda Seção
+
+    .second 
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        .card-container
+            display: flex
+            flex-flow: row wrap
+            justify-content: space-around
+
+            .card
+                margin: 2vh 2vw
+                width: 18.52vw
+                height: 35.29vh
+                border: 1px solid #6E6E6E
+                border-radius: $card-border-radius
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: space-evenly
+                img
+                    width: 7.24vw
+                    height: 12.5vh
+                p
+                    margin: 0vh 4vw
+                    font-size: 1rem
+                    text-align: justify
+            /* Parágrafo da segunda seção */
+            p
+                margin-right: 20px
+                margin-left: 20px
+                text-align: justify
+                line-height: 1.8rem
+
+    // Terceira Seção
+    .third
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .box02
+            width: 39.39vw
+            height: 38.5vh
 
 
 @media (min-width: 1440px) 
