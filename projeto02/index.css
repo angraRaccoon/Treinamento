@@ -363,22 +363,20 @@ section.fourth {
   border-right: 0.2rem solid white;
   border-top: 0.2rem solid white;
   transform: rotate(135deg);
-  /*  font-size: 13px
-  *  color: white
-  *  float: right
+  /*  float: right
   *  margin-left: 5px 
   *  */
 }
 .fourth .competence-container .active::after {
   content: "";
-  border: none;
+  margin-top: 1vh;
   transform: rotate(315deg);
 }
 .fourth .competence-container .active, .fourth .competence-container .collapsible:hover {
   background-color: #555;
 }
 .fourth .competence-container .content {
-  width: 86.67vw;
+  width: 79.5vw;
   font-size: 1.5rem;
   text-align: justify;
   background-color: #262626;
@@ -386,9 +384,13 @@ section.fourth {
   padding: 0 13px;
   max-height: 0;
   overflow: hidden;
+  border: none;
   transition: max-height 0.2s ease-out;
 }
-.fourth .competence-container .active .content {
+.fourth .competence-container .content p {
+  text-align: justify;
+}
+.fourth .competence-container .active + .content {
   border-top: 1px solid #FEC024;
   border-bottom: 1px solid #FEC024;
 }

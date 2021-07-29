@@ -220,7 +220,7 @@ section.fourth
 
         .active::after 
             content: ''
-            border: none
+            margin-top: 1vh
             transform: rotate(315deg) 
         
 
@@ -231,7 +231,7 @@ section.fourth
 
         /* Style the collapsible content. Note: hidden by default */
         .content 
-            width: 86.67vw
+            width: 79.5vw
             font-size: 1.5rem
             text-align: justify
             background-color: #262626
@@ -239,12 +239,13 @@ section.fourth
             padding: 0 13px
             max-height: 0
             overflow: hidden
+            border: none
             transition: max-height 0.2s ease-out
-        .active
-            .content 
-                border-top: 1px solid #FEC024
-                border-bottom: 1px solid #FEC024
-
+            p
+                text-align: justify
+        .active + .content 
+            border-top: 1px solid #FEC024
+            border-bottom: 1px solid #FEC024
 
 /* Quinta Seção */
 
