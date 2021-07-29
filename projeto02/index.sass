@@ -55,12 +55,21 @@ body
 
 h1
     font-size: 3.375rem
+    width: 78.89vw
 
 p
     color: #B5B5B5
 
 h1, p
     text-align: center
+
+
+/* Container dos botões da página
+.button-container
+    display: block
+        
+
+
 
 /* Texto que contém um 'U' nele */ 
 .text-box
@@ -98,6 +107,16 @@ header
     section
         width: $full-width
         @extend %flex-column-items-center
+
+.button-container
+    @extend %flex-column-items-center
+    button
+        width: 46.9vw
+        height: 9.86vh
+        margin: 2vh 0
+        color: white
+        font-size: 1.33rem
+        border-radius: $card-border-radius
 
 button
     width: 46.9vw
@@ -193,6 +212,7 @@ section.fourth
         width: 80vw
         height: 21.83vh
     .competence-container
+        margin-bottom: 5%
         @extend %flex-column-items-center
         .collapsible
             margin: 0
@@ -333,9 +353,33 @@ footer
 
 
 @media (min-width: 1024px) 
+
+    /* Container dos botões da página
+    .button-container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        button
+            margin: 2vh 1.5vw
+            width: 12.37vw
+            height: 7.29vh
+
+    
+    .first
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        height: calc(100vh - 15vh)
+
     .container 
         margin-right: 80px
         margin-left: 80px
+        h1
+            width: 58.57vw
+        p
+            font-size: 1rem
+            width: 30.45vw
     header
         height: 15vh
         img
