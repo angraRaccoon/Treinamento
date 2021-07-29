@@ -158,8 +158,14 @@ section.second, section.seventh
     /* Lidando com os diferentes backgrounds da terceira seção */
     /* Primeiro background */
     .box-01
+        width: 100vw
         height: 52.29vh
         background-image: url('./assets/Grupo\ 34.svg')
+        h1
+            margin: 10vh 6vw
+            width: 83.67vw
+            height: 36.62vh
+            text-align: justify
 
     /* Segundo Background */
     .box-02
@@ -200,6 +206,7 @@ section.fourth
             outline: none
             text-align: left
             font-size: 1.5rem
+            font-weight: normal
 
         .collapsible::after 
             content: ''
@@ -222,6 +229,7 @@ section.fourth
             content: ''
             margin-top: 1vh
             transform: rotate(315deg) 
+            font-weight: bold
         
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -266,16 +274,51 @@ section.fourth
 
 /* Sexta Seção */ 
 .sixth
+    height: 609px
     background-image: url('./assets/opinion.png')
+    background-size: contain
+    background-repeat: no-repeat
     h5
         font-size: 1.5rem
         color: #F89D24
 
 /* Sétima Seção */
-.seventh
+section.seventh
     h3.text-box-heading
         width: 69.45vw
         height: 21.83vh
+        margin: 0 2vw
+        margin-top: 9vh
+    p
+       @extend %card-paragraph
+
+    // Lista Desordenada
+    ul
+        color: #F89D24
+        font-size: 1.7rem
+        list-style-type: circle
+        margin: 0
+        li
+            width: 86.11vw
+            height: 17.25vh
+            h6
+                text-transform: uppercase
+                color: #F89D24
+                font-size: 1.17rem
+            p
+                text-align: justify
+
+
+section.eighth
+    width: $full-width
+    background-image: url('assets/negociando.png')
+    p
+        @extend %card-paragraph
+
+footer
+    p
+        font-size: 1.33rem
+        margin: 8vh 0
 
 @media(min-width:768px)
     html

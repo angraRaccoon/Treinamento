@@ -187,7 +187,7 @@ template {
   border-radius: 5px;
 }
 
-.fifth .card-container .card p, .second .card-container .card p {
+section.eighth p, section.seventh p, .fifth .card-container .card p, .second .card-container .card p {
   margin: 0vh 4vw;
   font-size: 1.34rem;
   text-align: justify;
@@ -309,8 +309,15 @@ section.second, section.seventh {
   font-weight: normal;
 }
 .third .box-01 {
+  width: 100vw;
   height: 52.29vh;
   background-image: url("./assets/Grupo 34.svg");
+}
+.third .box-01 h1 {
+  margin: 10vh 6vw;
+  width: 83.67vw;
+  height: 36.62vh;
+  text-align: justify;
 }
 .third .box-02 {
   justify-content: center;
@@ -351,6 +358,7 @@ section.fourth {
   outline: none;
   text-align: left;
   font-size: 1.5rem;
+  font-weight: normal;
 }
 .fourth .competence-container .collapsible::after {
   content: "";
@@ -371,6 +379,7 @@ section.fourth {
   content: "";
   margin-top: 1vh;
   transform: rotate(315deg);
+  font-weight: bold;
 }
 .fourth .competence-container .active, .fourth .competence-container .collapsible:hover {
   background-color: #555;
@@ -407,7 +416,10 @@ section.fourth {
 }
 /* Sexta Seção */ 
 .sixth {
+  height: 609px;
   background-image: url("./assets/opinion.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .sixth h5 {
   font-size: 1.5rem;
@@ -415,9 +427,38 @@ section.fourth {
 }
 
 /* Sétima Seção */
-.seventh h3.text-box-heading {
+section.seventh h3.text-box-heading {
   width: 69.45vw;
   height: 21.83vh;
+  margin: 0 2vw;
+  margin-top: 9vh;
+}
+section.seventh ul {
+  color: #F89D24;
+  font-size: 1.7rem;
+  list-style-type: circle;
+  margin: 0;
+}
+section.seventh ul li {
+  width: 86.11vw;
+  height: 17.25vh;
+}
+section.seventh ul li h6 {
+  text-transform: uppercase;
+  color: #F89D24;
+  font-size: 1.17rem;
+}
+section.seventh ul li p {
+  text-align: justify;
+}
+
+section.eighth {
+  width: 100vw;
+  background-image: url("assets/negociando.png");
+}
+footer p {
+  font-size: 1.33rem;
+  margin: 8vh 0;
 }
 
 @media (min-width: 768px) {
