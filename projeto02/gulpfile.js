@@ -41,7 +41,7 @@ function browsersyncReload(cb){
 
 function watchTask(){
   watch('*.html', browsersyncReload)
-  watch(['styles/index.sass','scripts/index.js'], series(sassUpdate,jsTask, browsersyncReload))
+  watch(['styles/*.sass','scripts/*.js'], series(sassUpdate,jsTask, browsersyncReload))
 }
 
 //Default gulptask

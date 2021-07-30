@@ -1,2 +1,723 @@
-html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}.button-container,.container,.container section,.fifth .card-container,.fifth .card-container .card,.fourth .competence-container,.second .card-container,.second .card-container .card,.second .mobile,.third .box-02{display:flex;flex-direction:column}.button-container,.container,.container section,.fifth .card-container,.fifth .card-container .card,.fourth .competence-container,.second .card-container .card,.second .mobile,.third .box-02{align-items:center}.fifth .card-container .card{justify-content:space-around}.text-box-heading{align-self:flex-start;font-size:4rem;font-weight:400;height:21.83vh;margin-left:4vw;margin-top:9vh;width:52vw}.fifth .card-container .card,.second .card-container .card{border:1px solid #6e6e6e;border-radius:5px}.fifth .card-container .card p,.second .card-container .card p,section.eighth p,section.seventh p{font-size:1.34rem;margin:0 4vw;text-align:justify}html{font-size:12px}body{background-color:#0c0c0c;color:#fff}h1{font-size:3.375rem;width:78.89vw}p{color:#b5b5b5}h1,p{text-align:center}button{border-radius:5px;color:#fff;font-size:1.33rem;height:9.86vh;margin:2vh 0;width:46.94vw}.text-box{background-color:inherit;border:1px solid #fec024;border-top:none;font-size:4rem;height:18.49vh;left:3vw;position:absolute;width:30.71vw}span.card-title{color:#f89d24}header img{height:6.34vh;left:2.2vw;position:relative;top:1.8vh;width:12.22vw}.container{margin-left:20px;margin-right:20px}.container section{width:100vw}button.orange{background-color:#f89d24;border:1px solid #f89d24}button.black{background-color:#0c0c0c;border:1px solid #fff}section.second,section.seventh{background:radial-gradient(#2c2c2c,#1a1a1a);width:100vw}.second .desktop{display:none}.second .card-container{justify-content:space-around}.second .card-container .card{height:46vh;justify-content:space-evenly;margin:2vh 0;width:70.28vw}.second .card-container .card img{height:16.9vh;width:27.5vw}.second p{line-height:1.8rem;margin-left:20px;margin-right:20px;text-align:justify}.third{width:100vw}.third h1{font-weight:400;text-transform:capitalize}.third .box-01{background-image:url(assets/Grupo\ 34.svg);height:52.29vh;width:100vw}.third .box-01 h1{height:36.62vh;margin:10vh 6vw;text-align:justify;width:83.67vw}.third .box-02{background-color:#f89d24;height:44.01vh;justify-content:center;width:100vw}.third .box-02 button{background-color:#fff;border:1px solid #fff;color:#f89d24;width:56.39vw}section.fourth{background-image:url(assets/teacher\ bnw.png);width:100vw}.fourth h3{height:21.83vh;width:80vw}.fourth .competence-container{margin-bottom:5%}.fourth .competence-container .collapsible{background-color:#686868;border:1px solid #686868;border-radius:.5px;color:#fff;cursor:pointer;font-size:1.5rem;font-weight:400;margin:0;outline:none;padding:13px;text-align:left;width:86.87vw}.fourth .competence-container .collapsible:after{border-right:.2rem solid #fff;border-top:.2rem solid #fff;bottom:2.5vh;content:"";display:block;height:.7825rem;left:70vw;position:relative;transform:rotate(135deg);width:.7825rem}.fourth .competence-container .active:after{content:"";font-weight:700;margin-top:1vh;transform:rotate(315deg)}.fourth .competence-container .active,.fourth .competence-container .collapsible:hover{background-color:#555}.fourth .competence-container .content{background-color:#262626;border:none;font-size:1.5rem;max-height:0;overflow:hidden;padding:0 13px;text-align:justify;transition:max-height .2s ease-out;width:79.5vw}.fourth .competence-container .content p{text-align:justify}.fourth .competence-container .active+.content{border-bottom:1px solid #fec024;border-top:1px solid #fec024}.fifth .card-container .card{height:89.96vh;margin-bottom:3vh;width:87.5vw}.fifth .card-container .card img{height:41.2vh;width:74.17vw}.sixth{background-image:url(assets/opinion.png);background-repeat:no-repeat;background-size:contain;height:609px}.sixth h5{color:#f89d24;font-size:1.5rem}section.seventh h3.text-box-heading{height:21.83vh;margin:9vh 2vw 0;width:69.45vw}section.seventh ul{color:#f89d24;font-size:1.7rem;list-style-type:circle;margin:0}section.seventh ul li{height:17.25vh;width:86.11vw}section.seventh ul li h6{color:#f89d24;font-size:1.17rem;text-transform:uppercase}section.seventh ul li p{text-align:justify}section.eighth{background-image:url(assets/negociando.png);width:100vw}footer p{font-size:1.33rem;margin:8vh 0}@media (min-width:768px){html{font-size:16px}.container{margin-left:50px;margin-right:50px}}@media (min-width:1024px){* * .text-box{background-color:inherit;border:1px solid #fec024;border-top:none;font-size:4rem;height:26.82vh;left:6vw;position:absolute;top:100vh;width:15vw}h3.text-box-heading{align-self:flex-start;font-size:4rem;height:21.61vh;margin-left:12vw;margin-top:18vh;width:18.3vw}.button-container{display:flex;flex-direction:row;justify-content:center}.button-container button{height:7.29vh;margin:2vh 1.5vw;width:12.37vw}header{height:15vh}header img{height:12.37vh;left:1.5vw;position:relative;top:1.5vh;width:8.49vw}.first{align-items:center;display:flex;flex-direction:row;height:85vh;justify-content:center}.container{margin-left:80px;margin-right:80px}.container h1{width:58.57vw}.container p{font-size:1rem;width:30.45vw}section.second{display:grid;grid-template-columns:50vw 50vw}section.second .button-container{margin-left:8vw}section.second p{font-size:1.125rem;height:26.69vh;margin-left:12vw;text-align:justify;width:24.67vw}section.second .mobile{display:none}section.second .desktop{display:block}section.second .card-container{display:flex;flex-flow:row wrap}section.second .card-container .card{border:1px solid #6e6e6e;border-radius:5px;display:flex;flex-direction:column;height:35.29vh;width:18.52vw}section.second .card-container .card img{height:12.5vh;margin:0;width:7.24vw}section.second .card-container .card p{font-size:1rem;height:9.51vh;line-height:1.2rem;text-align:justify;width:15vw}section.third{background-image:url(assets/Grupo\ 34.svg);display:flex;flex-direction:row;height:48.44vh;justify-content:space-between;width:100vw}section.third .box-01{background-image:none;height:18.22vh;width:58.57vw}section.third .box-01 h1{height:18.22vh;margin:0 6vw;text-align:center;width:53.57vw}section.third .box-02{height:38.5vh;width:39.38vw}section.third .box-02 h1{width:23.57vw}section.third .box-02 button{width:14.86vw}}@media (min-width:1440px){.container{margin-left:calc(50vw - 675px);margin-right:calc(50vw - 675px)}}
+@charset "UTF-8";
+/* Importando um arquivo CSS Reset */
+@use 'css_reset' {}/* Declarando variáveis para o uso no sass */
+section.fifth .card-container .card, .container, .container section, .button-container, .second .mobile, .second .card-container .card, .third .box-02, section.fourth .competence-container, section.fifth .card-container, .second .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.fifth .card-container .card, .container, .container section, .button-container, .second .mobile, .second .card-container .card, .third .box-02, section.fourth .competence-container, section.fifth .card-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.fifth .card-container .card {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.second .card-container .card, section.fifth .card-container .card {
+  border: 1px solid #6E6E6E;
+  border-radius: 5px;
+}
+
+.second .card-container .card p, section.fifth .card-container .card p, section.seventh p, section.eighth p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+/* Standard CSS */
+html {
+  font-size: 12px;
+}
+
+body {
+  background-color: #0C0C0C;
+  color: white;
+}
+
+h1 {
+  font-size: 3.375rem;
+  width: 78.89vw;
+}
+
+p {
+  color: #B5B5B5;
+}
+
+h1, p {
+  text-align: center;
+}
+
+/* Botão */
+button {
+  width: 46.94vw;
+  height: 9.86vh;
+  margin: 2vh 0;
+  color: white;
+  font-size: 1.33rem;
+  border-radius: 5px;
+}
+
+/* Texto que contém um 'U' nele */
+.text-box {
+  position: absolute;
+  left: 3vw;
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+span.card-title {
+  color: #F89D24;
+}
+
+/* mobile */
+/* Imagem do header */
+header img {
+  width: 12.22vw;
+  height: 6.34vh;
+  position: relative;
+  left: 2.2vw;
+  top: 1.8vh;
+}
+
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.container section {
+  width: 100vw;
+}
+
+button.orange {
+  background-color: #F89D24;
+  border: 1px solid #F89D24;
+}
+
+button.black {
+  background-color: #0C0C0C;
+  border: 1px solid #FFFFFF;
+}
+
+/* Segunda Seção */
+section.second, section.seventh {
+  width: 100vw;
+  background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+
+.second {
+  /* Container de cards da segunda seção */
+  /* Parágrafo da segunda seção */
+}
+
+.second .desktop {
+  display: none;
+}
+
+.second .card-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.second .card-container .card {
+  margin: 2vh 0;
+  width: 70.28vw;
+  height: 46vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.second .card-container .card img {
+  width: 27.5vw;
+  height: 16.9vh;
+}
+
+.second p {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+/* Terceira seção */
+.third {
+  width: 100vw;
+  /* Lidando com os diferentes backgrounds da terceira seção */
+  /* Primeiro background */
+  /* Segundo Background */
+}
+
+.third h1 {
+  text-transform: capitalize;
+  font-weight: normal;
+  background-image: none;
+}
+
+.third .box-01 {
+  width: 100vw;
+  height: 52.29vh;
+  background-image: url("./assets/Grupo 34.svg");
+}
+
+.third .box-01 h1 {
+  margin: 10vh 6vw;
+  width: 83.67vw;
+  height: 36.62vh;
+  text-align: justify;
+}
+
+.third .box-02 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 44.01vh;
+  background-color: #F89D24;
+}
+
+.third .box-02 button {
+  border: 1px solid white;
+  background-color: white;
+  color: #F89D24;
+  width: 56.39vw;
+}
+
+/* Quarta seção  */
+section.fourth {
+  width: 100vw;
+  background-image: url("./assets/teacher bnw.png");
+  background-position-x: -40px;
+}
+
+section.fourth h3 {
+  width: 80vw;
+  height: 21.83vh;
+}
+
+section.fourth .competence-container {
+  margin-bottom: 5%;
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the collapsible content. Note: hidden by default */
+}
+
+section.fourth .competence-container .collapsible {
+  margin: 0;
+  background-color: #686868;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  width: 86.87vw;
+  border: 1px solid #686868;
+  border-radius: 0.5px;
+  outline: none;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+section.fourth .competence-container .collapsible::after {
+  content: '';
+  position: relative;
+  bottom: 2.5vh;
+  left: 70vw;
+  display: block;
+  width: 0.7825rem;
+  height: 0.7825rem;
+  border-right: 0.2rem solid white;
+  border-top: 0.2rem solid white;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  /*
+                float: right
+                margin-left: 5px
+                */
+}
+
+section.fourth .competence-container .active::after {
+  content: '';
+  margin-top: 1vh;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  font-weight: bold;
+}
+
+section.fourth .competence-container .active, section.fourth .competence-container .collapsible:hover {
+  background-color: #555;
+}
+
+section.fourth .competence-container .content {
+  width: 79.5vw;
+  font-size: 1.5rem;
+  text-align: justify;
+  background-color: #262626;
+  border: none;
+  padding: 0 13px;
+  max-height: 0;
+  overflow: hidden;
+  border: none;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+section.fourth .competence-container .content p {
+  text-align: justify;
+}
+
+section.fourth .competence-container .active + .content {
+  border-top: 1px solid #FEC024;
+  border-bottom: 1px solid #FEC024;
+}
+
+/* Quinta Seção */
+section.fifth .card-container .card {
+  margin-bottom: 3vh;
+  width: 87.5vw;
+  height: 89.96vh;
+}
+
+section.fifth .card-container .card img {
+  width: 74.17vw;
+  height: 41.2vh;
+}
+
+/* Sexta Seção */
+section.sixth {
+  height: 609px;
+  background-image: url("./assets/opinion.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.sixth h5 {
+  font-size: 1.5rem;
+  color: #F89D24;
+}
+
+/* Sétima Seção */
+section.seventh h3.text-box-heading {
+  width: 69.45vw;
+  height: 21.83vh;
+  margin: 0 2vw;
+  margin-top: 9vh;
+}
+
+section.seventh ul {
+  color: #F89D24;
+  font-size: 1.7rem;
+  list-style-type: circle;
+  margin: 0;
+}
+
+section.seventh ul li {
+  width: 86.11vw;
+  height: 17.25vh;
+}
+
+section.seventh ul li h6 {
+  text-transform: uppercase;
+  color: #F89D24;
+  font-size: 1.17rem;
+}
+
+section.seventh ul li p {
+  text-align: justify;
+}
+
+section.eighth {
+  width: 100vw;
+  background-image: url("./assets/negociando.png");
+}
+
+footer p {
+  font-size: 1.33rem;
+  margin: 8vh 0;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+  /* Declarando variáveis para o uso no sass */
+  section.fifth .card-container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.fifth .card-container .card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.fifth .card-container .card {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  section.fifth .card-container .card {
+    border: 1px solid #6E6E6E;
+    border-radius: 5px;
+  }
+  section.second .text-box, section.fifth .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+  section.fifth .card-container .card p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  /* Texto que contém um 'U' nele */
+  /* Container dos botões da página */
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-container button {
+    margin: 2vh 1.5vw;
+    width: 12.37vw;
+    height: 7.29vh;
+  }
+  header {
+    height: 15vh;
+  }
+  header img {
+    width: 8.49vw;
+    height: 12.37vh;
+    position: relative;
+    left: 1.5vw;
+    top: 1.5vh;
+  }
+  /* Primeira Seção */
+  .first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: calc(100vh - 15vh);
+  }
+  .container {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+  .container h1 {
+    width: 58.57vw;
+  }
+  .container p {
+    font-size: 1rem;
+    width: 30.45vw;
+  }
+  section.second {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50vw 50vw;
+        grid-template-columns: 50vw 50vw;
+    /* Parágrafo da segunda seção */
+  }
+  section.second .text-box {
+    position: absolute;
+    top: 101vh;
+    left: 7vw;
+  }
+  section.second h3.text-box-heading {
+    margin-top: 18vh;
+    margin-left: 12vw;
+    width: 18.3vw;
+    height: 21.61vh;
+    font-size: 4rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  section.second .button-container {
+    margin-left: 8vw;
+  }
+  section.second p {
+    margin-left: 12vw;
+    width: 24.67vw;
+    height: 26.69vh;
+    text-align: justify;
+    font-size: 1.125rem;
+  }
+  section.second .mobile {
+    display: none;
+  }
+  section.second .desktop {
+    display: block;
+  }
+  section.second .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  section.second .card-container .card {
+    width: 18.52vw;
+    height: 35.29vh;
+    border: 1px solid #6E6E6E;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.second .card-container .card img {
+    margin: 0;
+    width: 7.24vw;
+    height: 12.5vh;
+  }
+  section.second .card-container .card p {
+    width: 15vw;
+    height: 9.51vh;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: justify;
+  }
+  section.third {
+    width: 100vw;
+    height: 48.44vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("./assets/Grupo 34.svg");
+  }
+  section.third .box-01 {
+    background-image: none;
+    width: 58.57vw;
+    height: 18.22vh;
+  }
+  section.third .box-01 h1 {
+    margin: 0 6vw;
+    width: 53.57vw;
+    height: 18.22vh;
+    text-align: center;
+  }
+  section.third .box-02 {
+    /* Causando overflow à direita */
+    width: 39.38vw;
+    height: 38.5vh;
+  }
+  section.third .box-02 h1 {
+    width: 23.57vw;
+  }
+  section.third .box-02 button {
+    width: 14.86vw;
+  }
+  section.fourth {
+    height: 79.57vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    /* Style the collapsible content. Note: hidden by default */
+  }
+  section.fourth .desktop {
+    display: none;
+  }
+  section.fourth .competence-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.fourth .collapsible {
+    margin: 0;
+    background-color: #686868;
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    width: 86.87vw;
+    border: 1px solid #686868;
+    border-radius: 0.5px;
+    outline: none;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  section.fourth .collapsible::after {
+    content: '';
+    position: relative;
+    bottom: 2.5vh;
+    left: 70vw;
+    display: block;
+    width: 0.7825rem;
+    height: 0.7825rem;
+    border-right: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    /*
+                float: right
+                margin-left: 5px
+                */
+  }
+  section.fourth .active::after {
+    content: '';
+    margin-top: 1vh;
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+    font-weight: bold;
+  }
+  section.fourth .active, section.fourth .collapsible:hover {
+    background-color: #555;
+  }
+  section.fourth .content {
+    width: 79.5vw;
+    font-size: 1.5rem;
+    text-align: justify;
+    background-color: #262626;
+    border: none;
+    padding: 0 13px;
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+  }
+  section.fourth .content p {
+    text-align: justify;
+  }
+  section.fourth .active + .content {
+    border-top: 1px solid #FEC024;
+    border-bottom: 1px solid #FEC024;
+  }
+  section.fifth .text-box {
+    position: relative;
+    top: 0vh;
+    left: -29vw;
+  }
+  section.fifth h3.text-box-heading {
+    position: relative;
+    top: -10vh;
+    right: -19vw;
+    margin: 0vw;
+    width: 18.3vw;
+    height: 21.61vh;
+    font-size: 4rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  section.fifth .card-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.fifth .card-container .card {
+    margin: 2vh 1vw;
+    width: 26.57vw;
+    height: 65.66vh;
+  }
+  section.fifth .card-container .card img {
+    width: 315px;
+    height: 234px;
+  }
+  section.fifth .card-container .card p {
+    width: 23.06vw;
+    height: 18.29vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    margin-right: calc((100vw - 1350px) / 2);
+    margin-left: calc((100vw - 1350px) / 2);
+  }
+}
 /*# sourceMappingURL=index.css.map */
