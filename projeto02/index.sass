@@ -162,6 +162,7 @@ section.second, section.seventh
 /* Terceira seção */
 
 .third
+    width: $full-width
     h1
         text-transform: capitalize
         font-weight: normal
@@ -447,13 +448,30 @@ footer
                     text-align: justify
 
     // Terceira Seção
-    .third
+    section.third
+        width: $full-width
+        height: 48.44vh
         display: flex
         flex-direction: row
         justify-content: space-between
-        .box02
-            width: 39.39vw
+        background-image: url('./assets/Grupo\ 34.svg')
+        .box-01
+            background-image: none
+            width: 58.57vw
+            height: 18.22vh
+            h1
+                margin: 0 6vw
+                width: 53.57vw
+                height: 18.22vh
+                text-align: center
+        .box-02
+            /* Causando overflow à direita */
+            width: 39.38vw
             height: 38.5vh
+            h1
+                width: 23.57vw
+            button
+                width: 14.86vw
 
 
 @media (min-width: 1440px) 
