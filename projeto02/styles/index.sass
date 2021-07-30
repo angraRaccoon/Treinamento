@@ -576,6 +576,7 @@ footer
 
     // Quinta Seção
     section.fifth
+
         .text-box
             position: relative
             top: 0vh
@@ -609,7 +610,30 @@ footer
                 height: 65.66vh
                 @extend %card-border-lg
                 @extend %flex-justified-lg
+    
+    // Sexta Seção
+    section.sixth
+        background-size: cover
 
+    section.seventh
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .text-box
+            position: relative
+            top: 0vh
+            left: -29vw
+            @extend %text-box-base
+
+        h3.text-box-heading
+            position: relative
+            top: -10vh
+            right: -19vw
+            margin: 0vw
+            width: 23.64vw
+            height: 21.28vh
+            font-size: $font-heading-medium
+            align-self: flex-start
 
 @media (min-width: 1440px) 
     .container 

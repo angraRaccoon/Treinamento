@@ -395,7 +395,7 @@ footer p {
     border: 1px solid #6E6E6E;
     border-radius: 5px;
   }
-  section.second .text-box, section.fifth .text-box {
+  section.second .text-box, section.fifth .text-box, section.seventh .text-box {
     width: 15vw;
     height: 26.82vh;
     background-color: inherit;
@@ -711,6 +711,37 @@ footer p {
   section.fifth .card-container .card p {
     width: 23.06vw;
     height: 18.29vh;
+  }
+  section.sixth {
+    background-size: cover;
+  }
+  section.seventh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.seventh .text-box {
+    position: relative;
+    top: 0vh;
+    left: -29vw;
+  }
+  section.seventh h3.text-box-heading {
+    position: relative;
+    top: -10vh;
+    right: -19vw;
+    margin: 0vw;
+    width: 23.64vw;
+    height: 21.28vh;
+    font-size: 4rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 
