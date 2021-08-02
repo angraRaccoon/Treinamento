@@ -3,7 +3,6 @@ header{
 }
 
 /* Definindo a navbar  */
-
 header nav{
     z-index: 1; /*Deixar acima da tela */
     position: fixed;
@@ -38,7 +37,6 @@ nav button:hover{
 }
 
 /* Definindo o menu collapse */
-
 .mainmenubtn {
     background-color: #2571B7;
     color: white;
@@ -76,6 +74,11 @@ nav button:hover{
     text-decoration: none;
     display: block;
 }
+
+.dropdown-child a:hover {
+    background-color: #144da1;
+}
+
 .dropdown:hover .dropdown-child {
     display: block;
     position: relative;

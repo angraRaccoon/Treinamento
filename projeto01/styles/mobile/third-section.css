@@ -68,6 +68,7 @@ section.third-section{
     height: 4.6875vh
 }
 
+
 /* Cores dos cards */
 
 #green-card{
@@ -75,12 +76,31 @@ section.third-section{
     border-color: #7FBA00;
 }
 
+#green-card button:hover{
+    color: white;
+    background-color: #7FBA00;
+    border-color: white;
+}
+
 #blue-card{
     color: #00A4EF;
     border-color: #00A4EF;
 }
 
+#blue-card button:hover{
+    color: white;
+    background-color: #00A4EF;
+    border-color: white;
+}
+
 #yellow-card{
     color: #FFB900;
     border-color: #FFB900;
+}
+
+
+#yellow-card button:hover{
+    color: white;
+    background-color: #FFB900;
+    border-color: white;
 }
