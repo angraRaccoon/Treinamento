@@ -1,0 +1,25 @@
+.fourth-section h3{
+    margin: 10vh 0;
+}
+
+.fourth-section .card-group{
+
+    margin:  5vw;
+
+}
+
+.fourth-section .card-group .card{
+    text-align: center;
+    border: 3px solid #DEDEDE;
+    color: #737373
+}
+
+.fourth-section .card h6{
+    font-size: 1.25rem;
+    color: #F25022;
+}
+
+.fourth-section .card p{
+    margin: 0% 3vw;
+    margin-bottom: 4vh;
+}

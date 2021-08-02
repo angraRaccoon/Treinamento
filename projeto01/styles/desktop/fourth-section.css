@@ -1,0 +1,33 @@
+@media (min-width: 1440px) {
+
+    section.fourth-section{
+        margin: 4vh 0;
+    }
+    
+    .fourth-section h3{
+        font-size: 3.333rem;
+        margin: 0;
+    }
+    
+    .fourth-section .card-group{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .fourth-section .card-group .card{
+        width: 21.04vw;
+        height: 24.89vh;
+    }
+    
+    .fourth-section .card-group .card h6{
+        font-size: 1.6667rem;
+    }
+    
+    .fourth-section .card-group .card p{
+        font-size: 1.3333rem;
+    }
+
+}
+

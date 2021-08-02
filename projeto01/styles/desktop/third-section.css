@@ -1,0 +1,72 @@
+@media (min-width: 1440px) {
+
+    .third-section .card-group{
+        display: flex;
+        flex-wrap: row nowrap;
+        justify-content: center;
+    }
+    
+    
+    .third-section .card-group .card{
+        width: 23.33333vw;
+        height: 45.9vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0vh 5vw;
+        word-spacing: 0.5vw;
+    }
+    
+    .third-section .card-group hr{
+        display: none;
+    }
+    
+    /* Cards da terceira seção */
+    
+    
+    .third-section .card h6{
+        font-size: 1.25rem;
+        margin: 1vh 0;
+    
+    }
+    
+    
+    .third-section .card .card-content p{
+        width: 25vw;
+        height: 10.33vh;
+        text-align: center;
+        font-size: 1.333rem;
+    }
+    
+    
+    .third-section .card img{
+        width: 11vw;
+        height: 17.77778vh;
+    }
+    
+    .third-section .card .card-separator{
+       display: block;
+       border: 2.2px solid #DEDEDE;
+       background-color: #DEDEDE;
+       width: 15%;
+       margin: 2vh 0;
+       align-self: center;
+    }
+    
+    .third-section .card .card-content{
+        width: 18vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .third-section .card .card-content button{
+        border: 2px solid;
+        width: 7.64vw;
+        height: 4.6vh
+    }
+
+}
+

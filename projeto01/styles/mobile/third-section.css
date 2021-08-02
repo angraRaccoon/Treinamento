@@ -1,0 +1,86 @@
+section.third-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #737373;
+}
+
+
+/* Grupo de cards da terceira seção */
+
+
+.third-section .card-group .card{
+    height: 24.375vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+    margin: 0vh 5vw;
+    word-spacing: 1vw;
+}
+
+.third-section .card-group hr{
+    background-color: #DEDEDE;
+    margin: 2vh 2vw;
+    border: 0.25vh solid #DEDEDE;  
+    border-radius: 0%;
+}
+
+/* Cards da terceira seção */
+
+
+.third-section .card h6{
+    font-size: 1.25rem;
+    margin: 1vh 0;
+
+}
+
+.third-section .card p{
+    height: 70px;
+    width: 236px
+}
+
+
+.third-section .card img{
+    width: 19.44vw;
+    height: 10.9375vh;
+    align-self: center;
+}
+
+.third-section .card .card-separator{
+   display: none;
+ }
+
+.third-section .card .card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.third-section .card .card-content button{
+    padding: 1vh 1vw;
+    margin: 1vh 0;
+    background-color: white;
+    border: 1px solid;
+    width: 28vw;
+    height: 4.6875vh
+}
+
+/* Cores dos cards */
+
+#green-card{
+    color: #7FBA00;
+    border-color: #7FBA00;
+}
+
+#blue-card{
+    color: #00A4EF;
+    border-color: #00A4EF;
+}
+
+#yellow-card{
+    color: #FFB900;
+    border-color: #FFB900;
+}

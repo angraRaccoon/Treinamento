@@ -1,0 +1,83 @@
+header{
+    height: 7.5vh;
+}
+
+/* Definindo a navbar  */
+
+header nav{
+    z-index: 1; /*Deixar acima da tela */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7.5vh; 
+    background-color: #2571B7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+nav .desktop-menu{
+    display: none;
+}
+
+/* Definindo o botão da navbar */
+nav button{
+    margin: 2vh 0%;
+    margin-right: 4%;
+    width: 30%;
+    height: 4.3vh;
+    background-color: #002050;
+    border: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+nav button:hover{
+    background-color: #144da1;
+}
+
+/* Definindo o menu collapse */
+
+.mainmenubtn {
+    background-color: #2571B7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0px 15px;
+    
+}
+
+/* Talvez não seja o melhor jeito de definir as barras do dropdown menu */
+.mainmenubtn .collapse-border{
+    width: 2rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0.35em 0%;
+}
+
+.mainmenubtn:hover {
+    background-color: #2571B7;
+    padding: 0px 15px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: #2571B7;
+    min-width: 200px;
+    border: 1px solid #2571B7;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+    position: relative;
+    bottom: 2vh;
+}

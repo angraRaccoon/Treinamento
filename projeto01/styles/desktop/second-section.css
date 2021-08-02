@@ -1,0 +1,31 @@
+@media (min-width: 1440px) {
+
+    .second-section h3{
+        font-size: 3.333rem;
+    }
+    
+    p{
+        font-size: 1.6666rem;
+    }
+    
+    .second-section .text span{
+        color: #F25022;
+    }
+    
+    
+    /* Estilizando as caixas de cores */
+    
+    .second-section .color-box-container{
+        flex-flow: row wrap;
+        justify-content: center;
+    
+    }
+    
+    .second-section .color-box{
+        width: 40vw;
+        height: 13.3333vh;
+        margin: 2vh 1vw;
+    }
+
+}
+

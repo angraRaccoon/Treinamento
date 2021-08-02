@@ -1,0 +1,12 @@
+@media (min-width: 1440px) {
+
+    section.fifth-section{
+        background-position: 0 50%;
+    }
+    
+    .fifth-section h3{
+        font-size: 4rem;
+        line-height: 5rem;
+    } 
+
+}

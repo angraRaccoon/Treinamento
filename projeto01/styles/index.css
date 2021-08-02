@@ -1,0 +1,72 @@
+/*
+Requisitos:
+Desenvolvimento de um arquivo HTML e CSS a partir dos mockups apresentados;
+O menu deve continuar fixo a medida que usuário desce a tela;
+Não há necessidade de criação de nenhuma funcionalidade;
+Todos os botões devem ter uma mudança de cor para uma mais clara quando o usuário passa o mouse;
+Utilizar Roboto como a fonte principal;
+Seguir os padrões de desenvolvimento da Raccoon (container, encapsulamento e mobile-first-section);
+Os arquivos para execução do projeto encontram-se neste link.
+
+Desafio:
+Utilizar a metodologia BEM para nomenclatura das classes.
+
+*/
+
+/* Importando a fonte roboto */
+@import url('./fonts.css');
+/* Mobile */
+@import url('./mobile/header.css'); /* Header */
+@import url('./mobile/first-section.css'); /* Primeira seção */
+@import url('./mobile/second-section.css'); /* Segunda seção */
+@import url('./mobile/third-section.css'); /* Terceira seção */
+@import url('./mobile/fourth-section.css'); /* Quarta Seção */
+@import url('./mobile/fifth-section.css'); /* Quinta Seção*/
+@import url('./mobile/sixth-section.css'); /* Sexta Seção */
+@import url('./mobile/footer.css'); /* Rodapé */
+/* Desktop */
+@import url('./desktop/header.css'); /*header */
+@import url('./desktop/first-section.css'); /* Primeira seção */
+@import url('./desktop/second-section.css'); /* Segunda seção */
+@import url('./desktop/third-section.css'); /* Terceira seção */
+@import url('./desktop/fourth-section.css');  /* Quarta Seção */
+@import url('./desktop/fifth-section.css'); /* Quinta Seção */
+@import url('./desktop/sixth-section.css'); /* Sexta seção */
+@import url('./desktop/footer.css'); /* Rodapé */
+
+
+/* Retirando o estilo padrão do Browser e realizando um CSS reset padrão*/
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+h1{font-size:2em;margin:.67em 0}
+html{
+ font-size: 12px;
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    font: 400 normal 'Roboto', sans-serif;
+}
+
+p{
+    margin: 0;
+    color: #737373
+}
+
+
+@media (min-width: 1024px) {
+ 
+    nav .dropdown {
+        position: relative;
+        display: none;
+    }
+
+}
+
+/* Definindo o heading */
+
+h3{ 
+    font-size: 2rem;
+    text-align: center;
+    color: #2571B7;
+ }

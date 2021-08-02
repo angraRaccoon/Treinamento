@@ -1,0 +1,20 @@
+@media (min-width: 1440px) {
+
+    footer{
+        height: 16vh;
+        justify-content:  center;
+    }
+    
+    footer .footer-container img{
+        margin-bottom: 3%;
+        width: 16%;
+    }
+    
+    
+    footer .footer-container p{
+        margin-bottom: 3%;
+    }
+    
+
+
+}

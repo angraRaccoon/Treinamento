@@ -1,0 +1,42 @@
+@media (min-width: 1440px) {
+
+
+    section.sixth-section{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    .sixth-section p{
+        font-size: 2rem;
+    }
+    
+    .sixth-section form{
+    
+        width: 39.2vw;
+        height: 85.78vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sixth-section form label{
+        font-size: 1.17rem;
+        margin: 0 1.4vw;
+        align-self: flex-start;
+    }
+    
+    .sixth-section form input{
+        width: 32.5vw;
+        height: 6.22vh;
+    }
+    
+    .sixth-section form button{
+        width: 36.5vw;
+        height: 6.22vh;
+        font-size: 2.33rem;
+    }
+
+
+}

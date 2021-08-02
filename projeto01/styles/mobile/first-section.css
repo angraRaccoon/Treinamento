@@ -1,0 +1,51 @@
+section.first-section{
+    background-image: url('../assets/Grupo\ 52.png');
+    background-position: 40% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 92vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section h1{
+    font-size: 3.5rem;
+}
+
+.first-section h3{
+    color: white;
+}
+
+
+.first-section button{
+    border: none;
+    color: white;
+    font-size: 1.75rem;
+    width: 52.22vw;
+    height: 8.125vh;
+    background-color: #00A4EF;
+}
+
+.first-section button:hover{
+    background-color: #53bbeb;
+}
+
+.first-section .img-container{
+    display: block;
+}
+
+.first-section .img-container .arrow{
+    display: none;
+}
+
+.first-section .img-container img{
+    width: 36.3vw;
+    height: 6.15vh;
+    position: relative;
+    top: 18vh
+}
+
