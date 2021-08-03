@@ -1,0 +1,36 @@
+@charset "UTF-8";
+section.seventh-section p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+/* Sétima Seção */
+section.seventh-section {
+  width: 100vw;
+  background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+section.seventh-section h3.text-box-heading {
+  width: 69.45vw;
+  height: 21.83vh;
+  margin: 0 2vw;
+  margin-top: 9vh;
+}
+section.seventh-section ul {
+  color: #F89D24;
+  font-size: 1.7rem;
+  list-style-type: circle;
+  margin: 0;
+}
+section.seventh-section ul li {
+  width: 86.11vw;
+  height: 17.25vh;
+}
+section.seventh-section ul li h6 {
+  text-transform: uppercase;
+  color: #F89D24;
+  font-size: 1.17rem;
+}
+section.seventh-section ul li p {
+  text-align: justify;
+}

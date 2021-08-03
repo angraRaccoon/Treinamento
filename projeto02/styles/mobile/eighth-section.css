@@ -1,0 +1,10 @@
+section.eighth-section p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+section.eighth-section {
+  width: 100vw;
+  background-image: url("./assets/negociando.png");
+}

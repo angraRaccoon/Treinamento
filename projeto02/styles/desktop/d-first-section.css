@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */ 
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 15vh);
+  }
+}

@@ -1,54 +1,31 @@
-const { src, dest, watch, series } = require('gulp')
+const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
-const postcss = require('gulp-postcss')
-const cssnano = require('cssnano')
-const terser = require('gulp-terser')
-const browsersync = require('browser-sync').create()
+const browserSync = require('browser-sync').create()
 
+// Compile sass into css
+const style = () => {
+  
+  return gulp.src('./styles/**/*.sass')
+  .pipe(sass().on('error',sass.logError))
+  .pipe(gulp.dest('./styles'))
+  .pipe(browserSync.stream())
 
-//sass Task
-function sassUpdate(){
-  return src('styles/index.sass', { sourcemaps: true })
-    .pipe(sass())
-    .pipe(postcss([cssnano()]))
-    .pipe(dest('styles', { sourcemaps: '.' }));
 }
 
-//javscript Task
-function jsTask(){
-  return src('scripts/index.js', { sourcemaps: true })
-    .pipe(terser())
-    .pipe(dest('scripts',{ sourcemaps: '.' }))
-}
+const watch = () => {
 
-//Browsersync
-function browsersyncServe(cb){
-  browsersync.init({
+  browserSync.init({
     server: {
-      baseDir: '.'
+      baseDir: './'
     }
   })
-  cb()
+
+  gulp.watch('./styles/**/*.sass', style)
+  gulp.watch('./*.html').on('change', browserSync.reload)
+  gulp.watch('./scripts/**/*.js').on('change', browserSync.reload)
 }
 
-//Browsersync reload
-function browsersyncReload(cb){
-  browsersync.reload()
-  cb()
-}
 
-// Watch Task
 
-function watchTask(){
-  watch('*.html', browsersyncReload)
-  watch(['styles/*.sass','scripts/*.js'], series(sassUpdate,jsTask, browsersyncReload))
-}
-
-//Default gulptask
-exports.default = series(
-  sassUpdate,
-  jsTask,
-  browsersyncServe,
-  browsersyncReload,
-  watchTask
-)
+exports.style = style
+exports.watch = watch

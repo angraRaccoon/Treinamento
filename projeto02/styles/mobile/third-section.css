@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Declarando variáveis para o uso no sass */ 
+.third-section .box-02 {
+  display: flex;
+  flex-direction: column;
+}
+
+.third-section .box-02 {
+  align-items: center;
+}
+
+/* Terceira seção */
+.third-section {
+  width: 100vw;
+  /* Lidando com os diferentes backgrounds da terceira seção */
+  /* Primeiro background */
+  /* Segundo Background */
+}
+.third-section h1 {
+  text-transform: capitalize;
+  font-weight: normal;
+  background-image: none;
+}
+.third-section .box-01 {
+  width: 100vw;
+  height: 52.29vh;
+  background-image: url("./assets/Grupo 34.svg");
+}
+.third-section .box-01 h1 {
+  margin: 10vh 6vw;
+  width: 83.67vw;
+  height: 36.62vh;
+  text-align: justify;
+}
+.third-section .box-02 {
+  justify-content: center;
+  width: 100vw;
+  height: 44.01vh;
+  background-color: #F89D24;
+}
+.third-section .box-02 button {
+  border: 1px solid white;
+  background-color: white;
+  color: #F89D24;
+  width: 56.39vw;
+}

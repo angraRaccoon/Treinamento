@@ -1,0 +1,113 @@
+@media (min-width: 1024px)
+    /* Declarando variáveis para o uso no sass */ 
+    $font-size-normal:  12px
+    $font-heading-medium: 4rem
+    $full-width: 100vw
+    $card-border-radius:  5px
+
+
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify
+
+    // Quarta Seção
+    section.fourth-section
+        height: 79.57vh
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+        background-size: contain
+        background-repeat: no-repeat
+        .desktop
+            display: none
+        .competence-container
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+        .collapsible
+            margin: 0
+            background-color: #686868
+            color: white
+            cursor: pointer
+            padding: 13px
+            width: 86.87vw
+            border: 1px solid #686868
+            border-radius: 0.5px
+            outline: none
+            text-align: left
+            font-size: 1.5rem
+            font-weight: normal
+
+        .collapsible::after 
+            content: ''
+            position: relative
+            bottom: 2.5vh
+            left: 70vw
+            display: block
+            width: 0.7825rem
+            height: 0.7825rem
+            border-right: 0.2rem solid white
+            border-top: 0.2rem solid white
+            transform: rotate(135deg)
+
+            /*
+                float: right
+                margin-left: 5px 
+                */
+
+        .active::after 
+            content: ''
+            margin-top: 1vh
+            transform: rotate(315deg) 
+            font-weight: bold
+        
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover 
+           background-color: #555
+        
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content 
+            width: 79.5vw
+            font-size: 1.5rem
+            text-align: justify
+            background-color: #262626
+            border: none
+            padding: 0 13px
+            max-height: 0
+            overflow: hidden
+            border: none
+            transition: max-height 0.2s ease-out
+            p
+                text-align: justify
+        .active + .content 
+            border-top: 1px solid #FEC024
+            border-bottom: 1px solid #FEC024

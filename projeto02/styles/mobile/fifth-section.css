@@ -1,0 +1,35 @@
+@charset "UTF-8";
+section.fifth-section .card-container, section.fifth-section .card-container .card {
+  display: flex;
+  flex-direction: column;
+}
+
+section.fifth-section .card-container, section.fifth-section .card-container .card {
+  align-items: center;
+}
+
+section.fifth-section .card-container .card {
+  justify-content: space-around;
+}
+
+section.fifth-section .card-container .card {
+  border: 1px solid #6E6E6E;
+  border-radius: 5px;
+}
+
+section.fifth-section .card-container .card p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+/* Quinta Seção */
+section.fifth-section .card-container .card {
+  margin-bottom: 3vh;
+  width: 87.5vw;
+  height: 89.96vh;
+}
+section.fifth-section .card-container .card img {
+  width: 74.17vw;
+  height: 41.2vh;
+}

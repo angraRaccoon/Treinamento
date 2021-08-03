@@ -1,25 +1,178 @@
 @charset "UTF-8";
-/* Importando um arquivo CSS Reset */
-@use 'css_reset' {}/* Declarando variáveis para o uso no sass */
-section.fifth .card-container .card, .container, .container section, .button-container, .second .mobile, .second .card-container .card, .third .box-02, section.fourth .competence-container, section.fifth .card-container, .second .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+header img {
+  width: 12.22vw;
+  height: 6.34vh;
+  position: relative;
+  left: 2.2vw;
+  top: 1.8vh;
+}
+
+/* Declarando variáveis para o uso no sass */ 
+.container, .container section, .button-container, .second-section .card-container, .second-section .card-container .card, .second-section .mobile {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
-section.fifth .card-container .card, .container, .container section, .button-container, .second .mobile, .second .card-container .card, .third .box-02, section.fourth .competence-container, section.fifth .card-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section.fifth .card-container .card {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.container, .container section, .button-container, .second-section .card-container .card, .second-section .mobile {
+  align-items: center;
 }
 
 .text-box-heading {
@@ -29,19 +182,831 @@ section.fifth .card-container .card {
   height: 21.83vh;
   font-weight: normal;
   font-size: 4rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
-.second .card-container .card, section.fifth .card-container .card {
+.second-section .card-container .card {
   border: 1px solid #6E6E6E;
   border-radius: 5px;
 }
 
-.second .card-container .card p, section.fifth .card-container .card p, section.seventh p, section.eighth p {
+.second-section .card-container .card p {
   margin: 0vh 4vw;
   font-size: 1.34rem;
   text-align: justify;
+}
+
+section.second-section {
+  width: 100vw;
+  background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+
+.second-section {
+  /* Container de cards da segunda seção */
+  /* Parágrafo da segunda seção */
+}
+.second-section .desktop {
+  display: none;
+}
+.second-section .card-container {
+  justify-content: space-around;
+}
+.second-section .card-container .card {
+  margin: 2vh 0;
+  width: 70.28vw;
+  height: 46vh;
+  justify-content: space-evenly;
+}
+.second-section .card-container .card img {
+  width: 27.5vw;
+  height: 16.9vh;
+}
+.second-section p {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+/* Declarando variáveis para o uso no sass */ 
+.container, .container section, .button-container, .third-section .box-02 {
+  display: flex;
+  flex-direction: column;
+}
+
+.container, .container section, .button-container, .third-section .box-02 {
+  align-items: center;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+/* Terceira seção */
+.third-section {
+  width: 100vw;
+  /* Lidando com os diferentes backgrounds da terceira seção */
+  /* Primeiro background */
+  /* Segundo Background */
+}
+.third-section h1 {
+  text-transform: capitalize;
+  font-weight: normal;
+  background-image: none;
+}
+.third-section .box-01 {
+  width: 100vw;
+  height: 52.29vh;
+  background-image: url("./assets/Grupo 34.svg");
+}
+.third-section .box-01 h1 {
+  margin: 10vh 6vw;
+  width: 83.67vw;
+  height: 36.62vh;
+  text-align: justify;
+}
+.third-section .box-02 {
+  justify-content: center;
+  width: 100vw;
+  height: 44.01vh;
+  background-color: #F89D24;
+}
+.third-section .box-02 button {
+  border: 1px solid white;
+  background-color: white;
+  color: #F89D24;
+  width: 56.39vw;
+}
+
+.container, .container section, .button-container, section.fourth-section .competence-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container, .container section, .button-container, section.fourth-section .competence-container {
+  align-items: center;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+/* Quarta seção  */
+section.fourth-section {
+  width: 100vw;
+  background-image: url("./assets/teacher bnw.png");
+  background-position-x: -40px;
+}
+section.fourth-section h3 {
+  width: 80vw;
+  height: 21.83vh;
+}
+section.fourth-section .competence-container {
+  margin-bottom: 5%;
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the collapsible content. Note: hidden by default */
+}
+section.fourth-section .competence-container .collapsible {
+  margin: 0;
+  background-color: #686868;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  width: 86.87vw;
+  border: 1px solid #686868;
+  border-radius: 0.5px;
+  outline: none;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+section.fourth-section .competence-container .collapsible::after {
+  content: "";
+  position: relative;
+  bottom: 2.5vh;
+  left: 70vw;
+  display: block;
+  width: 0.7825rem;
+  height: 0.7825rem;
+  border-right: 0.2rem solid white;
+  border-top: 0.2rem solid white;
+  transform: rotate(135deg);
+  /*  float: right
+  *  margin-left: 5px 
+  *  */
+}
+section.fourth-section .competence-container .active::after {
+  content: "";
+  margin-top: 1vh;
+  transform: rotate(315deg);
+  font-weight: bold;
+}
+section.fourth-section .competence-container .active, section.fourth-section .competence-container .collapsible:hover {
+  background-color: #555;
+}
+section.fourth-section .competence-container .content {
+  width: 79.5vw;
+  font-size: 1.5rem;
+  text-align: justify;
+  background-color: #262626;
+  border: none;
+  padding: 0 13px;
+  max-height: 0;
+  overflow: hidden;
+  border: none;
+  transition: max-height 0.2s ease-out;
+}
+section.fourth-section .competence-container .content p {
+  text-align: justify;
+}
+section.fourth-section .competence-container .active + .content {
+  border-top: 1px solid #FEC024;
+  border-bottom: 1px solid #FEC024;
+}
+
+.container, .container section, .button-container, section.fifth-section .card-container, section.fifth-section .card-container .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.container, .container section, .button-container, section.fifth-section .card-container, section.fifth-section .card-container .card {
+  align-items: center;
+}
+
+section.fifth-section .card-container .card {
+  justify-content: space-around;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+section.fifth-section .card-container .card {
+  border: 1px solid #6E6E6E;
+  border-radius: 5px;
+}
+
+section.fifth-section .card-container .card p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+/* Quinta Seção */
+section.fifth-section .card-container .card {
+  margin-bottom: 3vh;
+  width: 87.5vw;
+  height: 89.96vh;
+}
+section.fifth-section .card-container .card img {
+  width: 74.17vw;
+  height: 41.2vh;
+}
+/* Sexta Seção */ 
+section.sixth-section {
+  height: 609px;
+  background-image: url("./assets/opinion.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Carrossel Menu */
+}
+section.sixth-section h5 {
+  font-size: 1.5rem;
+  color: #F89D24;
+}
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+section.sixth-section .carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+section.sixth-section .carousel ol, section.sixth-section .carousel li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.sixth-section .carousel .carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+section.sixth-section .carousel .carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+  counter-increment: item;
+}
+section.sixth-section .carousel .carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -40%, 70px);
+  color: #fff;
+  font-size: 2em;
+}
+section.sixth-section .carousel .carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+section.sixth-section .carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+section.sixth-section .carousel__navigation .carousel__navigation-list, section.sixth-section .carousel__navigation .carousel__navigation-item {
+  display: inline-block;
+}
+section.sixth-section .carousel__navigation .carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+section.sixth-section .carousel::before, section.sixth-section .carousel::after, section.sixth-section .carousel__prev, section.sixth-section .carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+section.sixth-section .carousel::before, section.sixth-section .carousel__prev {
+  left: -1rem;
+}
+section.sixth-section .carousel::after, section.sixth-section .carousel__next {
+  right: -1rem;
+}
+section.sixth-section .carousel::before, section.sixth-section .carousel::after {
+  content: "";
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+section.sixth-section .carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+section.sixth-section .carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+@media (hover: hover) {
+  .sixth .carousel .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .sixth .carousel .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sixth-section .carousel .carousel__snapper {
+    animation-name: none;
+  }
+}
+.container, .container section, .button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container, .container section, .button-container {
+  align-items: center;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+section.seventh-section p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+/* Sétima Seção */
+section.seventh-section {
+  width: 100vw;
+  background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+section.seventh-section h3.text-box-heading {
+  width: 69.45vw;
+  height: 21.83vh;
+  margin: 0 2vw;
+  margin-top: 9vh;
+}
+section.seventh-section ul {
+  color: #F89D24;
+  font-size: 1.7rem;
+  list-style-type: circle;
+  margin: 0;
+}
+section.seventh-section ul li {
+  width: 86.11vw;
+  height: 17.25vh;
+}
+section.seventh-section ul li h6 {
+  text-transform: uppercase;
+  color: #F89D24;
+  font-size: 1.17rem;
+}
+section.seventh-section ul li p {
+  text-align: justify;
+}
+
+.container, .container section, .button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container, .container section, .button-container {
+  align-items: center;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
+section.eighth-section p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+section.eighth-section {
+  width: 100vw;
+  background-image: url("./assets/negociando.png");
+}
+footer p {
+  font-size: 1.33rem;
+  margin: 8vh 0;
+}
+
+@media (min-width: 1024px) {
+  header {
+    height: 15vh;
+  }
+  header img {
+    width: 8.49vw;
+    height: 12.37vh;
+    position: relative;
+    left: 1.5vw;
+    top: 1.5vh;
+  }
+}
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */ 
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 15vh);
+  }
+}
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */ 
+  section.second-section .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+
+  section.second-section {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    /* Parágrafo da segunda seção */
+  }
+  section.second-section .text-box {
+    position: absolute;
+    top: 101vh;
+    left: 7vw;
+  }
+  section.second-section h3.text-box-heading {
+    margin-top: 18vh;
+    margin-left: 12vw;
+    width: 18.3vw;
+    height: 21.61vh;
+    font-size: 4rem;
+    align-self: flex-start;
+  }
+  section.second-section .button-container {
+    margin-left: 8vw;
+  }
+  section.second-section p {
+    margin-left: 12vw;
+    width: 24.67vw;
+    height: 26.69vh;
+    text-align: justify;
+    font-size: 1.125rem;
+  }
+  section.second-section .mobile {
+    display: none;
+  }
+  section.second-section .desktop {
+    display: block;
+  }
+  section.second-section .card-container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section.second-section .card-container .card {
+    width: 18.52vw;
+    height: 35.29vh;
+    border: 1px solid #6E6E6E;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.second-section .card-container .card img {
+    margin: 0;
+    width: 7.24vw;
+    height: 12.5vh;
+  }
+  section.second-section .card-container .card p {
+    width: 15vw;
+    height: 9.51vh;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: justify;
+  }
+}
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */
+  section.third-section {
+    width: 100vw;
+    height: 48.44vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("./assets/Grupo 34.svg");
+  }
+  section.third-section .box-01 {
+    background-image: none;
+    width: 58.57vw;
+    height: 18.22vh;
+  }
+  section.third-section .box-01 h1 {
+    margin: 0 6vw;
+    width: 53.57vw;
+    height: 18.22vh;
+    text-align: center;
+  }
+  section.third-section .box-02 {
+    /* Causando overflow à direita */
+    width: 39.38vw;
+    height: 38.5vh;
+  }
+  section.third-section .box-02 h1 {
+    width: 23.57vw;
+  }
+  section.third-section .box-02 button {
+    width: 14.86vw;
+  }
+}
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */ 
+  section.fourth-section {
+    height: 79.57vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    /* Style the collapsible content. Note: hidden by default */
+  }
+  section.fourth-section .desktop {
+    display: none;
+  }
+  section.fourth-section .competence-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  section.fourth-section .collapsible {
+    margin: 0;
+    background-color: #686868;
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    width: 86.87vw;
+    border: 1px solid #686868;
+    border-radius: 0.5px;
+    outline: none;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  section.fourth-section .collapsible::after {
+    content: "";
+    position: relative;
+    bottom: 2.5vh;
+    left: 70vw;
+    display: block;
+    width: 0.7825rem;
+    height: 0.7825rem;
+    border-right: 0.2rem solid white;
+    border-top: 0.2rem solid white;
+    transform: rotate(135deg);
+    /*  float: right
+    *  margin-left: 5px 
+    *  */
+  }
+  section.fourth-section .active::after {
+    content: "";
+    margin-top: 1vh;
+    transform: rotate(315deg);
+    font-weight: bold;
+  }
+  section.fourth-section .active, section.fourth-section .collapsible:hover {
+    background-color: #555;
+  }
+  section.fourth-section .content {
+    width: 79.5vw;
+    font-size: 1.5rem;
+    text-align: justify;
+    background-color: #262626;
+    border: none;
+    padding: 0 13px;
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+    transition: max-height 0.2s ease-out;
+  }
+  section.fourth-section .content p {
+    text-align: justify;
+  }
+  section.fourth-section .active + .content {
+    border-top: 1px solid #FEC024;
+    border-bottom: 1px solid #FEC024;
+  }
+}
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */ 
+  section.fifth-section .card-container .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.fifth-section .card-container .card {
+    align-items: center;
+  }
+
+  section.fifth-section .card-container .card {
+    justify-content: space-around;
+  }
+
+  section.fifth-section .card-container .card {
+    border: 1px solid #6E6E6E;
+    border-radius: 5px;
+  }
+
+  section.fifth-section .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+
+  section.fifth-section .card-container .card p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  section.fifth-section .text-box {
+    position: relative;
+    top: 0vh;
+    left: -29vw;
+  }
+  section.fifth-section h3.text-box-heading {
+    position: relative;
+    top: -10vh;
+    right: -19vw;
+    margin: 0vw;
+    width: 18.3vw;
+    height: 21.61vh;
+    font-size: 4rem;
+    align-self: flex-start;
+  }
+  section.fifth-section .card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  section.fifth-section .card-container .card {
+    margin: 2vh 1vw;
+    width: 26.57vw;
+    height: 65.66vh;
+  }
+  section.fifth-section .card-container .card img {
+    width: 315px;
+    height: 234px;
+  }
+  section.fifth-section .card-container .card p {
+    width: 23.06vw;
+    height: 18.29vh;
+  }
+}
+@media (min-width: 1024px) {
+  section.seventh-section .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+
+  section.seventh-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section.seventh-section .text-box {
+    position: relative;
+    top: 0vh;
+    left: -29vw;
+  }
+  section.seventh-section h3.text-box-heading {
+    position: relative;
+    top: -10vh;
+    right: -19vw;
+    margin: 0vw;
+    width: 23.64vw;
+    height: 21.28vh;
+    font-size: 4rem;
+    align-self: flex-start;
+  }
+}
+/* Importando um arquivo CSS Reset */
+/* Declarando variáveis para o uso no sass */ 
+.button-container, .container section, .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container, .container section, .container {
+  align-items: center;
+}
+
+.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
 }
 
 /* Standard CSS */
@@ -77,7 +1042,7 @@ button {
   border-radius: 5px;
 }
 
-/* Texto que contém um 'U' nele */
+/* Texto que contém um 'U' nele */ 
 .text-box {
   position: absolute;
   left: 3vw;
@@ -95,19 +1060,10 @@ span.card-title {
 
 /* mobile */
 /* Imagem do header */
-header img {
-  width: 12.22vw;
-  height: 6.34vh;
-  position: relative;
-  left: 2.2vw;
-  top: 1.8vh;
-}
-
 .container {
   margin-right: 20px;
   margin-left: 20px;
 }
-
 .container section {
   width: 100vw;
 }
@@ -122,337 +1078,33 @@ button.black {
   border: 1px solid #FFFFFF;
 }
 
-/* Segunda Seção */
-section.second, section.seventh {
-  width: 100vw;
-  background: radial-gradient(#2C2C2C, #1A1A1A);
-}
-
-.second {
-  /* Container de cards da segunda seção */
-  /* Parágrafo da segunda seção */
-}
-
-.second .desktop {
-  display: none;
-}
-
-.second .card-container {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.second .card-container .card {
-  margin: 2vh 0;
-  width: 70.28vw;
-  height: 46vh;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.second .card-container .card img {
-  width: 27.5vw;
-  height: 16.9vh;
-}
-
-.second p {
-  margin-right: 20px;
-  margin-left: 20px;
-  text-align: justify;
-  line-height: 1.8rem;
-}
-
-/* Terceira seção */
-.third {
-  width: 100vw;
-  /* Lidando com os diferentes backgrounds da terceira seção */
-  /* Primeiro background */
-  /* Segundo Background */
-}
-
-.third h1 {
-  text-transform: capitalize;
-  font-weight: normal;
-  background-image: none;
-}
-
-.third .box-01 {
-  width: 100vw;
-  height: 52.29vh;
-  background-image: url("./assets/Grupo 34.svg");
-}
-
-.third .box-01 h1 {
-  margin: 10vh 6vw;
-  width: 83.67vw;
-  height: 36.62vh;
-  text-align: justify;
-}
-
-.third .box-02 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
-  height: 44.01vh;
-  background-color: #F89D24;
-}
-
-.third .box-02 button {
-  border: 1px solid white;
-  background-color: white;
-  color: #F89D24;
-  width: 56.39vw;
-}
-
-/* Quarta seção  */
-section.fourth {
-  width: 100vw;
-  background-image: url("./assets/teacher bnw.png");
-  background-position-x: -40px;
-}
-
-section.fourth h3 {
-  width: 80vw;
-  height: 21.83vh;
-}
-
-section.fourth .competence-container {
-  margin-bottom: 5%;
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  /* Style the collapsible content. Note: hidden by default */
-}
-
-section.fourth .competence-container .collapsible {
-  margin: 0;
-  background-color: #686868;
-  color: white;
-  cursor: pointer;
-  padding: 13px;
-  width: 86.87vw;
-  border: 1px solid #686868;
-  border-radius: 0.5px;
-  outline: none;
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-section.fourth .competence-container .collapsible::after {
-  content: '';
-  position: relative;
-  bottom: 2.5vh;
-  left: 70vw;
-  display: block;
-  width: 0.7825rem;
-  height: 0.7825rem;
-  border-right: 0.2rem solid white;
-  border-top: 0.2rem solid white;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  /*
-                float: right
-                margin-left: 5px
-                */
-}
-
-section.fourth .competence-container .active::after {
-  content: '';
-  margin-top: 1vh;
-  -webkit-transform: rotate(315deg);
-          transform: rotate(315deg);
-  font-weight: bold;
-}
-
-section.fourth .competence-container .active, section.fourth .competence-container .collapsible:hover {
-  background-color: #555;
-}
-
-section.fourth .competence-container .content {
-  width: 79.5vw;
-  font-size: 1.5rem;
-  text-align: justify;
-  background-color: #262626;
-  border: none;
-  padding: 0 13px;
-  max-height: 0;
-  overflow: hidden;
-  border: none;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-
-section.fourth .competence-container .content p {
-  text-align: justify;
-}
-
-section.fourth .competence-container .active + .content {
-  border-top: 1px solid #FEC024;
-  border-bottom: 1px solid #FEC024;
-}
-
-/* Quinta Seção */
-section.fifth .card-container .card {
-  margin-bottom: 3vh;
-  width: 87.5vw;
-  height: 89.96vh;
-}
-
-section.fifth .card-container .card img {
-  width: 74.17vw;
-  height: 41.2vh;
-}
-
-/* Sexta Seção */
-section.sixth {
-  height: 609px;
-  background-image: url("./assets/opinion.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-section.sixth h5 {
-  font-size: 1.5rem;
-  color: #F89D24;
-}
-
-/* Sétima Seção */
-section.seventh h3.text-box-heading {
-  width: 69.45vw;
-  height: 21.83vh;
-  margin: 0 2vw;
-  margin-top: 9vh;
-}
-
-section.seventh ul {
-  color: #F89D24;
-  font-size: 1.7rem;
-  list-style-type: circle;
-  margin: 0;
-}
-
-section.seventh ul li {
-  width: 86.11vw;
-  height: 17.25vh;
-}
-
-section.seventh ul li h6 {
-  text-transform: uppercase;
-  color: #F89D24;
-  font-size: 1.17rem;
-}
-
-section.seventh ul li p {
-  text-align: justify;
-}
-
-section.eighth {
-  width: 100vw;
-  background-image: url("./assets/negociando.png");
-}
-
-footer p {
-  font-size: 1.33rem;
-  margin: 8vh 0;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     margin-right: 50px;
     margin-left: 50px;
   }
 }
-
 @media (min-width: 1024px) {
   /* Desktop */
-  /* Declarando variáveis para o uso no sass */
-  section.fifth .card-container .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section.fifth .card-container .card {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  section.fifth .card-container .card {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  section.fifth .card-container .card {
-    border: 1px solid #6E6E6E;
-    border-radius: 5px;
-  }
-  section.second .text-box, section.fifth .text-box, section.seventh .text-box {
-    width: 15vw;
-    height: 26.82vh;
-    background-color: inherit;
-    border: 1px solid #FEC024;
-    border-top: none;
-    font-size: 4rem;
-  }
-  section.fifth .card-container .card p {
-    font-size: 1rem;
-    text-align: justify;
-  }
-  /* Texto que contém um 'U' nele */
+  /* Declarando variáveis para o uso no sass */ 
+  /* Texto que contém um 'U' nele */ 
   /* Container dos botões da página */
   .button-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    justify-content: center;
   }
   .button-container button {
     margin: 2vh 1.5vw;
     width: 12.37vw;
     height: 7.29vh;
   }
-  header {
-    height: 15vh;
-  }
-  header img {
-    width: 8.49vw;
-    height: 12.37vh;
-    position: relative;
-    left: 1.5vw;
-    top: 1.5vh;
-  }
-  /* Primeira Seção */
-  .first {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: calc(100vh - 15vh);
-  }
+
   .container {
     margin-right: 80px;
     margin-left: 80px;
@@ -464,291 +1116,14 @@ footer p {
     font-size: 1rem;
     width: 30.45vw;
   }
-  section.second {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50vw 50vw;
-        grid-template-columns: 50vw 50vw;
-    /* Parágrafo da segunda seção */
-  }
-  section.second .text-box {
-    position: absolute;
-    top: 101vh;
-    left: 7vw;
-  }
-  section.second h3.text-box-heading {
-    margin-top: 18vh;
-    margin-left: 12vw;
-    width: 18.3vw;
-    height: 21.61vh;
-    font-size: 4rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  section.second .button-container {
-    margin-left: 8vw;
-  }
-  section.second p {
-    margin-left: 12vw;
-    width: 24.67vw;
-    height: 26.69vh;
-    text-align: justify;
-    font-size: 1.125rem;
-  }
-  section.second .mobile {
-    display: none;
-  }
-  section.second .desktop {
-    display: block;
-  }
-  section.second .card-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-  section.second .card-container .card {
-    width: 18.52vw;
-    height: 35.29vh;
-    border: 1px solid #6E6E6E;
-    border-radius: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  section.second .card-container .card img {
-    margin: 0;
-    width: 7.24vw;
-    height: 12.5vh;
-  }
-  section.second .card-container .card p {
-    width: 15vw;
-    height: 9.51vh;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    text-align: justify;
-  }
-  section.third {
-    width: 100vw;
-    height: 48.44vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-image: url("./assets/Grupo 34.svg");
-  }
-  section.third .box-01 {
-    background-image: none;
-    width: 58.57vw;
-    height: 18.22vh;
-  }
-  section.third .box-01 h1 {
-    margin: 0 6vw;
-    width: 53.57vw;
-    height: 18.22vh;
-    text-align: center;
-  }
-  section.third .box-02 {
-    /* Causando overflow à direita */
-    width: 39.38vw;
-    height: 38.5vh;
-  }
-  section.third .box-02 h1 {
-    width: 23.57vw;
-  }
-  section.third .box-02 button {
-    width: 14.86vw;
-  }
-  section.fourth {
-    height: 79.57vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    /* Style the collapsible content. Note: hidden by default */
-  }
-  section.fourth .desktop {
-    display: none;
-  }
-  section.fourth .competence-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  section.fourth .collapsible {
-    margin: 0;
-    background-color: #686868;
-    color: white;
-    cursor: pointer;
-    padding: 13px;
-    width: 86.87vw;
-    border: 1px solid #686868;
-    border-radius: 0.5px;
-    outline: none;
-    text-align: left;
-    font-size: 1.5rem;
-    font-weight: normal;
-  }
-  section.fourth .collapsible::after {
-    content: '';
-    position: relative;
-    bottom: 2.5vh;
-    left: 70vw;
-    display: block;
-    width: 0.7825rem;
-    height: 0.7825rem;
-    border-right: 0.2rem solid white;
-    border-top: 0.2rem solid white;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-    /*
-                float: right
-                margin-left: 5px
-                */
-  }
-  section.fourth .active::after {
-    content: '';
-    margin-top: 1vh;
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg);
-    font-weight: bold;
-  }
-  section.fourth .active, section.fourth .collapsible:hover {
-    background-color: #555;
-  }
-  section.fourth .content {
-    width: 79.5vw;
-    font-size: 1.5rem;
-    text-align: justify;
-    background-color: #262626;
-    border: none;
-    padding: 0 13px;
-    max-height: 0;
-    overflow: hidden;
-    border: none;
-    -webkit-transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-out;
-  }
-  section.fourth .content p {
-    text-align: justify;
-  }
-  section.fourth .active + .content {
-    border-top: 1px solid #FEC024;
-    border-bottom: 1px solid #FEC024;
-  }
-  section.fifth .text-box {
-    position: relative;
-    top: 0vh;
-    left: -29vw;
-  }
-  section.fifth h3.text-box-heading {
-    position: relative;
-    top: -10vh;
-    right: -19vw;
-    margin: 0vw;
-    width: 18.3vw;
-    height: 21.61vh;
-    font-size: 4rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
-  section.fifth .card-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  section.fifth .card-container .card {
-    margin: 2vh 1vw;
-    width: 26.57vw;
-    height: 65.66vh;
-  }
-  section.fifth .card-container .card img {
-    width: 315px;
-    height: 234px;
-  }
-  section.fifth .card-container .card p {
-    width: 23.06vw;
-    height: 18.29vh;
-  }
-  section.sixth {
+
+  section.sixth-section {
     background-size: cover;
   }
-  section.seventh {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  section.seventh .text-box {
-    position: relative;
-    top: 0vh;
-    left: -29vw;
-  }
-  section.seventh h3.text-box-heading {
-    position: relative;
-    top: -10vh;
-    right: -19vw;
-    margin: 0vw;
-    width: 23.64vw;
-    height: 21.28vh;
-    font-size: 4rem;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-  }
 }
-
 @media (min-width: 1440px) {
   .container {
     margin-right: calc((100vw - 1350px) / 2);
     margin-left: calc((100vw - 1350px) / 2);
   }
 }
-/*# sourceMappingURL=index.css.map */

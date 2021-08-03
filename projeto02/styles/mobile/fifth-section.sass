@@ -1,0 +1,56 @@
+$font-size-normal:  12px
+$font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
+    align-items: center
+
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+
+%text-box-heading
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: $font-heading-medium
+    align-self: flex-start
+
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius: $card-border-radius
+
+%card-paragraph
+    margin: 0vh 4vw
+    font-size: 1.34rem
+    text-align: justify
+
+    
+/* Quinta Seção */
+
+section.fifth-section
+    .card-container
+        @extend %flex-column-items-center
+        .card
+            margin-bottom: 3vh
+            width: 87.5vw
+            height: 89.96vh
+            @extend %card-border
+            @extend %flex-justified
+            img
+                width: 74.17vw
+                height: 41.2vh 
+            p
+                @extend %card-paragraph

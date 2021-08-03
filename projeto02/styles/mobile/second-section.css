@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* Declarando variáveis para o uso no sass */ 
+.second-section .card-container, .second-section .card-container .card, .second-section .mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section .card-container .card, .second-section .mobile {
+  align-items: center;
+}
+
+.second-section .card-container .card {
+  border: 1px solid #6E6E6E;
+  border-radius: 5px;
+}
+
+.second-section .card-container .card p {
+  margin: 0vh 4vw;
+  font-size: 1.34rem;
+  text-align: justify;
+}
+
+section.second-section {
+  width: 100vw;
+  background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+
+.second-section {
+  /* Container de cards da segunda seção */
+  /* Parágrafo da segunda seção */
+}
+.second-section .desktop {
+  display: none;
+}
+.second-section .card-container {
+  justify-content: space-around;
+}
+.second-section .card-container .card {
+  margin: 2vh 0;
+  width: 70.28vw;
+  height: 46vh;
+  justify-content: space-evenly;
+}
+.second-section .card-container .card img {
+  width: 27.5vw;
+  height: 16.9vh;
+}
+.second-section p {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
+  line-height: 1.8rem;
+}

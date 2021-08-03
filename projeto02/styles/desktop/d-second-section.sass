@@ -1,0 +1,87 @@
+@media (min-width: 1024px)
+    /* Declarando variáveis para o uso no sass */ 
+    $font-size-normal:  12px
+    $font-heading-medium: 4rem
+    $full-width: 100vw
+    $card-border-radius:  5px
+
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify 
+    
+
+    // Segunda Seção
+
+    section.second-section 
+        display: grid
+        grid-template-columns: 50vw 50vw
+        .text-box
+            position: absolute
+            top: 101vh
+            left: 7vw
+            @extend %text-box-base
+
+        h3.text-box-heading
+            margin-top: 18vh
+            margin-left: 12vw
+            width: 18.3vw
+            height: 21.61vh
+            font-size: $font-heading-medium
+            align-self: flex-start
+        .button-container
+            margin-left: 8vw
+        /* Parágrafo da segunda seção */
+        p
+            
+            margin-left: 12vw
+            width: 24.67vw
+            height: 26.69vh
+            text-align: justify
+            font-size: 1.125rem
+        .mobile
+            display: none
+        .desktop
+            display: block
+        .card-container
+            display: flex
+            flex-flow: row wrap
+            .card
+                width: 18.52vw
+                height: 35.29vh
+                border: 1px solid #6E6E6E
+                border-radius: $card-border-radius
+                display: flex
+                flex-direction: column
+                img
+                    margin: 0
+                    width: 7.24vw
+                    height: 12.5vh
+                p
+                    width: 15vw
+                    height: 9.51vh
+                    font-size: 1rem
+                    line-height: 1.2rem
+                    text-align: justify

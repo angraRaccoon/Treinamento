@@ -2,6 +2,27 @@
 
 @use 'css_reset'
 
+// Importando seções mobile
+@use './mobile/header' 
+@use './mobile/second-section'
+@use './mobile/third-section'
+@use './mobile/fourth-section'
+@use './mobile/fifth-section'
+@use './mobile/sixth-section'
+@use './mobile/seventh-section'
+@use './mobile/eighth-section'
+@use './mobile/footer'
+
+// Importando seções desktop
+@use './desktop/d-header'
+@use './desktop/d-first-section'
+@use './desktop/d-second-section'
+@use './desktop/d-third-section'
+@use './desktop/d-fourth-section'
+@use './desktop/d-fifth-section'
+@use './desktop/d-seventh-section'
+@use './desktop/d-eighth-section'
+@use './desktop/d-footer'
 /* Declarando variáveis para o uso no sass */ 
 
 $font-size-normal:  12px
@@ -94,13 +115,6 @@ span.card-title
 /* mobile */
 
 /* Imagem do header */
-header 
-    img
-        width: 12.22vw
-        height: 6.34vh
-        position: relative
-        left: 2.2vw
-        top: 1.8vh
 
 .container 
     margin-right: 20px
@@ -122,214 +136,6 @@ button.orange
 button.black
     background-color: #0C0C0C
     border: 1px solid #FFFFFF
-
-/* Segunda Seção */
-
-section.second, section.seventh
-    width: $full-width
-    background: radial-gradient(#2C2C2C,#1A1A1A)
-
-.second
-    .mobile
-        @extend %flex-column-items-center
-    .desktop
-        display: none 
-    /* Container de cards da segunda seção */
-    .card-container
-        @extend %flex-column
-        justify-content: space-around
-
-        .card
-            margin: 2vh 0
-            width: 70.28vw
-            height: 46vh
-            @extend %card-border
-            @extend %flex-column-items-center
-            justify-content: space-evenly
-            img
-                width: 27.5vw
-                height: 16.9vh
-            p
-                @extend %card-paragraph
-    /* Parágrafo da segunda seção */
-    p
-        margin-right: 20px
-        margin-left: 20px
-        text-align: justify
-        line-height: 1.8rem
-
-  
-/* Terceira seção */
-
-.third
-    width: $full-width
-    h1
-        text-transform: capitalize
-        font-weight: normal
-        background-image: none
-    /* Lidando com os diferentes backgrounds da terceira seção */
-    /* Primeiro background */
-    .box-01
-        width: 100vw
-        height: 52.29vh
-        background-image: url('./assets/Grupo 34.svg')
-        h1
-            margin: 10vh 6vw
-            width: 83.67vw
-            height: 36.62vh
-            text-align: justify
-
-    /* Segundo Background */
-    .box-02
-        @extend %flex-column-items-center
-        justify-content: center
-        width: $full-width
-        height: 44.01vh
-        background-color: #F89D24
-
-        button
-            border: 1px solid white
-            background-color: white
-            color: #F89D24
-            width: 56.39vw
-
-
-/* Quarta seção  */
-section.fourth
-    width: $full-width
-    background-image: url('./assets/teacher bnw.png')
-    background-position-x: -40px
-    h3
-        width: 80vw
-        height: 21.83vh
-    .competence-container
-        margin-bottom: 5%
-        @extend %flex-column-items-center
-        .collapsible
-            margin: 0
-            background-color: #686868
-            color: white
-            cursor: pointer
-            padding: 13px
-            width: 86.87vw
-            border: 1px solid #686868
-            border-radius: 0.5px
-            outline: none
-            text-align: left
-            font-size: 1.5rem
-            font-weight: normal
-
-        .collapsible::after 
-            content: ''
-            position: relative
-            bottom: 2.5vh
-            left: 70vw
-            display: block
-            width: 0.7825rem
-            height: 0.7825rem
-            border-right: 0.2rem solid white
-            border-top: 0.2rem solid white
-            transform: rotate(135deg)
-
-            /*
-                float: right
-                margin-left: 5px 
-                */
-
-        .active::after 
-            content: ''
-            margin-top: 1vh
-            transform: rotate(315deg) 
-            font-weight: bold
-        
-
-        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-        .active, .collapsible:hover 
-           background-color: #555
-        
-
-        /* Style the collapsible content. Note: hidden by default */
-        .content 
-            width: 79.5vw
-            font-size: 1.5rem
-            text-align: justify
-            background-color: #262626
-            border: none
-            padding: 0 13px
-            max-height: 0
-            overflow: hidden
-            border: none
-            transition: max-height 0.2s ease-out
-            p
-                text-align: justify
-        .active + .content 
-            border-top: 1px solid #FEC024
-            border-bottom: 1px solid #FEC024
-
-/* Quinta Seção */
-
-section.fifth
-    .card-container
-        @extend %flex-column-items-center
-        .card
-            margin-bottom: 3vh
-            width: 87.5vw
-            height: 89.96vh
-            @extend %card-border
-            @extend %flex-justified
-            img
-                width: 74.17vw
-                height: 41.2vh 
-            p
-                @extend %card-paragraph
-
-/* Sexta Seção */ 
-section.sixth
-    height: 609px
-    background-image: url('./assets/opinion.png')
-    background-size: contain
-    background-repeat: no-repeat
-    h5
-        font-size: 1.5rem
-        color: #F89D24
-
-/* Sétima Seção */
-section.seventh
-    h3.text-box-heading
-        width: 69.45vw
-        height: 21.83vh
-        margin: 0 2vw
-        margin-top: 9vh
-    p
-       @extend %card-paragraph
-
-    // Lista Desordenada
-    ul
-        color: #F89D24
-        font-size: 1.7rem
-        list-style-type: circle
-        margin: 0
-        li
-            width: 86.11vw
-            height: 17.25vh
-            h6
-                text-transform: uppercase
-                color: #F89D24
-                font-size: 1.17rem
-            p
-                text-align: justify
-
-
-section.eighth
-    width: $full-width
-    background-image: url('./assets/negociando.png')
-    p
-        @extend %card-paragraph
-
-footer
-    p
-        font-size: 1.33rem
-        margin: 8vh 0
 
 @media(min-width:768px)
     html
@@ -391,24 +197,6 @@ footer
             width: 12.37vw
             height: 7.29vh
 
-    header
-        height: 15vh
-        img
-            width: 8.49vw
-            height: 12.37vh
-            position: relative
-            left: 1.5vw
-            top: 1.5vh
-
-    /* Primeira Seção */
-    
-    .first
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: center
-        height: calc(100vh - 15vh)
-
     .container 
         margin-right: 80px
         margin-left: 80px
@@ -418,222 +206,11 @@ footer
             font-size: 1rem
             width: 30.45vw
 
-    // Segunda Seção
 
-    section.second 
-        display: grid
-        grid-template-columns: 50vw 50vw
-        .text-box
-            position: absolute
-            top: 101vh
-            left: 7vw
-            @extend %text-box-base
-
-        h3.text-box-heading
-            margin-top: 18vh
-            margin-left: 12vw
-            width: 18.3vw
-            height: 21.61vh
-            font-size: $font-heading-medium
-            align-self: flex-start
-        .button-container
-            margin-left: 8vw
-        /* Parágrafo da segunda seção */
-        p
-            
-            margin-left: 12vw
-            width: 24.67vw
-            height: 26.69vh
-            text-align: justify
-            font-size: 1.125rem
-        .mobile
-            display: none
-        .desktop
-            display: block
-        .card-container
-            display: flex
-            flex-flow: row wrap
-            .card
-                width: 18.52vw
-                height: 35.29vh
-                border: 1px solid #6E6E6E
-                border-radius: $card-border-radius
-                display: flex
-                flex-direction: column
-                img
-                    margin: 0
-                    width: 7.24vw
-                    height: 12.5vh
-                p
-                    width: 15vw
-                    height: 9.51vh
-                    font-size: 1rem
-                    line-height: 1.2rem
-                    text-align: justify
-
-    // Terceira Seção
-    section.third
-        width: $full-width
-        height: 48.44vh
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        background-image: url('./assets/Grupo\ 34.svg')
-        .box-01
-            background-image: none
-            width: 58.57vw
-            height: 18.22vh
-            h1
-                margin: 0 6vw
-                width: 53.57vw
-                height: 18.22vh
-                text-align: center
-        .box-02
-            /* Causando overflow à direita */
-            width: 39.38vw
-            height: 38.5vh
-            h1
-                width: 23.57vw
-            button
-                width: 14.86vw
-    
-    // Quarta Seção
-    section.fourth
-        height: 79.57vh
-        display: flex
-        flex-flow: row wrap
-        justify-content: center
-        align-items: center
-        background-size: contain
-        background-repeat: no-repeat
-        .desktop
-            display: none
-        .competence-container
-            display: flex
-            flex-direction: row
-            justify-content: center
-            align-items: center
-        .collapsible
-            margin: 0
-            background-color: #686868
-            color: white
-            cursor: pointer
-            padding: 13px
-            width: 86.87vw
-            border: 1px solid #686868
-            border-radius: 0.5px
-            outline: none
-            text-align: left
-            font-size: 1.5rem
-            font-weight: normal
-
-        .collapsible::after 
-            content: ''
-            position: relative
-            bottom: 2.5vh
-            left: 70vw
-            display: block
-            width: 0.7825rem
-            height: 0.7825rem
-            border-right: 0.2rem solid white
-            border-top: 0.2rem solid white
-            transform: rotate(135deg)
-
-            /*
-                float: right
-                margin-left: 5px 
-                */
-
-        .active::after 
-            content: ''
-            margin-top: 1vh
-            transform: rotate(315deg) 
-            font-weight: bold
-        
-
-        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-        .active, .collapsible:hover 
-           background-color: #555
-        
-
-        /* Style the collapsible content. Note: hidden by default */
-        .content 
-            width: 79.5vw
-            font-size: 1.5rem
-            text-align: justify
-            background-color: #262626
-            border: none
-            padding: 0 13px
-            max-height: 0
-            overflow: hidden
-            border: none
-            transition: max-height 0.2s ease-out
-            p
-                text-align: justify
-        .active + .content 
-            border-top: 1px solid #FEC024
-            border-bottom: 1px solid #FEC024
-
-    // Quinta Seção
-    section.fifth
-
-        .text-box
-            position: relative
-            top: 0vh
-            left: -29vw
-            @extend %text-box-base
-
-        h3.text-box-heading
-            position: relative
-            top: -10vh
-            right: -19vw
-            margin: 0vw
-            width: 18.3vw
-            height: 21.61vh
-            font-size: $font-heading-medium
-            align-self: flex-start
-
-        .card-container
-            display: flex
-            flex-flow: row wrap
-            justify-content: center
-            .card
-                margin: 2vh 1vw
-                img
-                    width: 315px
-                    height: 234px
-                p
-                    width: 23.06vw
-                    height: 18.29vh
-                    @extend %card-paragraph-lg
-                width: 26.57vw
-                height: 65.66vh
-                @extend %card-border-lg
-                @extend %flex-justified-lg
-    
     // Sexta Seção
-    section.sixth
+    section.sixth-section
         background-size: cover
 
-    section.seventh
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        .text-box
-            position: relative
-            top: 0vh
-            left: -29vw
-            @extend %text-box-base
-
-        h3.text-box-heading
-            position: relative
-            top: -10vh
-            right: -19vw
-            margin: 0vw
-            width: 23.64vw
-            height: 21.28vh
-            font-size: $font-heading-medium
-            align-self: flex-start
 
 @media (min-width: 1440px) 
     .container 

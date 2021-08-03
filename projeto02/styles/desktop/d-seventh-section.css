@@ -1,0 +1,31 @@
+@media (min-width: 1024px) {
+  section.seventh-section .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+
+  section.seventh-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section.seventh-section .text-box {
+    position: relative;
+    top: 0vh;
+    left: -29vw;
+  }
+  section.seventh-section h3.text-box-heading {
+    position: relative;
+    top: -10vh;
+    right: -19vw;
+    margin: 0vw;
+    width: 23.64vw;
+    height: 21.28vh;
+    font-size: 4rem;
+    align-self: flex-start;
+  }
+}
