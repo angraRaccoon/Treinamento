@@ -1,5 +1,6 @@
 section.first-section{
     background-image: url('../assets/Grupo\ 52.png');
+    overflow:hidden;
     background-position: 40% 0%;
     background-size: cover;
     background-repeat: no-repeat;

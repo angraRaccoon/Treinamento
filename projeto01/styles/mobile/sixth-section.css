@@ -37,6 +37,10 @@ section.sixth-section{
     
 }
 
+.sixth-section form  label + .sixth-section form input:focus{
+    color: #2571B7;
+}
+
 .sixth-section form button{
     height: 8.125vh;
     font-size: 1.75rem;

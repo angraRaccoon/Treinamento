@@ -3,6 +3,7 @@ section.fifth-section{
     width: 100vw;
     height: 35vh;
     background-image: url('../assets/Grupo 89.png');
+    overflow:hidden;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
