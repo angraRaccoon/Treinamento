@@ -58,6 +58,12 @@
     width: 26.57vw;
     height: 65.66vh;
   }
+  section.fifth-section .card-container .card .card-title {
+    display: block;
+    width: 12.81vw;
+    height: 4.69vh;
+    line-height: 1rem;
+  }
   section.fifth-section .card-container .card img {
     width: 315px;
     height: 234px;

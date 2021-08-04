@@ -10,13 +10,15 @@
         align-items: center
         background-size: contain
         background-repeat: no-repeat
-        .desktop
+        .mobile
             display: none
+            
         .competence-container
-            display: flex
+            display: none
             flex-direction: row
             justify-content: center
             align-items: center
+        
         .collapsible
             margin: 0
             background-color: #686868
@@ -30,7 +32,6 @@
             text-align: left
             font-size: 1.5rem
             font-weight: normal
-
         .collapsible::after 
             content: ''
             position: relative
@@ -55,12 +56,12 @@
             font-weight: bold
         
 
-        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        // Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
         .active, .collapsible:hover 
            background-color: #555
         
 
-        /* Style the collapsible content. Note: hidden by default */
+        // Style the collapsible content. Note: hidden by default 
         .content 
             width: 79.5vw
             font-size: 1.5rem
@@ -77,5 +78,3 @@
         .active + .content 
             border-top: 1px solid #FEC024
             border-bottom: 1px solid #FEC024
-
-      

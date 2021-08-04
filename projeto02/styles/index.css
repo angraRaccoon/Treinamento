@@ -207,6 +207,7 @@ header img {
 
 section.second-section {
   width: 100vw;
+  display: flex;
   background: radial-gradient(#2C2C2C, #1A1A1A);
 }
 
@@ -827,25 +828,32 @@ footer p {
   }
 
   section.second-section {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 50vw 50vw;
     /* Parágrafo da segunda seção */
   }
   section.second-section .text-box {
-    position: absolute;
-    top: 101vh;
+    position: relative;
+    top: 0vh;
     left: 10vw;
   }
   section.second-section h3.text-box-heading {
-    margin-top: 18vh;
-    margin-left: 12vw;
+    position: relative;
+    left: 16vw;
     width: 18.3vw;
     height: 21.61vh;
     font-size: 4rem;
     align-self: flex-start;
   }
   section.second-section .button-container {
+    margin: 5vh 0;
     margin-left: 8vw;
+  }
+  section.second-section .mobile {
+    display: none;
+  }
+  section.second-section .desktop {
+    display: block;
   }
   section.second-section p {
     margin-left: 12vw;
@@ -853,12 +861,6 @@ footer p {
     height: 26.69vh;
     text-align: justify;
     font-size: 1.125rem;
-  }
-  section.second-section .mobile {
-    display: none;
-  }
-  section.second-section .desktop {
-    display: block;
   }
   section.second-section .card-container {
     display: flex;
@@ -927,14 +929,12 @@ footer p {
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
-    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    /* Style the collapsible content. Note: hidden by default */
   }
-  section.fourth-section .desktop {
+  section.fourth-section .mobile {
     display: none;
   }
   section.fourth-section .competence-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -1055,6 +1055,12 @@ footer p {
     margin: 2vh 1vw;
     width: 26.57vw;
     height: 65.66vh;
+  }
+  section.fifth-section .card-container .card .card-title {
+    display: block;
+    width: 12.81vw;
+    height: 4.69vh;
+    line-height: 1rem;
   }
   section.fifth-section .card-container .card img {
     width: 315px;
@@ -1189,10 +1195,6 @@ button.black {
     height: 7.29vh;
   }
 
-  .container {
-    margin-right: 80px;
-    margin-left: 80px;
-  }
   .container h1 {
     width: 58.57vw;
   }

@@ -38,6 +38,7 @@
 
 section.second-section {
   width: 100vw;
+  display: flex;
   background: radial-gradient(#2C2C2C, #1A1A1A);
 }
 
