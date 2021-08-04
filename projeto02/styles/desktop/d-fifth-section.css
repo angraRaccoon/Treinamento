@@ -33,6 +33,9 @@
     text-align: justify;
   }
 
+  section.fifth-section {
+    width: 100vw;
+  }
   section.fifth-section .text-box {
     position: relative;
     top: 0vh;

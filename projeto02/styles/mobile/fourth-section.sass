@@ -46,7 +46,8 @@ section.fourth-section
     width:  100vw
     background-image: url('./assets/teacher bnw.png')
     background-position-x: -40px
-    background-size: cover
+    //background-size: cover  // escala com o container 
+    background-repeat: no-repeat
     .text-box
         position: relative
         top: 0vh
@@ -58,12 +59,14 @@ section.fourth-section
         height: 21.83vh
         margin: 0
         position: relative
-        top: -11vh
+        top: -8vh
         left: 6.5vw
         @extend %text-box-heading
     h3
         width: 80vw
         height: 21.83vh
+    .desktop
+        display: none
     .competence-container
         margin-bottom: 5%
         @extend %flex-column-items-center

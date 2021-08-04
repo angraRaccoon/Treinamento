@@ -28,7 +28,7 @@ section.fourth-section {
   width: 100vw;
   background-image: url("./assets/teacher bnw.png");
   background-position-x: -40px;
-  background-size: cover;
+  background-repeat: no-repeat;
 }
 section.fourth-section .text-box {
   position: relative;
@@ -40,12 +40,15 @@ section.fourth-section h3.text-box-heading {
   height: 21.83vh;
   margin: 0;
   position: relative;
-  top: -11vh;
+  top: -8vh;
   left: 6.5vw;
 }
 section.fourth-section h3 {
   width: 80vw;
   height: 21.83vh;
+}
+section.fourth-section .desktop {
+  display: none;
 }
 section.fourth-section .competence-container {
   margin-bottom: 5%;
