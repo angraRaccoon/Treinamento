@@ -1,12 +1,28 @@
 @charset "UTF-8";
 /* Declarando variáveis para o uso no sass */ 
-.second-section .card-container, .second-section .card-container .card, .second-section .mobile {
+.second-section .card-container, .second-section .card-container .card {
   display: flex;
   flex-direction: column;
 }
 
-.second-section .card-container .card, .second-section .mobile {
+.second-section .card-container .card {
   align-items: center;
+}
+
+.second-section .text-box {
+  width: 30.56vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+.second-section h3.text-box-heading {
+  width: 51.94vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
 }
 
 .second-section .card-container .card {
@@ -29,8 +45,25 @@ section.second-section {
   /* Container de cards da segunda seção */
   /* Parágrafo da segunda seção */
 }
+.second-section .mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .second-section .desktop {
   display: none;
+}
+.second-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: 10vw;
+}
+.second-section h3.text-box-heading {
+  margin: 0;
+  position: relative;
+  top: -10vh;
+  left: 14%;
 }
 .second-section .card-container {
   justify-content: space-around;
@@ -46,6 +79,7 @@ section.second-section {
   height: 16.9vh;
 }
 .second-section p {
+  margin: 0;
   margin-right: 20px;
   margin-left: 20px;
   text-align: justify;

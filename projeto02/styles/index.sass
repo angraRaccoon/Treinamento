@@ -2,6 +2,7 @@
 
 @use 'css_reset'
 
+
 // Importando seções mobile
 @use './mobile/header' 
 @use './mobile/second-section'
@@ -23,8 +24,8 @@
 @use './desktop/d-seventh-section'
 @use './desktop/d-eighth-section'
 @use './desktop/d-footer'
-/* Declarando variáveis para o uso no sass */ 
 
+//Declarando Variáveis
 $font-size-normal:  12px
 $font-heading-medium: 4rem
 $full-width: 100vw
@@ -94,27 +95,11 @@ button
     border-radius: $card-border-radius
 
 
-/* Texto que contém um 'U' nele */ 
-.text-box
-    position: absolute
-    left: 3vw
-    width: 30.71vw
-    height: 18.49vh
-    background-color: inherit
-    border: 1px solid #FEC024
-    border-top: none
-    font-size: $font-heading-medium
-
-.text-box-heading
-    @extend %text-box-heading
-
 span.card-title
     color: #F89D24
 
 
 /* mobile */
-
-/* Imagem do header */
 
 .container 
     margin-right: 20px
@@ -210,6 +195,7 @@ button.black
     // Sexta Seção
     section.sixth-section
         background-size: cover
+        padding: 0
 
 
 @media (min-width: 1440px) 

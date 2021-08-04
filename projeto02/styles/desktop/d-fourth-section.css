@@ -1,6 +1,4 @@
-@charset "UTF-8";
 @media (min-width: 1024px) {
-  /* Declarando variáveis para o uso no sass */ 
   section.fourth-section {
     height: 79.57vh;
     display: flex;

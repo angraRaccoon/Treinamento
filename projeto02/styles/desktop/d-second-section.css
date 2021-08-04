@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @media (min-width: 1024px) {
-  /* Declarando variáveis para o uso no sass */ 
   section.second-section .text-box {
     width: 15vw;
     height: 26.82vh;
@@ -18,7 +17,7 @@
   section.second-section .text-box {
     position: absolute;
     top: 101vh;
-    left: 7vw;
+    left: 10vw;
   }
   section.second-section h3.text-box-heading {
     margin-top: 18vh;

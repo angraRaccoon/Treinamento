@@ -1,5 +1,24 @@
+section.eighth-section .text-box {
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+section.eighth-section h3.text-box-heading {
+  margin-top: 9vh;
+  margin-left: 4vw;
+  width: 52vw;
+  height: 21.83vh;
+  font-weight: normal;
+  font-size: 4rem;
+  align-self: flex-start;
+}
+
 section.eighth-section p {
-  margin: 0vh 4vw;
+  margin: 4vh 4vw;
   font-size: 1.34rem;
   text-align: justify;
 }
@@ -7,4 +26,17 @@ section.eighth-section p {
 section.eighth-section {
   width: 100vw;
   background-image: url("./assets/negociando.png");
+}
+section.eighth-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: -30vw;
+}
+section.eighth-section h3.text-box-heading {
+  width: 69.45vw;
+  height: 21.83vh;
+  margin: 0;
+  position: relative;
+  top: -11vh;
+  left: 9vw;
 }

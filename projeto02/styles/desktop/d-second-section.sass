@@ -1,9 +1,11 @@
 @media (min-width: 1024px)
-    /* Declarando variáveis para o uso no sass */ 
+   
     $font-size-normal:  12px
     $font-heading-medium: 4rem
     $full-width: 100vw
     $card-border-radius:  5px
+
+
 
     %flex-column-lg
         display: flex
@@ -16,6 +18,8 @@
     %flex-justified-lg
         @extend %flex-column-items-center-lg
         justify-content: space-around
+
+
 
     %card-border-lg
         border: 1px solid #6E6E6E
@@ -30,8 +34,7 @@
         font-size: $font-heading-medium
     %card-paragraph-lg
         font-size: 1rem
-        text-align: justify 
-    
+        text-align: justify
 
     // Segunda Seção
 
@@ -41,7 +44,7 @@
         .text-box
             position: absolute
             top: 101vh
-            left: 7vw
+            left: 10vw
             @extend %text-box-base
 
         h3.text-box-heading

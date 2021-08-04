@@ -19,14 +19,6 @@ $card-border-radius:  5px
     @extend %flex-column-items-center
     justify-content: space-between
 
-%text-box-base
-    width: 30.71vw
-    height: 18.49vh
-    background-color: inherit
-    border: 1px solid #FEC024
-    border-top: none
-    font-size: $font-heading-medium
-
 %text-box-heading
     margin-top: 9vh
     margin-left: 4vw
@@ -41,26 +33,6 @@ $card-border-radius:  5px
     border-radius:  5px
 
 %card-paragraph
-    margin: 4vh 4vw
+    margin: 0vh 4vw
     font-size: 1.34rem
     text-align: justify
-    
-section.eighth-section
-    width:  100vw
-    background-image: url('./assets/negociando.png')
-    .text-box
-        position: relative
-        top: 0vh
-        left: -30vw
-        @extend %text-box-base
-
-    h3.text-box-heading
-        width: 69.45vw
-        height: 21.83vh
-        margin: 0
-        position: relative
-        top: -11vh
-        left: 9vw
-        @extend %text-box-heading
-    p
-        @extend %card-paragraph

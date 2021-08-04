@@ -157,6 +157,9 @@ template {
   display: none;
 }
 
+header {
+  height: 6.5vh;
+}
 header img {
   width: 12.22vw;
   height: 6.34vh;
@@ -166,23 +169,29 @@ header img {
 }
 
 /* Declarando variáveis para o uso no sass */ 
-.container, .container section, .button-container, .second-section .card-container, .second-section .card-container .card, .second-section .mobile {
+.container, .container section, .button-container, .second-section .card-container, .second-section .card-container .card {
   display: flex;
   flex-direction: column;
 }
 
-.container, .container section, .button-container, .second-section .card-container .card, .second-section .mobile {
+.container, .container section, .button-container, .second-section .card-container .card {
   align-items: center;
 }
 
-.text-box-heading {
-  margin-top: 9vh;
-  margin-left: 4vw;
-  width: 52vw;
+.second-section .text-box {
+  width: 30.56vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+.second-section h3.text-box-heading {
+  width: 51.94vw;
   height: 21.83vh;
   font-weight: normal;
   font-size: 4rem;
-  align-self: flex-start;
 }
 
 .second-section .card-container .card {
@@ -205,8 +214,25 @@ section.second-section {
   /* Container de cards da segunda seção */
   /* Parágrafo da segunda seção */
 }
+.second-section .mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .second-section .desktop {
   display: none;
+}
+.second-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: 10vw;
+}
+.second-section h3.text-box-heading {
+  margin: 0;
+  position: relative;
+  top: -10vh;
+  left: 14%;
 }
 .second-section .card-container {
   justify-content: space-around;
@@ -222,13 +248,13 @@ section.second-section {
   height: 16.9vh;
 }
 .second-section p {
+  margin: 0;
   margin-right: 20px;
   margin-left: 20px;
   text-align: justify;
   line-height: 1.8rem;
 }
 
-/* Declarando variáveis para o uso no sass */ 
 .container, .container section, .button-container, .third-section .box-02 {
   display: flex;
   flex-direction: column;
@@ -236,16 +262,6 @@ section.second-section {
 
 .container, .container section, .button-container, .third-section .box-02 {
   align-items: center;
-}
-
-.text-box-heading {
-  margin-top: 9vh;
-  margin-left: 4vw;
-  width: 52vw;
-  height: 21.83vh;
-  font-weight: normal;
-  font-size: 4rem;
-  align-self: flex-start;
 }
 
 /* Terceira seção */
@@ -293,11 +309,16 @@ section.second-section {
   align-items: center;
 }
 
-.text-box-heading {
-  margin-top: 9vh;
-  margin-left: 4vw;
-  width: 52vw;
-  height: 21.83vh;
+section.fourth-section .text-box {
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+section.fourth-section h3.text-box-heading {
   font-weight: normal;
   font-size: 4rem;
   align-self: flex-start;
@@ -308,6 +329,20 @@ section.fourth-section {
   width: 100vw;
   background-image: url("./assets/teacher bnw.png");
   background-position-x: -40px;
+  background-size: cover;
+}
+section.fourth-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: -30vw;
+}
+section.fourth-section h3.text-box-heading {
+  width: 63.1vw;
+  height: 21.83vh;
+  margin: 0;
+  position: relative;
+  top: -11vh;
+  left: 6.5vw;
 }
 section.fourth-section h3 {
   width: 80vw;
@@ -389,7 +424,16 @@ section.fifth-section .card-container .card {
   justify-content: space-around;
 }
 
-.text-box-heading {
+section.fifth-section .text-box {
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+section.fifth-section h3.text-box-heading {
   margin-top: 9vh;
   margin-left: 4vw;
   width: 52vw;
@@ -411,15 +455,43 @@ section.fifth-section .card-container .card p {
 }
 
 /* Quinta Seção */
+section.fifth-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: -30vw;
+}
+section.fifth-section h3.text-box-heading {
+  width: 63.1vw;
+  height: 21.83vh;
+  margin: 0;
+  position: relative;
+  top: -11vh;
+  left: 9vw;
+}
 section.fifth-section .card-container .card {
   margin-bottom: 3vh;
   width: 87.5vw;
   height: 89.96vh;
 }
+section.fifth-section .card-container .card .card-title {
+  display: block;
+  width: 45.61vw;
+  height: 6.34vh;
+  line-height: 2rem;
+}
 section.fifth-section .card-container .card img {
   width: 74.17vw;
   height: 41.2vh;
 }
+.container, .container section, .button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container, .container section, .button-container {
+  align-items: center;
+}
+
 /* Sexta Seção */ 
 section.sixth-section {
   height: 609px;
@@ -604,7 +676,16 @@ section.sixth-section .carousel::after {
   align-items: center;
 }
 
-.text-box-heading {
+section.seventh-section .text-box {
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+section.seventh-section h3.text-box-heading {
   margin-top: 9vh;
   margin-left: 4vw;
   width: 52vw;
@@ -625,17 +706,24 @@ section.seventh-section {
   width: 100vw;
   background: radial-gradient(#2C2C2C, #1A1A1A);
 }
+section.seventh-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: 5vw;
+}
 section.seventh-section h3.text-box-heading {
   width: 69.45vw;
   height: 21.83vh;
-  margin: 0 2vw;
-  margin-top: 9vh;
+  margin: 0;
+  position: relative;
+  top: -11vh;
+  left: 9vw;
 }
 section.seventh-section ul {
   color: #F89D24;
   font-size: 1.7rem;
   list-style-type: circle;
-  margin: 0;
+  margin: 5vh 0;
 }
 section.seventh-section ul li {
   width: 86.11vw;
@@ -659,7 +747,16 @@ section.seventh-section ul li p {
   align-items: center;
 }
 
-.text-box-heading {
+section.eighth-section .text-box {
+  width: 30.71vw;
+  height: 18.49vh;
+  background-color: inherit;
+  border: 1px solid #FEC024;
+  border-top: none;
+  font-size: 4rem;
+}
+
+section.eighth-section h3.text-box-heading {
   margin-top: 9vh;
   margin-left: 4vw;
   width: 52vw;
@@ -670,7 +767,7 @@ section.seventh-section ul li p {
 }
 
 section.eighth-section p {
-  margin: 0vh 4vw;
+  margin: 4vh 4vw;
   font-size: 1.34rem;
   text-align: justify;
 }
@@ -678,6 +775,19 @@ section.eighth-section p {
 section.eighth-section {
   width: 100vw;
   background-image: url("./assets/negociando.png");
+}
+section.eighth-section .text-box {
+  position: relative;
+  top: 0vh;
+  left: -30vw;
+}
+section.eighth-section h3.text-box-heading {
+  width: 69.45vw;
+  height: 21.83vh;
+  margin: 0;
+  position: relative;
+  top: -11vh;
+  left: 9vw;
 }
 footer p {
   font-size: 1.33rem;
@@ -707,7 +817,6 @@ footer p {
   }
 }
 @media (min-width: 1024px) {
-  /* Declarando variáveis para o uso no sass */ 
   section.second-section .text-box {
     width: 15vw;
     height: 26.82vh;
@@ -725,7 +834,7 @@ footer p {
   section.second-section .text-box {
     position: absolute;
     top: 101vh;
-    left: 7vw;
+    left: 10vw;
   }
   section.second-section h3.text-box-heading {
     margin-top: 18vh;
@@ -810,7 +919,6 @@ footer p {
   }
 }
 @media (min-width: 1024px) {
-  /* Declarando variáveis para o uso no sass */ 
   section.fourth-section {
     height: 79.57vh;
     display: flex;
@@ -989,7 +1097,6 @@ footer p {
   }
 }
 /* Importando um arquivo CSS Reset */
-/* Declarando variáveis para o uso no sass */ 
 .button-container, .container section, .container {
   display: flex;
   flex-direction: column;
@@ -997,16 +1104,6 @@ footer p {
 
 .button-container, .container section, .container {
   align-items: center;
-}
-
-.text-box-heading {
-  margin-top: 9vh;
-  margin-left: 4vw;
-  width: 52vw;
-  height: 21.83vh;
-  font-weight: normal;
-  font-size: 4rem;
-  align-self: flex-start;
 }
 
 /* Standard CSS */
@@ -1042,24 +1139,11 @@ button {
   border-radius: 5px;
 }
 
-/* Texto que contém um 'U' nele */ 
-.text-box {
-  position: absolute;
-  left: 3vw;
-  width: 30.71vw;
-  height: 18.49vh;
-  background-color: inherit;
-  border: 1px solid #FEC024;
-  border-top: none;
-  font-size: 4rem;
-}
-
 span.card-title {
   color: #F89D24;
 }
 
 /* mobile */
-/* Imagem do header */
 .container {
   margin-right: 20px;
   margin-left: 20px;
@@ -1119,6 +1203,7 @@ button.black {
 
   section.sixth-section {
     background-size: cover;
+    padding: 0;
   }
 }
 @media (min-width: 1440px) {
