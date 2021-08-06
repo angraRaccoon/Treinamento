@@ -81,6 +81,7 @@
     right: 18%;
   }
   section.sixth-section .carousel .carousel__button {
+    display: block;
     position: absolute;
     top: 35%;
     width: 2.49vw;
