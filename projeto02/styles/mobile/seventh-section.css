@@ -19,8 +19,9 @@ section.seventh-section h3.text-box-heading {
 }
 
 section.seventh-section p {
-  margin: 0vh 4vw;
-  font-size: 1.34rem;
+  width: 86.67vw;
+  height: 26.06vh;
+  font-size: 1.125rem;
   text-align: justify;
 }
 
@@ -28,6 +29,9 @@ section.seventh-section p {
 section.seventh-section {
   width: 100vw;
   background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+section.seventh-section .button-container {
+  margin: 5vh 0;
 }
 section.seventh-section .text-box {
   position: relative;
@@ -42,13 +46,20 @@ section.seventh-section h3.text-box-heading {
   top: -11vh;
   left: 9vw;
 }
+section.seventh-section p {
+  line-height: 2rem;
+}
+section.seventh-section .desktop {
+  display: none;
+}
 section.seventh-section ul {
   color: #F89D24;
   font-size: 1.7rem;
   list-style-type: circle;
-  margin: 5vh 0;
+  margin: 2vh 0;
 }
 section.seventh-section ul li {
+  font-weight: bold;
   width: 86.11vw;
   height: 17.25vh;
 }
@@ -58,5 +69,7 @@ section.seventh-section ul li h6 {
   font-size: 1.17rem;
 }
 section.seventh-section ul li p {
+  width: 79.44vw;
+  height: 12.85vh;
   text-align: justify;
 }

@@ -4,5 +4,76 @@
     $font-heading-medium: 4rem
     $full-width: 100vw
     $card-border-radius:  5px
+
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify
     
-    //section.eighth-section
+    // Oitava seção
+    section.eighth-section
+        width:  100vw !important
+        display: grid !important // Ver especifidade
+        grid-template-columns: 50vw 50vw
+        background: radial-gradient(#2C2C2C,#1A1A1A)
+        .img-container
+            display: block
+            img
+                width: 150%
+                height: 100%
+                object-fit: cover
+        .content-container
+            background-image: none
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: flex-end
+            .text-box
+                position: relative
+                top: -5vh
+                right: -5vw
+                @extend %text-box-base
+
+            h3.text-box-heading
+                width: 17.42vw
+                height: 21.83vh
+                margin: 0
+                position: relative
+                top: -15vh
+                left: 8.5vw
+            p
+                position: relative
+                top: -6vh
+                line-height: 2rem
+                margin: 0 2vw
+                width: 24.67vw
+                height: 26.69vh
+                @extend %card-paragraph-lg
+            .button-container
+                margin: 5vh 0
+                position: relative
+                top: -6vh

@@ -38,21 +38,54 @@
     // Sétima Seção
     section.seventh-section
         width: 100vw
+        height: 70vw
         display: flex !important
-        flex-direction: row !important
-        justify-content: space-between
+        flex-direction: row !important // ver a especifidade dos dois
+        justify-content: space-around
+        align-items: flex-start
         .text-box
             position: relative
-            top: 0vh
-            left: -29vw
+            top: -13vh
+            left: 0vw
             @extend %text-box-base
 
         h3.text-box-heading
             position: relative
-            top: -10vh
-            right: -19vw
+            top: -23vh
+            left: 6vw
             margin: 0vw
             width: 23.64vw
             height: 21.28vh
             font-size: $font-heading-medium
             align-self: flex-start
+        p
+            position: relative
+            top: -16vh
+            width: 24.67vw
+        .button-container
+            position: relative
+            top: -16vh
+        .desktop
+            display: block
+        .mobile
+            display: none
+        // Lista Desordenada
+        ul
+            font-size: 0.875rem
+            list-style-type: circle
+            li
+                font-weight: bold
+                width: 32.43vw
+                height: 9.375vh
+                margin: 7vh 0
+                h6
+                    height: 1.95vh
+                    text-transform: uppercase
+                    color: #F89D24
+                p
+                    top: 0
+                    margin: 0
+                    line-height: 1.25rem
+                    width: 30.67vw
+                    height: 9.375vh
+                    text-align: justify

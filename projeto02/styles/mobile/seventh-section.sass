@@ -41,14 +41,17 @@ $card-border-radius:  5px
     border-radius:  5px
 
 %card-paragraph
-    margin: 0vh 4vw
-    font-size: 1.34rem
+    width: 86.67vw
+    height: 26.06vh
+    font-size: 1.125rem
     text-align: justify
 
 /* Sétima Seção */
 section.seventh-section
     width: 100vw
     background: radial-gradient(#2C2C2C,#1A1A1A)
+    .button-container
+        margin: 5vh 0
     .text-box
         position: relative
         top: 0vh
@@ -64,15 +67,18 @@ section.seventh-section
         left: 9vw
         @extend %text-box-heading
     p
-       @extend %card-paragraph
-
+        line-height: 2rem
+        @extend %card-paragraph
+    .desktop
+        display: none
     // Lista Desordenada
     ul
         color: #F89D24
         font-size: 1.7rem
         list-style-type: circle
-        margin: 5vh 0
+        margin: 2vh 0
         li
+            font-weight: bold
             width: 86.11vw
             height: 17.25vh
             h6
@@ -80,4 +86,6 @@ section.seventh-section
                 color: #F89D24
                 font-size: 1.17rem
             p
+                width: 79.44vw
+                height: 12.85vh
                 text-align: justify

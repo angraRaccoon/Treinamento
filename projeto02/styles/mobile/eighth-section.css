@@ -1,4 +1,4 @@
-section.eighth-section .text-box {
+section.eighth-section .content-container .text-box {
   width: 30.71vw;
   height: 18.49vh;
   background-color: inherit;
@@ -7,7 +7,7 @@ section.eighth-section .text-box {
   font-size: 4rem;
 }
 
-section.eighth-section h3.text-box-heading {
+section.eighth-section .content-container h3.text-box-heading {
   margin-top: 9vh;
   margin-left: 4vw;
   width: 52vw;
@@ -17,26 +17,43 @@ section.eighth-section h3.text-box-heading {
   align-self: flex-start;
 }
 
-section.eighth-section p {
+section.eighth-section .content-container p {
   margin: 4vh 4vw;
-  font-size: 1.34rem;
+  font-size: 1.125rem;
   text-align: justify;
 }
 
 section.eighth-section {
   width: 100vw;
-  background-image: url("./assets/negociando.png");
+  display: block;
 }
-section.eighth-section .text-box {
+section.eighth-section .img-container {
+  display: none;
+}
+section.eighth-section .content-container {
+  background-image: url("./assets/negociando.png");
+  background-repeat: no-repeat;
+}
+section.eighth-section .content-container .text-box {
+  margin: 0;
   position: relative;
   top: 0vh;
-  left: -30vw;
+  left: 5vw;
 }
-section.eighth-section h3.text-box-heading {
+section.eighth-section .content-container h3.text-box-heading {
   width: 69.45vw;
   height: 21.83vh;
   margin: 0;
   position: relative;
-  top: -11vh;
+  top: -10vh;
   left: 9vw;
+}
+section.eighth-section .content-container p {
+  line-height: 2rem;
+  margin: 0 2vw;
+  width: 86.67vw;
+  height: 26.06vh;
+}
+section.eighth-section .content-container .button-container {
+  margin: 5vh 0;
 }

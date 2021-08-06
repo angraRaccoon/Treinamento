@@ -515,6 +515,7 @@ section.sixth-section .carousel {
   height: 78.125vh;
   width: 93.26vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 section.sixth-section .carousel .carousel-border {
   display: none;
@@ -637,8 +638,9 @@ section.seventh-section h3.text-box-heading {
 }
 
 section.seventh-section p {
-  margin: 0vh 4vw;
-  font-size: 1.34rem;
+  width: 86.67vw;
+  height: 26.06vh;
+  font-size: 1.125rem;
   text-align: justify;
 }
 
@@ -646,6 +648,9 @@ section.seventh-section p {
 section.seventh-section {
   width: 100vw;
   background: radial-gradient(#2C2C2C, #1A1A1A);
+}
+section.seventh-section .button-container {
+  margin: 5vh 0;
 }
 section.seventh-section .text-box {
   position: relative;
@@ -660,13 +665,20 @@ section.seventh-section h3.text-box-heading {
   top: -11vh;
   left: 9vw;
 }
+section.seventh-section p {
+  line-height: 2rem;
+}
+section.seventh-section .desktop {
+  display: none;
+}
 section.seventh-section ul {
   color: #F89D24;
   font-size: 1.7rem;
   list-style-type: circle;
-  margin: 5vh 0;
+  margin: 2vh 0;
 }
 section.seventh-section ul li {
+  font-weight: bold;
   width: 86.11vw;
   height: 17.25vh;
 }
@@ -676,6 +688,8 @@ section.seventh-section ul li h6 {
   font-size: 1.17rem;
 }
 section.seventh-section ul li p {
+  width: 79.44vw;
+  height: 12.85vh;
   text-align: justify;
 }
 
@@ -688,7 +702,7 @@ section.seventh-section ul li p {
   align-items: center;
 }
 
-section.eighth-section .text-box {
+section.eighth-section .content-container .text-box {
   width: 30.71vw;
   height: 18.49vh;
   background-color: inherit;
@@ -697,7 +711,7 @@ section.eighth-section .text-box {
   font-size: 4rem;
 }
 
-section.eighth-section h3.text-box-heading {
+section.eighth-section .content-container h3.text-box-heading {
   margin-top: 9vh;
   margin-left: 4vw;
   width: 52vw;
@@ -707,29 +721,47 @@ section.eighth-section h3.text-box-heading {
   align-self: flex-start;
 }
 
-section.eighth-section p {
+section.eighth-section .content-container p {
   margin: 4vh 4vw;
-  font-size: 1.34rem;
+  font-size: 1.125rem;
   text-align: justify;
 }
 
 section.eighth-section {
   width: 100vw;
-  background-image: url("./assets/negociando.png");
+  display: block;
 }
-section.eighth-section .text-box {
+section.eighth-section .img-container {
+  display: none;
+}
+section.eighth-section .content-container {
+  background-image: url("./assets/negociando.png");
+  background-repeat: no-repeat;
+}
+section.eighth-section .content-container .text-box {
+  margin: 0;
   position: relative;
   top: 0vh;
-  left: -30vw;
+  left: 5vw;
 }
-section.eighth-section h3.text-box-heading {
+section.eighth-section .content-container h3.text-box-heading {
   width: 69.45vw;
   height: 21.83vh;
   margin: 0;
   position: relative;
-  top: -11vh;
+  top: -10vh;
   left: 9vw;
 }
+section.eighth-section .content-container p {
+  line-height: 2rem;
+  margin: 0 2vw;
+  width: 86.67vw;
+  height: 26.06vh;
+}
+section.eighth-section .content-container .button-container {
+  margin: 5vh 0;
+}
+
 footer p {
   font-size: 1.33rem;
   margin: 8vh 0;
@@ -749,7 +781,8 @@ footer p {
 }
 @media (min-width: 1024px) {
   /* Declarando variáveis para o uso no sass */ 
-  .first-section {
+  section.first-section {
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1176,24 +1209,127 @@ footer p {
 
   section.seventh-section {
     width: 100vw;
+    height: 70vw;
     display: flex !important;
     flex-direction: row !important;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
   }
   section.seventh-section .text-box {
     position: relative;
-    top: 0vh;
-    left: -29vw;
+    top: -13vh;
+    left: 0vw;
   }
   section.seventh-section h3.text-box-heading {
     position: relative;
-    top: -10vh;
-    right: -19vw;
+    top: -23vh;
+    left: 6vw;
     margin: 0vw;
     width: 23.64vw;
     height: 21.28vh;
     font-size: 4rem;
     align-self: flex-start;
+  }
+  section.seventh-section p {
+    position: relative;
+    top: -16vh;
+    width: 24.67vw;
+  }
+  section.seventh-section .button-container {
+    position: relative;
+    top: -16vh;
+  }
+  section.seventh-section .desktop {
+    display: block;
+  }
+  section.seventh-section .mobile {
+    display: none;
+  }
+  section.seventh-section ul {
+    font-size: 0.875rem;
+    list-style-type: circle;
+  }
+  section.seventh-section ul li {
+    font-weight: bold;
+    width: 32.43vw;
+    height: 9.375vh;
+    margin: 7vh 0;
+  }
+  section.seventh-section ul li h6 {
+    height: 1.95vh;
+    text-transform: uppercase;
+    color: #F89D24;
+  }
+  section.seventh-section ul li p {
+    top: 0;
+    margin: 0;
+    line-height: 1.25rem;
+    width: 30.67vw;
+    height: 9.375vh;
+    text-align: justify;
+  }
+}
+@media (min-width: 1024px) {
+  section.eighth-section .content-container .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+
+  section.eighth-section .content-container p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  section.eighth-section {
+    width: 100vw !important;
+    display: grid !important;
+    grid-template-columns: 50vw 50vw;
+    background: radial-gradient(#2C2C2C, #1A1A1A);
+  }
+  section.eighth-section .img-container {
+    display: block;
+  }
+  section.eighth-section .img-container img {
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+  }
+  section.eighth-section .content-container {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  section.eighth-section .content-container .text-box {
+    position: relative;
+    top: -5vh;
+    right: -5vw;
+  }
+  section.eighth-section .content-container h3.text-box-heading {
+    width: 17.42vw;
+    height: 21.83vh;
+    margin: 0;
+    position: relative;
+    top: -15vh;
+    left: 8.5vw;
+  }
+  section.eighth-section .content-container p {
+    position: relative;
+    top: -6vh;
+    line-height: 2rem;
+    margin: 0 2vw;
+    width: 24.67vw;
+    height: 26.69vh;
+  }
+  section.eighth-section .content-container .button-container {
+    margin: 5vh 0;
+    position: relative;
+    top: -6vh;
   }
 }
 /* Importando um arquivo CSS Reset */
@@ -1275,7 +1411,7 @@ button.black {
 }
 @media (min-width: 1024px) {
   /* Desktop */
-  /* Declarando variáveis para o uso no sass */ 
+  /* Declarando variáveis para o uso no sass */
   /* Texto que contém um 'U' nele */ 
   /* Container dos botões da página */
   .button-container {
