@@ -1,3 +1,10 @@
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .desktop {
+  display: none;
+}
 footer p {
   font-size: 1.33rem;
   margin: 8vh 0;
