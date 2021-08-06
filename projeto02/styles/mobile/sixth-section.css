@@ -8,169 +8,105 @@ section.sixth-section {
   /* Carrossel Menu */
 }
 section.sixth-section h5 {
+  margin: 0;
   font-size: 1.5rem;
   color: #F89D24;
-}
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
+  text-align: center;
 }
 section.sixth-section .carousel {
   position: relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
+  height: 78.125vh;
+  width: 93.26vw;
+  margin: 0 auto;
 }
-section.sixth-section .carousel ol, section.sixth-section .carousel li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+section.sixth-section .carousel .carousel-border {
+  display: none;
 }
-section.sixth-section .carousel .carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-section.sixth-section .carousel .carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-  background-color: #f99;
-  counter-increment: item;
-}
-section.sixth-section .carousel .carousel__slide:before {
-  content: counter(item);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -40%, 70px);
-  color: #fff;
-  font-size: 2em;
-}
-section.sixth-section .carousel .carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+section.sixth-section .carousel .carousel__track-container {
   height: 100%;
-  scroll-snap-align: center;
+  overflow: hidden;
 }
-section.sixth-section .carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
+section.sixth-section .carousel .carousel__track-container .carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: transform 250ms ease-in;
 }
-section.sixth-section .carousel__navigation .carousel__navigation-list, section.sixth-section .carousel__navigation .carousel__navigation-item {
-  display: inline-block;
-}
-section.sixth-section .carousel__navigation .carousel__navigation-button {
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #333;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-section.sixth-section .carousel::before, section.sixth-section .carousel::after, section.sixth-section .carousel__prev, section.sixth-section .carousel__next {
+section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide {
   position: absolute;
   top: 0;
-  margin-top: 37.5%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
+  left: -0.1vw;
+  bottom: 0;
+  width: 100%;
 }
-section.sixth-section .carousel::before, section.sixth-section .carousel__prev {
-  left: -1rem;
+section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h1 {
+  font-size: 3.375rem;
+  position: absolute;
+  width: 86.67vw;
+  height: 64.08vh;
+  left: 5%;
 }
-section.sixth-section .carousel::after, section.sixth-section .carousel__next {
-  right: -1rem;
+section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h5 {
+  width: 80vw;
+  height: 8.1vh;
+  position: absolute;
+  top: 50vh;
+  left: 6vw;
 }
-section.sixth-section .carousel::before, section.sixth-section .carousel::after {
+section.sixth-section .carousel .carousel__button {
+  display: none;
+}
+section.sixth-section .carousel .carousel__button .arrow {
+  position: relative;
+  top: 0vh;
+  left: 0vw;
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-right: 0.5em solid #686868;
+  border-top: 0.5em solid #686868;
+  transform: rotate(135deg);
+}
+section.sixth-section .carousel .carousel__button--left {
+  left: 30px;
+  transform: rotate(90deg);
+}
+section.sixth-section .carousel .carousel__button--right {
+  right: 50px;
+  transform: rotate(-90deg);
+}
+section.sixth-section .carousel .carousel__nav {
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+section.sixth-section .carousel .carousel__nav .carousel__indicator {
+  width: 0;
+  height: 0;
+  border: 0;
+  background: transparent;
+  position: relative;
+  top: -10px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+section.sixth-section .carousel .carousel__nav .carousel__indicator::after {
+  content: "+";
+  color: #707070;
+}
+section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide {
+  border: 0;
+  border-radius: 0;
+  width: 50px;
+  height: 2.5px;
+  background: white;
+  margin: 0 8px;
+  top: 0px;
+  transition: transform 500ms ease-in;
+}
+section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide::after {
   content: "";
-  z-index: 1;
-  background-color: #333;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none;
-}
-section.sixth-section .carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
-}
-section.sixth-section .carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-}
-
-@media (hover: hover) {
-  .sixth .carousel .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-  .sixth .carousel .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .sixth-section .carousel .carousel__snapper {
-    animation-name: none;
-  }
 }

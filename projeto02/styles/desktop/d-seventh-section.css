@@ -10,8 +10,8 @@
 
   section.seventh-section {
     width: 100vw;
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: space-between;
   }
   section.seventh-section .text-box {

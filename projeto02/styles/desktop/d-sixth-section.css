@@ -1,0 +1,147 @@
+@media (min-width: 1024px) {
+  .arrow {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-right: 0.2em solid white;
+    border-top: 0.2em solid white;
+    transform: rotate(135deg);
+  }
+
+  section.sixth-section h1, section.sixth-section h5 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  section.sixth-section h5 {
+    margin: 0;
+    width: 30%;
+    height: 20%;
+    position: relative;
+    bottom: -30px;
+    right: -600px;
+    font-size: 2rem;
+    color: #F89D24;
+    text-align: right;
+  }
+  section.sixth-section .carousel {
+    position: relative;
+    height: 78.125vh;
+    width: 93.26vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  section.sixth-section .carousel .carousel-border {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    width: 4.83vw;
+    height: 8.59vh;
+  }
+  section.sixth-section .carousel .carousel-border.border-top {
+    border-right: 1px solid #F89D24;
+    border-top: 1px solid #F89D24;
+    top: 0;
+    right: 0;
+  }
+  section.sixth-section .carousel .carousel-border.border-bottom {
+    border-left: 1px solid #F89D24;
+    border-bottom: 1px solid #F89D24;
+    bottom: 0;
+    left: 0;
+  }
+  section.sixth-section .carousel .carousel__track-container {
+    height: 100%;
+  }
+  section.sixth-section .carousel .carousel__track-container .carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 250ms ease-in;
+  }
+  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide {
+    position: absolute;
+    top: 0;
+    left: -0.1vw;
+    bottom: 0;
+    width: 100%;
+  }
+  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h1 {
+    position: absolute;
+    width: 70%;
+    top: 20%;
+    left: 15%;
+  }
+  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h5 {
+    position: absolute;
+    top: 52%;
+    right: 18%;
+  }
+  section.sixth-section .carousel .carousel__button {
+    position: absolute;
+    top: 35%;
+    width: 2.49vw;
+    height: 4.43vh;
+    transform: translateY(-50%);
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  section.sixth-section .carousel .carousel__button .arrow {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-right: 0.5em solid #686868;
+    border-top: 0.5em solid #686868;
+    transform: rotate(135deg);
+  }
+  section.sixth-section .carousel .carousel__button--left {
+    left: 30px;
+    transform: rotate(90deg);
+  }
+  section.sixth-section .carousel .carousel__button--right {
+    right: 50px;
+    transform: rotate(-90deg);
+  }
+  section.sixth-section .carousel .carousel__nav {
+    position: absolute;
+    bottom: 15%;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  section.sixth-section .carousel .carousel__nav .carousel__indicator {
+    width: 0;
+    height: 0;
+    border: 0;
+    background: transparent;
+    position: relative;
+    top: -10px;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+  section.sixth-section .carousel .carousel__nav .carousel__indicator::after {
+    content: "+";
+    color: #707070;
+  }
+  section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide {
+    border: 0;
+    border-radius: 0;
+    width: 50px;
+    height: 2.5px;
+    background: white;
+    margin: 0 8px;
+    top: 0px;
+    transition: transform 500ms ease-in;
+  }
+  section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide::after {
+    content: "";
+  }
+}

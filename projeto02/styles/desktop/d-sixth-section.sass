@@ -1,67 +1,57 @@
+@media (min-width: 1024px)
 
-$font-size-normal:  12px
-$font-heading-medium: 4rem
-$full-width: 100vw
-$card-border-radius:  5px
-
-%flex-column
-    display: flex
-    flex-direction: column
-
-%flex-column-items-center
-    @extend %flex-column
-    align-items: center
-
-%flex-justified
-    @extend %flex-column-items-center
-    justify-content: space-around
-
-%flex-between
-    @extend %flex-column-items-center
-    justify-content: space-between
-
-%text-box-heading
-    margin-top: 9vh
-    margin-left: 4vw
-    width: 52vw
-    height: 21.83vh
-    font-weight: normal
-    font-size: 4rem
-    align-self: flex-start
-
-%card-border
-    border: 1px solid #6E6E6E
-    border-radius:  5px
-
-%card-paragraph
-    margin: 0vh 4vw
-    font-size: 1.34rem
-    text-align: justify
-  
-
-/* Sexta Seção */ 
-section.sixth-section
-    height: 609px
-    background-image: url('./assets/opinion.png')
-    background-size: contain
-    background-repeat: no-repeat
-    h5
-        margin: 0
-        font-size: 1.5rem
-        color: #F89D24
-        text-align: center
-    /* Carrossel Menu */
-    .carousel
+    .arrow
+        position: relative
+        top: 0vh
+        left: 0vw
+        display: block
+        width: 3em
+        height: 3em
+        border-right: 0.2em solid white
+        border-top: 0.2em solid white
+        transform: rotate(135deg)
+        
+    // Sexta Seção
+    section.sixth-section
+        h1, h5
+            width: 100%
+            padding: 0
+            margin: 0
+        h5
+            margin: 0
+            width: 30%
+            height: 20%
+            position: relative
+            bottom: -30px
+            right: -600px
+            font-size: 2rem
+            color: #F89D24
+            text-align: right
+        .carousel
             position: relative
             height: 78.125vh
             width: 93.26vw
             margin: 0 auto
+            overflow: hidden
             .carousel-border
-                display: none
-            
+                background: transparent
+                border: 0
+                position: absolute
+                width: 4.83vw
+                height: 8.59vh
+            .carousel-border.border-top
+                border-right: 1px solid #F89D24
+                border-top: 1px solid #F89D24
+                top: 0
+                right: 0
+            .carousel-border.border-bottom
+                border-left: 1px solid #F89D24
+                border-bottom: 1px solid #F89D24
+                bottom: 0
+                left: 0
             .carousel__track-container
+                //background: lightgreen
                 height: 100%
-                overflow: hidden
                 .carousel__track
                     padding: 0
                     margin: 0
@@ -75,21 +65,25 @@ section.sixth-section
                         width: 100%
                     .carousel__slide.current-slide
                         h1
-                            font-size: 3.375rem
                             position: absolute             
-                            width: 86.67vw
-                            height: 64.08vh
-                            left: 5%
+                            width: 70%
+                            top: 20%
+                            left: 15%
                         h5
-                            width: 80vw
-                            height: 8.1vh
                             position: absolute
-                            top: 50vh
-                            left: 6vw
+                            top: 52%
+                            right: 18%
 
 
             .carousel__button
-                display: none
+                position: absolute
+                top: 35%
+                width: 2.49vw
+                height: 4.43vh
+                transform: translateY(-50%)
+                border: 0
+                background: transparent
+                cursor: pointer
                 .arrow
                     position: relative
                     top: 0vh
@@ -110,8 +104,8 @@ section.sixth-section
             
             .carousel__nav
                 position: absolute
-                bottom: -10px
-                left: 25%
+                bottom: 15%
+                left: 45%
                 display: flex
                 justify-content: center
                 padding: 10px 0
