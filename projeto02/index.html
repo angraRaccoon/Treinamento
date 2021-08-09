@@ -8,6 +8,28 @@
     <title>Projeto 2</title>
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="flex-container">
+                <h1>Lorem</h1>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                </p>
+                <form>
+                    <input id="name" type="text" placeholder="Nome" />
+                    <input id="phone" type="text" placeholder="Telefone" />
+                    <input id="email" type="email" placeholder="E-mail" />
+                    <input id="career" type="text" placeholder="Profissão" />
+                    <div class="checkbox-container">
+                        <input type="checkbox" > Li e aceito os <u>termos de uso.</u></input>
+                    </div>
+                    <button type="button">Declarar Interesse</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <img src='./styles/assets/LOGOSYNAPSE_simbolo_laranja-1.png' />
     </header>
@@ -16,7 +38,7 @@
             <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
             <div class="button-container">
-                <button class="black">Tenho interesse</button>
+                <button id="interest-button" class="black">Tenho interesse</button>
                 <button class="orange">Comprar Agora</button>
             </div>
         </section>
@@ -31,7 +53,7 @@
                 </p>
                 <br /><br /><br /><br />
                 <div class="desktop button-container">
-                    <button class="black"><strong>Tenho interesse</strong></button>
+                    <button id="interest-button" class="black"><strong>Tenho interesse</strong></button>
                     <button class="orange"><strong>Comprar Agora</strong></button>
                 </div>
             </div>
@@ -74,7 +96,7 @@
                 </div>
             </div>
             <div class="mobile button-container">
-                <button class="black"><strong>Tenho interesse</strong></button>
+                <button id="interest-button" class="black"><strong>Tenho interesse</strong></button>
                 <button class="orange"><strong>Comprar Agora</strong></button>
             </div>
         </section>
@@ -104,7 +126,7 @@
                         Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris.
                     </p>
                     <div class="button-container">
-                        <button><strong>Tenho interesse</strong></button>
+                        <button id="interest-button"><strong>Tenho interesse</strong></button>
                         <button class="orange"><strong>Comprar Agora</strong></button>
                     </div>
                 </div>
@@ -139,7 +161,7 @@
                     </p>
                 </div>
             </div> 
-            <button class="mobile black"><strong>Tenho interesse</strong></button>
+            <button id="interest-button" class="mobile black"><strong>Tenho interesse</strong></button>
             <button class="mobile orange"><strong>Comprar Agora</strong></button>
             <br /><br />
         </section>
@@ -215,7 +237,7 @@
                 </div>
             </div>
             <div class="button-container">
-                <button class="black"><strong>Tenho interesse</strong></button>
+                <button id="interest-button" class="black"><strong>Tenho interesse</strong></button>
                 <button class="orange"><strong>Comprar Agora</strong></button>
             </div>
         </section>
@@ -270,7 +292,7 @@
                     Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.
                 </p>
                 <div class="desktop button-container">
-                    <button class="black"><strong>Tenho interesse</strong></button>
+                    <button id="interest-button" class="black"><strong>Tenho interesse</strong></button>
                     <button class="orange"><strong>Comprar Agora</strong></button>
                 </div>
             </div>
@@ -301,7 +323,7 @@
                 </li>
             </ul>
             <div class="mobile button-container">
-                <button class="black"><strong>Tenho interesse</strong></button>
+                <button id="interest-button" class="black"><strong>Tenho interesse</strong></button>
                 <button class="orange"><strong>Comprar Agora</strong></button>
             </div>
         </section>
@@ -318,7 +340,7 @@
                     Bibendum est ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae.
                 </p>
                 <div class="button-container">
-                    <button class="black"><strong>Tenho interesse</strong></button>
+                    <button id="interest-button" class="black"><strong>Tenho interesse</strong></button>
                     <button class="orange"><strong>Comprar Agora</strong></button>
                 </div>
             </div>
@@ -334,7 +356,9 @@
             <p class="desktop"><strong>Texto Adicional</strong></p>
         </div>
     </footer>
+   
     <script src="./scripts/competence-container.js"></script>
     <script src="./scripts/carousel.js" ></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 </html>
