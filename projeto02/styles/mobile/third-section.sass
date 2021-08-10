@@ -47,15 +47,25 @@ $card-border-radius:  5px
     /* Lidando com os diferentes backgrounds da terceira seção */
     /* Primeiro background */
     .box-01
+        position: relative
         width: 100vw
         height: 52.29vh
-        background-image: url('./assets/Grupo 34.svg')
         h1
+            opacity: 1
             margin: 10vh 6vw
             width: 83.67vw
             height: 36.62vh
             text-align: justify
-
+    .box-01::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-image: url('./assets/Grupo 34.svg')
+        opacity: .4
     /* Segundo Background */
     .box-02
         @extend %flex-column-items-center

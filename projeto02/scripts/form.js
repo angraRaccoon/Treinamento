@@ -56,9 +56,6 @@ formBtn.addEventListener('click', async ev => {
     const email = document.getElementById('email').value
     const check = document.getElementById('checkbox')
 
-    console.log(check.checked)
-
-
 
     if(name == "" || phone == "" || cpf == "" || email == "" || !check.checked) return
 

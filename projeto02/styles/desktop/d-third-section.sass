@@ -7,13 +7,14 @@
 
     .container
         section.third-section
+            position: relative
             width: 100vw
             height: 48.44vh
             display: flex
             flex-direction: row
             justify-content: space-between
-            background-image: url('./assets/Grupo\ 34.svg')
             .box-01
+                position: static
                 background-image: none
                 width: 58.57vw
                 height: 18.22vh
@@ -22,11 +23,28 @@
                     width: 53.57vw
                     height: 18.22vh
                     text-align: center
+            .box-01::before
+                content: ''
+                position: absolute
+                z-index: -1
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
             .box-02
-                /* Causando overflow à direita */
                 width: 39.38vw
                 height: 38.5vh
                 h1
                     width: 23.57vw
                 button
                     width: 14.86vw
+        section.third-section::before
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background-image: url('./assets/Grupo\ 34.svg')
+            opacity: .3
