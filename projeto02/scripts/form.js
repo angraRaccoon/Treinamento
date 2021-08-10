@@ -48,12 +48,20 @@ const TestaCPF = (strCPF) =>{
 // Adicionando um evento de clique no botão do formulário
 formBtn.addEventListener('click', async ev => {
 
-    
+
     // Recebendo os valores dos inputs do formulário
     const name = document.getElementById('name').value
     const phone = document.getElementById('phone').value
     const cpf = document.getElementById('cpf').value
     const email = document.getElementById('email').value
+    const check = document.getElementById('checkbox')
+
+    console.log(check.checked)
+
+
+
+    if(name == "" || phone == "" || cpf == "" || email == "" || !check.checked) return
+
 
     // Realizando requisição POST na URL do json-server
     try{
