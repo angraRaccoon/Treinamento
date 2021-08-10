@@ -20,8 +20,8 @@
                 <form>
                     <input id="name" type="text" placeholder="Nome" />
                     <input id="phone" type="text" placeholder="Telefone" />
+                    <input id="cpf" type="text" placeholder="CPF" />
                     <input id="email" type="email" placeholder="E-mail" />
-                    <input id="career" type="text" placeholder="Profissão" />
                     <div class="checkbox-container">
                         <input type="checkbox" > Li e aceito os <u>termos de uso.</u></input>
                     </div>
@@ -356,9 +356,12 @@
             <p class="desktop"><strong>Texto Adicional</strong></p>
         </div>
     </footer>
-   
-    <script src="./scripts/competence-container.js"></script>
-    <script src="./scripts/carousel.js" ></script>
-    <script src="./scripts/modal.js"></script>
+    <!-- Modularizar scripts do index -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/addons/cleave-phone.br.js"></script>
+    <script src="scripts/competence-container.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/modal.js"></script>
+
 </body>
 </html>

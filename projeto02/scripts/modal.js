@@ -6,8 +6,6 @@ const footer = document.getElementsByTagName('footer')[0]
 
 const closeBtn = document.querySelector('.close') 
 
-
-
 interestBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         modal.style.display = 'block'
@@ -24,3 +22,23 @@ closeBtn.addEventListener('click', () => {
     footer.style.opacity = 1
 })
 
+// Máscara setup
+
+// Linkando inputs que precisam de mascara
+document.addEventListener('DOMContentLoaded', () => {
+
+    const phoneMask = new Cleave('#phone', {
+        phone: true,
+        phoneRegionCode: 'BR'
+    })
+
+    const cpfMask = new Cleave('#cpf', {
+        delimiters: ['.','.','-'],
+        blocks: [3,3,3,2]
+    })
+    
+})
+
+
+
+//Submit

@@ -1,6 +1,6 @@
 
 // Mobile Competence Container
-const mobileCompetenceContainerFunction = () => {
+function mobileCompetenceContainerFunction(){
 
     const coll=document.getElementsByClassName("collapsible");
     for(let l=0;l<coll.length;l++)
@@ -13,7 +13,7 @@ const mobileCompetenceContainerFunction = () => {
 }
 
 // Desktop Competence Container
-const desktopCompetenceContainerFunction = () => {
+function desktopCompetenceContainerFunction(){
 
     const competence_container = document.getElementsByClassName('desktop-competence-container')[0]
     const button_container = competence_container.firstElementChild

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.27.5",
+    "cleave.js": "^1.6.0",
     "cssnano": "^5.0.7",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
