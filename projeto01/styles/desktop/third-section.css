@@ -1,13 +1,13 @@
 @media (min-width: 1440px) {
 
-    .third-section .card-group{
+    .third-section .card-container{
         display: flex;
         flex-wrap: row nowrap;
         justify-content: center;
     }
     
     
-    .third-section .card-group .card{
+    .third-section .card-container .card{
         width: 23.33333vw;
         height: 45.9vh;
         display: flex;
@@ -17,7 +17,7 @@
         word-spacing: 0.5vw;
     }
     
-    .third-section .card-group hr{
+    .third-section .card-container hr{
         display: none;
     }
     

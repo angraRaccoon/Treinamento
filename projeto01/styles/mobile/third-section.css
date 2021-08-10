@@ -11,7 +11,7 @@ section.third-section{
 /* Grupo de cards da terceira seção */
 
 
-.third-section .card-group .card{
+.third-section .card-container .card{
     height: 24.375vh;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,7 @@ section.third-section{
     word-spacing: 1vw;
 }
 
-.third-section .card-group hr{
+.third-section .card-container hr{
     background-color: #DEDEDE;
     margin: 2vh 2vw;
     border: 0.25vh solid #DEDEDE;  

@@ -1,5 +1,6 @@
 
 // Mobile Competence Container
+// A função garante que o collapsible abre e fecha
 function mobileCompetenceContainerFunction(){
 
     const coll=document.getElementsByClassName("collapsible");
@@ -13,6 +14,7 @@ function mobileCompetenceContainerFunction(){
 }
 
 // Desktop Competence Container
+// Garante qual é a competência ativa na tela
 function desktopCompetenceContainerFunction(){
 
     const competence_container = document.getElementsByClassName('desktop-competence-container')[0]

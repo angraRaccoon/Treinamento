@@ -9,23 +9,23 @@
         margin: 0;
     }
     
-    .fourth-section .card-group{
+    .fourth-section .card-container{
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-content: center;
     }
     
-    .fourth-section .card-group .card{
+    .fourth-section .card-container .card{
         width: 21.04vw;
         height: 24.89vh;
     }
     
-    .fourth-section .card-group .card h6{
+    .fourth-section .card-container .card h6{
         font-size: 1.6667rem;
     }
     
-    .fourth-section .card-group .card p{
+    .fourth-section .card-container .card p{
         font-size: 1.3333rem;
     }
 

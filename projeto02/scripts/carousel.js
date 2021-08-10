@@ -9,13 +9,16 @@ const prevButton = document.querySelector('.carousel__button--left')
 const nav = document.querySelector('.carousel__nav')
 const dots = Array.from(nav.children)
 
+// Pegando o width do slide
 const slideWidth = slides[0].getBoundingClientRect().width
 
-
+// Indica qual a posição de cada slide na tela
 slides.forEach((slide, index) => {
     slide.style.left = `${slideWidth * index}px`
 })
 
+
+// Garante a movimentação dos slides
 const moveToSlide = (track, currentSlide, targetSlide) => {
 
     track.style.transform = `translateX(-${targetSlide.style.left})`
@@ -31,6 +34,8 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 
 }
 
+
+// Atualiza qual slide é o atual
 const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide')
     targetDot.classList.add('current-slide')

@@ -18,14 +18,14 @@
                     sed do eiusmod tempor incididunt ut labore et dolore
                 </p>
                 <form>
-                    <input id="name" type="text" placeholder="Nome" />
-                    <input id="phone" type="text" placeholder="Telefone" />
-                    <input id="cpf" type="text" placeholder="CPF" />
-                    <input id="email" type="email" placeholder="E-mail" />
+                    <input id="name" type="text" placeholder="Nome" required/>
+                    <input id="phone" type="text" placeholder="Telefone" required />
+                    <input id="cpf" type="text" placeholder="CPF" required/>
+                    <input id="email" type="email" placeholder="E-mail" required/>
                     <div class="checkbox-container">
-                        <input type="checkbox" > Li e aceito os <u>termos de uso.</u></input>
+                        <input type="checkbox" required> Li e aceito os <u>termos de uso.</u></input>
                     </div>
-                    <button type="button">Declarar Interesse</button>
+                    <button>Declarar Interesse</button>
                 </form>
             </div>
         </div>
@@ -357,11 +357,13 @@
         </div>
     </footer>
     <!-- Modularizar scripts do index -->
+    <!-- Não sei o porquê do import/export do js não modularizar, irei ver isso em mais detalhes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/addons/cleave-phone.br.js"></script>
     <script src="scripts/competence-container.js"></script>
     <script src="scripts/carousel.js"></script>
     <script src="scripts/modal.js"></script>
+    <script src="/scripts/form.js"></script>
 
 </body>
 </html>

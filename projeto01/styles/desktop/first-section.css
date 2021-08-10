@@ -26,8 +26,8 @@
     
     .first-section .img-container .arrow{
         position: relative;
-        top: 21vh;
-        left: 8vw;
+        top: 0vh;
+        left: 0vw;
         display: block;
         width: 3em;
         height: 3em;

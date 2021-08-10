@@ -2,13 +2,13 @@
     margin: 10vh 0;
 }
 
-.fourth-section .card-group{
+.fourth-section .card-container{
 
     margin:  5vw;
 
 }
 
-.fourth-section .card-group .card{
+.fourth-section .card-container .card{
     text-align: center;
     border: 3px solid #DEDEDE;
     color: #737373

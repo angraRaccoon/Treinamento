@@ -41,7 +41,7 @@ nav button:hover{
 }
 
 /* Definindo o menu collapse */
-.mainmenubtn {
+.mobile-mainmenubtn {
     background-color: #2571B7;
     color: white;
     border: none;
@@ -51,14 +51,14 @@ nav button:hover{
 }
 
 /* Talvez não seja o melhor jeito de definir as barras do dropdown menu */
-.mainmenubtn .collapse-border{
+.mobile-mainmenubtn .collapse-border{
     width: 2rem;
     height: 0.2rem;
     background-color: white;
     margin: 0.35em 0%;
 }
 
-.mainmenubtn:hover {
+.mobile-mainmenubtn:hover {
     background-color: #2571B7;
     padding: 0px 15px;
 }
