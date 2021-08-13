@@ -1,0 +1,78 @@
+$font-size-normal:  12px
+$font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
+    align-items: center
+
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+
+%text-box-base
+    width: 30.71vw
+    height: 18.49vh
+    background-color: inherit
+    border: 1px solid #FEC024
+    border-top: none
+    font-size: $font-heading-medium
+
+%text-box-heading
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: 4rem
+    align-self: flex-start
+
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius:  5px
+
+%card-paragraph
+    margin: 4vh 4vw
+    font-size: 1.125rem
+    text-align: justify
+    
+section.eighth-section
+    width:  100vw
+    display: block
+    .img-container
+        display: none
+    .content-container
+        background-image: url('./assets/negociando.png')
+        background-repeat: no-repeat
+        .text-box
+            margin: 0
+            position: relative
+            top: 0vh
+            left: 5vw
+            @extend %text-box-base
+
+        h3.text-box-heading
+            width: 69.45vw
+            height: 21.83vh
+            margin: 0
+            position: relative
+            top: -10vh
+            left: 9vw
+            @extend %text-box-heading
+        p
+            line-height: 2rem
+            margin: 0 2vw
+            width: 86.67vw
+            height: 26.06vh
+            @extend %card-paragraph
+        .button-container
+            margin: 5vh 0

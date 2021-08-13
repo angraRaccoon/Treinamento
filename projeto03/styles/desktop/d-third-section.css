@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */
+  .container section.third-section {
+    position: relative;
+    width: 100vw;
+    height: 48.44vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container section.third-section .box-01 {
+    position: static;
+    background-image: none;
+    width: 58.57vw;
+    height: 18.22vh;
+  }
+  .container section.third-section .box-01 h1 {
+    margin: 0 6vw;
+    width: 53.57vw;
+    height: 18.22vh;
+    text-align: center;
+  }
+  .container section.third-section .box-01::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .container section.third-section .box-02 {
+    width: 39.38vw;
+    height: 38.5vh;
+  }
+  .container section.third-section .box-02 h1 {
+    width: 23.57vw;
+  }
+  .container section.third-section .box-02 button {
+    width: 14.86vw;
+  }
+  .container section.third-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("./assets/Grupo 34.svg");
+    opacity: 0.3;
+  }
+}

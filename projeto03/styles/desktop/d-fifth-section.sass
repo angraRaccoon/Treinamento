@@ -1,0 +1,80 @@
+
+@media (min-width: 1024px)
+    /* Declarando variáveis para o uso no sass */ 
+    
+    $font-size-normal:  12px
+    $font-heading-medium: 4rem
+    $full-width: 100vw
+    $card-border-radius:  5px
+
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify
+
+    // Quinta Seção
+    section.fifth-section
+        width: 100vw
+        .text-box
+            position: relative
+            top: 0vh
+            left: -29vw
+            @extend %text-box-base
+
+        h3.text-box-heading
+            position: relative
+            top: -10vh
+            right: -19vw
+            margin: 0vw
+            width: 18.3vw
+            height: 21.61vh
+            font-size: $font-heading-medium
+            align-self: flex-start
+
+        .card-container
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+            .card
+                margin: 2vh 1vw
+                .card-title
+                    display: block
+                    width: 12.81vw
+                    height: 4.69vh
+                    line-height: 1rem
+                img
+                    width: 315px
+                    height: 234px
+                p
+                    width: 23.06vw
+                    height: 18.29vh
+                    @extend %card-paragraph-lg
+                width: 26.57vw
+                height: 65.66vh
+                @extend %card-border-lg
+                @extend %flex-justified-lg
+    

@@ -1,0 +1,99 @@
+/* Declarando variáveis para o uso no sass */ 
+
+$font-size-normal:  12px
+$font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
+    align-items: center
+
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+
+%text-box-base
+    width: 30.56vw
+    height: 18.49vh
+    background-color: inherit
+    border: 1px solid #FEC024
+    border-top: none
+    font-size: $font-heading-medium
+
+%text-box-heading
+    width: 51.94vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: 4rem
+
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius:  5px
+
+%card-paragraph
+    margin: 0vh 4vw
+    font-size: 1.34rem
+    text-align: justify
+
+    
+section.second-section
+    width:  100vw
+    display: flex
+    background: radial-gradient(#2C2C2C,#1A1A1A)
+
+.second-section
+    .mobile
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .desktop
+        display: none 
+    .text-box
+        position: relative
+        top: 0vh
+        left: 10vw
+        @extend %text-box-base
+
+    h3.text-box-heading
+        margin: 0
+        position: relative
+        top: -10vh
+        left: 14%
+        @extend %text-box-heading
+
+    /* Container de cards da segunda seção */
+    .card-container
+        @extend %flex-column
+        justify-content: space-around
+
+        .card
+            margin: 2vh 0
+            width: 70.28vw
+            height: 46vh
+            @extend %card-border
+            @extend %flex-column-items-center
+            justify-content: space-evenly
+            img
+                width: 27.5vw
+                height: 16.9vh
+            p
+                @extend %card-paragraph
+    /* Parágrafo da segunda seção */
+    p
+        margin: 0
+        margin-right: 20px
+        margin-left: 20px
+        text-align: justify
+        line-height: 1.8rem
+
+  

@@ -1,0 +1,209 @@
+/* Importando um arquivo CSS Reset */
+
+@use 'css_reset'
+
+
+// Importando seções mobile
+@use './mobile/header' 
+@use './mobile/second-section'
+@use './mobile/third-section'
+@use './mobile/fourth-section'
+@use './mobile/fifth-section'
+@use './mobile/sixth-section'
+@use './mobile/seventh-section'
+@use './mobile/eighth-section'
+@use './mobile/footer'
+@use './mobile/modal'
+
+// Importando seções desktop
+@use './desktop/d-header'
+@use './desktop/d-first-section'
+@use './desktop/d-second-section'
+@use './desktop/d-third-section'
+@use './desktop/d-fourth-section'
+@use './desktop/d-fifth-section'
+@use './desktop/d-sixth-section'
+@use './desktop/d-seventh-section'
+@use './desktop/d-eighth-section'
+@use './desktop/d-footer'
+@use './desktop/d-modal'
+
+//Declarando Variáveis
+$font-size-normal:  12px
+$font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
+    align-items: center
+
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+
+%text-box-heading
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: $font-heading-medium
+    align-self: flex-start
+
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius: $card-border-radius
+
+%card-paragraph
+    margin: 0vh 4vw
+    font-size: 1.34rem
+    text-align: justify
+
+
+/* Standard CSS */
+
+html
+ font-size:  $font-size-normal
+
+body
+    background-color: #0C0C0C
+    color: white
+
+h1
+    font-size: 3.375rem
+    width: 78.89vw
+
+p
+    color: #B5B5B5
+
+h1, p
+    text-align: center
+
+/* Botão */
+button
+    width: 46.94vw
+    height: 9.86vh
+    margin: 2vh 0
+    color: white
+    font-size: 1.33rem
+    border-radius: $card-border-radius
+
+
+span.card-title
+    color: #F89D24
+
+
+/* mobile */
+
+.container 
+    margin-right: 20px
+    margin-left: 20px
+    @extend %flex-column-items-center
+    section
+        width: $full-width
+        @extend %flex-column-items-center
+
+.button-container
+    @extend %flex-column-items-center
+
+
+button.orange
+    background-color: #F89D24
+    border: 1px solid #F89D24
+
+
+button.black
+    background-color: #0C0C0C
+    border: 1px solid #FFFFFF
+
+@media(min-width:768px)
+    html
+        font-size: 16px
+    
+
+@media (min-width: 768px) 
+    .container 
+        margin-right: 50px
+        margin-left: 50px
+    
+
+
+@media (min-width: 1024px) 
+
+
+    /* Desktop */
+
+    /* Declarando variáveis para o uso no sass */
+
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify
+
+    /* Texto que contém um 'U' nele */ 
+    
+    /* Container dos botões da página
+    .button-container
+        display: flex
+        flex-direction: row
+        justify-content: center
+        button
+            margin: 2vh 1.5vw
+            width: 12.37vw
+            height: 7.29vh
+
+    .container 
+        //margin-right: 80px
+        //margin-left: 80px 
+        h1
+            width: 58.57vw
+        p
+            font-size: 1rem
+            width: 30.45vw
+
+
+    // Sexta Seção
+    section.sixth-section
+        background-size: cover
+        padding: 0
+
+
+@media (min-width: 1440px) 
+    .container
+        margin-right: calc((100vw - 1350px) / 2)
+        margin-left: calc((100vw - 1350px) / 2)
+    
+

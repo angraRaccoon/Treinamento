@@ -1,0 +1,91 @@
+$font-size-normal:  12px
+$font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
+    align-items: center
+
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+
+%text-box-base
+    width: 30.71vw
+    height: 18.49vh
+    background-color: inherit
+    border: 1px solid #FEC024
+    border-top: none
+    font-size: $font-heading-medium
+
+%text-box-heading
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: 4rem
+    align-self: flex-start
+
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius:  5px
+
+%card-paragraph
+    width: 86.67vw
+    height: 26.06vh
+    font-size: 1.125rem
+    text-align: justify
+
+/* Sétima Seção */
+section.seventh-section
+    width: 100vw
+    background: radial-gradient(#2C2C2C,#1A1A1A)
+    .button-container
+        margin: 5vh 0
+    .text-box
+        position: relative
+        top: 0vh
+        left: 5vw
+        @extend %text-box-base
+
+    h3.text-box-heading
+        width: 69.45vw
+        height: 21.83vh
+        margin: 0
+        position: relative
+        top: -11vh
+        left: 9vw
+        @extend %text-box-heading
+    p
+        line-height: 2rem
+        @extend %card-paragraph
+    .desktop
+        display: none
+    // Lista Desordenada
+    ul
+        color: #F89D24
+        font-size: 1.7rem
+        list-style-type: circle
+        margin: 2vh 0
+        li
+            font-weight: bold
+            width: 86.11vw
+            height: 17.25vh
+            h6
+                text-transform: uppercase
+                color: #F89D24
+                font-size: 1.17rem
+            p
+                width: 79.44vw
+                height: 12.85vh
+                text-align: justify

@@ -1,0 +1,81 @@
+$font-size-normal:  12px
+$font-heading-medium: 4rem
+$full-width: 100vw
+$card-border-radius:  5px
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%flex-column-items-center
+    @extend %flex-column
+    align-items: center
+
+%flex-justified
+    @extend %flex-column-items-center
+    justify-content: space-around
+
+%flex-between
+    @extend %flex-column-items-center
+    justify-content: space-between
+
+%text-box-heading
+    margin-top: 9vh
+    margin-left: 4vw
+    width: 52vw
+    height: 21.83vh
+    font-weight: normal
+    font-size: 4rem
+    align-self: flex-start
+
+%card-border
+    border: 1px solid #6E6E6E
+    border-radius:  5px
+
+%card-paragraph
+    margin: 0vh 4vw
+    font-size: 1.34rem
+    text-align: justify
+    
+/* Terceira seção */
+.third-section
+    width: 100vw
+    h1
+        text-transform: capitalize
+        font-weight: normal
+        background-image: none
+    /* Lidando com os diferentes backgrounds da terceira seção */
+    /* Primeiro background */
+    .box-01
+        position: relative
+        width: 100vw
+        height: 52.29vh
+        h1
+            opacity: 1
+            margin: 10vh 6vw
+            width: 83.67vw
+            height: 36.62vh
+            text-align: justify
+    .box-01::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-image: url('./assets/Grupo 34.svg')
+        opacity: .4
+    /* Segundo Background */
+    .box-02
+        @extend %flex-column-items-center
+        justify-content: center
+        width:  100vw
+        height: 44.01vh
+        background-color: #F89D24
+
+        button
+            border: 1px solid white
+            background-color: white
+            color: #F89D24
+            width: 56.39vw

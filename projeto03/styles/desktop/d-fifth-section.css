@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@media (min-width: 1024px) {
+  /* Declarando variáveis para o uso no sass */ 
+  section.fifth-section .card-container .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.fifth-section .card-container .card {
+    align-items: center;
+  }
+
+  section.fifth-section .card-container .card {
+    justify-content: space-around;
+  }
+
+  section.fifth-section .card-container .card {
+    border: 1px solid #6E6E6E;
+    border-radius: 5px;
+  }
+
+  section.fifth-section .text-box {
+    width: 15vw;
+    height: 26.82vh;
+    background-color: inherit;
+    border: 1px solid #FEC024;
+    border-top: none;
+    font-size: 4rem;
+  }
+
+  section.fifth-section .card-container .card p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  section.fifth-section {
+    width: 100vw;
+  }
+  section.fifth-section .text-box {
+    position: relative;
+    top: 0vh;
+    left: -29vw;
+  }
+  section.fifth-section h3.text-box-heading {
+    position: relative;
+    top: -10vh;
+    right: -19vw;
+    margin: 0vw;
+    width: 18.3vw;
+    height: 21.61vh;
+    font-size: 4rem;
+    align-self: flex-start;
+  }
+  section.fifth-section .card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  section.fifth-section .card-container .card {
+    margin: 2vh 1vw;
+    width: 26.57vw;
+    height: 65.66vh;
+  }
+  section.fifth-section .card-container .card .card-title {
+    display: block;
+    width: 12.81vw;
+    height: 4.69vh;
+    line-height: 1rem;
+  }
+  section.fifth-section .card-container .card img {
+    width: 315px;
+    height: 234px;
+  }
+  section.fifth-section .card-container .card p {
+    width: 23.06vw;
+    height: 18.29vh;
+  }
+}

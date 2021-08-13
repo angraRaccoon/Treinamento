@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.third-section .box-02 {
+  display: flex;
+  flex-direction: column;
+}
+
+.third-section .box-02 {
+  align-items: center;
+}
+
+/* Terceira seção */
+.third-section {
+  width: 100vw;
+  /* Lidando com os diferentes backgrounds da terceira seção */
+  /* Primeiro background */
+  /* Segundo Background */
+}
+.third-section h1 {
+  text-transform: capitalize;
+  font-weight: normal;
+  background-image: none;
+}
+.third-section .box-01 {
+  position: relative;
+  width: 100vw;
+  height: 52.29vh;
+}
+.third-section .box-01 h1 {
+  opacity: 1;
+  margin: 10vh 6vw;
+  width: 83.67vw;
+  height: 36.62vh;
+  text-align: justify;
+}
+.third-section .box-01::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("./assets/Grupo 34.svg");
+  opacity: 0.4;
+}
+.third-section .box-02 {
+  justify-content: center;
+  width: 100vw;
+  height: 44.01vh;
+  background-color: #F89D24;
+}
+.third-section .box-02 button {
+  border: 1px solid white;
+  background-color: white;
+  color: #F89D24;
+  width: 56.39vw;
+}

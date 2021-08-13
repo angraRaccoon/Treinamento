@@ -1,0 +1,91 @@
+@media (min-width: 1024px) 
+ 
+    $font-size-normal:  12px
+    $font-heading-medium: 4rem
+    $full-width: 100vw
+    $card-border-radius:  5px
+
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify
+
+
+    // Sétima Seção
+    section.seventh-section
+        width: 100vw
+        height: 70vw
+        display: flex !important
+        flex-direction: row !important // ver a especifidade dos dois
+        justify-content: space-around
+        align-items: flex-start
+        .text-box
+            position: relative
+            top: -13vh
+            left: 0vw
+            @extend %text-box-base
+
+        h3.text-box-heading
+            position: relative
+            top: -23vh
+            left: 6vw
+            margin: 0vw
+            width: 23.64vw
+            height: 21.28vh
+            font-size: $font-heading-medium
+            align-self: flex-start
+        p
+            position: relative
+            top: -16vh
+            width: 24.67vw
+        .button-container
+            position: relative
+            top: -16vh
+        .desktop
+            display: block
+        .mobile
+            display: none
+        // Lista Desordenada
+        ul
+            font-size: 0.875rem
+            list-style-type: circle
+            li
+                font-weight: bold
+                width: 32.43vw
+                height: 9.375vh
+                margin: 7vh 0
+                h6
+                    height: 1.95vh
+                    text-transform: uppercase
+                    color: #F89D24
+                p
+                    top: 0
+                    margin: 0
+                    line-height: 1.25rem
+                    width: 30.67vw
+                    height: 9.375vh
+                    text-align: justify
