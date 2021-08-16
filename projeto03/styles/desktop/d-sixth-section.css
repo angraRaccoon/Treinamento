@@ -11,7 +11,7 @@
     transform: rotate(135deg);
   }
 
-  section.sixth-section h1, section.sixth-section h5 {
+  section.sixth-section h2, section.sixth-section h5 {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -69,7 +69,7 @@
     bottom: 0;
     width: 100%;
   }
-  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h1 {
+  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h2 {
     position: absolute;
     width: 70%;
     top: 20%;

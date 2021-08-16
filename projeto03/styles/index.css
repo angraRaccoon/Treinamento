@@ -272,7 +272,7 @@ section.second-section {
   /* Primeiro background */
   /* Segundo Background */
 }
-.third-section h1 {
+.third-section h2 {
   text-transform: capitalize;
   font-weight: normal;
   background-image: none;
@@ -282,7 +282,8 @@ section.second-section {
   width: 100vw;
   height: 52.29vh;
 }
-.third-section .box-01 h1 {
+.third-section .box-01 h2 {
+  font-size: 3.375rem;
   opacity: 1;
   margin: 10vh 6vw;
   width: 83.67vw;
@@ -305,6 +306,9 @@ section.second-section {
   width: 100vw;
   height: 44.01vh;
   background-color: #F89D24;
+}
+.third-section .box-02 h2 {
+  font-size: 3.375rem;
 }
 .third-section .box-02 button {
   border: 1px solid white;
@@ -549,7 +553,7 @@ section.sixth-section .carousel .carousel__track-container .carousel__track .car
   bottom: 0;
   width: 100%;
 }
-section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h1 {
+section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h2 {
   font-size: 3.375rem;
   position: absolute;
   width: 86.67vw;
@@ -820,7 +824,7 @@ footer p {
   justify-content: space-evenly;
   align-items: center;
 }
-.modal .modal-content .flex-container h1 {
+.modal .modal-content .flex-container h2 {
   font-size: 2.375rem;
   color: #F89D24;
 }
@@ -991,7 +995,8 @@ footer p {
     width: 58.57vw;
     height: 18.22vh;
   }
-  .container section.third-section .box-01 h1 {
+  .container section.third-section .box-01 h2 {
+    font-size: 3.375rem;
     margin: 0 6vw;
     width: 53.57vw;
     height: 18.22vh;
@@ -1010,7 +1015,9 @@ footer p {
     width: 39.38vw;
     height: 38.5vh;
   }
-  .container section.third-section .box-02 h1 {
+  .container section.third-section .box-02 h2 {
+    margin-left: 3%;
+    font-size: 3.375rem;
     width: 23.57vw;
   }
   .container section.third-section .box-02 button {
@@ -1197,7 +1204,7 @@ footer p {
     transform: rotate(135deg);
   }
 
-  section.sixth-section h1, section.sixth-section h5 {
+  section.sixth-section h2, section.sixth-section h5 {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -1255,7 +1262,7 @@ footer p {
     bottom: 0;
     width: 100%;
   }
-  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h1 {
+  section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h2 {
     position: absolute;
     width: 70%;
     top: 20%;
@@ -1525,7 +1532,7 @@ footer p {
     justify-content: space-evenly;
     align-items: center;
   }
-  .modal .modal-content .flex-container h1 {
+  .modal .modal-content .flex-container h2 {
     font-size: 2.375rem;
     color: #F89D24;
   }

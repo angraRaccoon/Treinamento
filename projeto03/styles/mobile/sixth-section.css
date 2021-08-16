@@ -40,7 +40,7 @@ section.sixth-section .carousel .carousel__track-container .carousel__track .car
   bottom: 0;
   width: 100%;
 }
-section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h1 {
+section.sixth-section .carousel .carousel__track-container .carousel__track .carousel__slide.current-slide h2 {
   font-size: 3.375rem;
   position: absolute;
   width: 86.67vw;

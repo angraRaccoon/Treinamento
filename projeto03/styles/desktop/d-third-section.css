@@ -15,7 +15,8 @@
     width: 58.57vw;
     height: 18.22vh;
   }
-  .container section.third-section .box-01 h1 {
+  .container section.third-section .box-01 h2 {
+    font-size: 3.375rem;
     margin: 0 6vw;
     width: 53.57vw;
     height: 18.22vh;
@@ -34,7 +35,9 @@
     width: 39.38vw;
     height: 38.5vh;
   }
-  .container section.third-section .box-02 h1 {
+  .container section.third-section .box-02 h2 {
+    margin-left: 3%;
+    font-size: 3.375rem;
     width: 23.57vw;
   }
   .container section.third-section .box-02 button {

@@ -15,7 +15,7 @@
   /* Primeiro background */
   /* Segundo Background */
 }
-.third-section h1 {
+.third-section h2 {
   text-transform: capitalize;
   font-weight: normal;
   background-image: none;
@@ -25,7 +25,8 @@
   width: 100vw;
   height: 52.29vh;
 }
-.third-section .box-01 h1 {
+.third-section .box-01 h2 {
+  font-size: 3.375rem;
   opacity: 1;
   margin: 10vh 6vw;
   width: 83.67vw;
@@ -48,6 +49,9 @@
   width: 100vw;
   height: 44.01vh;
   background-color: #F89D24;
+}
+.third-section .box-02 h2 {
+  font-size: 3.375rem;
 }
 .third-section .box-02 button {
   border: 1px solid white;
