@@ -75,10 +75,6 @@ section.second-section {
   height: 46vh;
   justify-content: space-evenly;
 }
-.second-section .card-container .card img {
-  width: 27.5vw;
-  height: 16.9vh;
-}
 .second-section p {
   margin: 0;
   margin-right: 20px;

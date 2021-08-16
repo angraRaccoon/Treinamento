@@ -160,9 +160,7 @@ template {
 header {
   height: 6.5vh;
 }
-header img {
-  width: 12.22vw;
-  height: 6.34vh;
+header amp-img {
   position: relative;
   left: 2.2vw;
   top: 1.8vh;
@@ -243,10 +241,6 @@ section.second-section {
   width: 70.28vw;
   height: 46vh;
   justify-content: space-evenly;
-}
-.second-section .card-container .card img {
-  width: 27.5vw;
-  height: 16.9vh;
 }
 .second-section p {
   margin: 0;
@@ -498,10 +492,6 @@ section.fifth-section .card-container .card .card-title {
   width: 45.61vw;
   height: 6.34vh;
   line-height: 2rem;
-}
-section.fifth-section .card-container .card img {
-  width: 74.17vw;
-  height: 41.2vh;
 }
 .container, .container section, .button-container {
   display: flex;
@@ -966,10 +956,8 @@ footer p {
     display: flex;
     flex-direction: column;
   }
-  section.second-section .card-container .card img {
+  section.second-section .card-container .card amp-img {
     margin: 0;
-    width: 7.24vw;
-    height: 12.5vh;
   }
   section.second-section .card-container .card p {
     width: 15vw;
@@ -1181,10 +1169,6 @@ footer p {
     width: 12.81vw;
     height: 4.69vh;
     line-height: 1rem;
-  }
-  section.fifth-section .card-container .card img {
-    width: 315px;
-    height: 234px;
   }
   section.fifth-section .card-container .card p {
     width: 23.06vw;

@@ -56,10 +56,8 @@
     display: flex;
     flex-direction: column;
   }
-  section.second-section .card-container .card img {
+  section.second-section .card-container .card amp-img {
     margin: 0;
-    width: 7.24vw;
-    height: 12.5vh;
   }
   section.second-section .card-container .card p {
     width: 15vw;
