@@ -1657,8 +1657,6 @@ button.black {
 }
 @media (min-width: 1024px) {
   /* Desktop */
-  /* Declarando variáveis para o uso no sass */
-  /* Texto que contém um 'U' nele */ 
   /* Container dos botões da página */
   .button-container {
     display: flex;
