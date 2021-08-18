@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create()
 const style = () => {
   
   return gulp.src('./styles/**/*.sass')
-  .pipe(sass().on('error',sass.logError))
+  .pipe(sass({ outputStyle: 'compressed' }).on('error',sass.logError))
   .pipe(gulp.dest('./styles'))
   .pipe(browserSync.stream())
 

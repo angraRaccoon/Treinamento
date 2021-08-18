@@ -1,11 +1,3 @@
 {
-  "leads": [
-    {
-      "name": "testUser",
-      "phone": "16 99380 6799",
-      "cpf": "158.720.560-28",
-      "email": "test@mail.me",
-      "id": 1
-    }
-  ]
+  "leads": []
 }
