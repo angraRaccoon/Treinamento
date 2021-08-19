@@ -11,6 +11,9 @@
     transform: rotate(135deg);
   }
 
+  section.sixth-section {
+    width: 100%;
+  }
   section.sixth-section h1, section.sixth-section h5 {
     width: 100%;
     padding: 0;
@@ -29,9 +32,10 @@
   }
   section.sixth-section .carousel {
     position: relative;
+    left: 0%;
     height: 78.125vh;
     width: 93.26vw;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
   }
   section.sixth-section .carousel .carousel-border {

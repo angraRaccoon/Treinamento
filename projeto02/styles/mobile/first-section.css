@@ -1,0 +1,8 @@
+section.first-section {
+  padding: 13% 0;
+  margin: 0;
+}
+section.first-section p {
+  width: calc(100% - 36px);
+  height: 12.32%;
+}

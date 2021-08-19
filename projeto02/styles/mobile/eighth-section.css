@@ -8,13 +8,11 @@ section.eighth-section .content-container .text-box {
 }
 
 section.eighth-section .content-container h3.text-box-heading {
-  margin-top: 9vh;
-  margin-left: 4vw;
+  display: inline-block;
   width: 52vw;
   height: 21.83vh;
   font-weight: normal;
   font-size: 4rem;
-  align-self: flex-start;
 }
 
 section.eighth-section .content-container p {
@@ -24,7 +22,7 @@ section.eighth-section .content-container p {
 }
 
 section.eighth-section {
-  width: 100vw;
+  width: 100%;
   display: block;
 }
 section.eighth-section .img-container {
@@ -35,12 +33,14 @@ section.eighth-section .content-container {
   background-repeat: no-repeat;
 }
 section.eighth-section .content-container .text-box {
+  display: inline-block;
   margin: 0;
   position: relative;
   top: 0vh;
   left: 5vw;
 }
 section.eighth-section .content-container h3.text-box-heading {
+  display: inline-block;
   width: 69.45vw;
   height: 21.83vh;
   margin: 0;

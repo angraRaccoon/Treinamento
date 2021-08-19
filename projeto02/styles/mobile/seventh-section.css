@@ -9,8 +9,6 @@ section.seventh-section .text-box {
 }
 
 section.seventh-section h3.text-box-heading {
-  margin-top: 9vh;
-  margin-left: 4vw;
   width: 52vw;
   height: 21.83vh;
   font-weight: normal;
@@ -34,11 +32,14 @@ section.seventh-section .button-container {
   margin: 5vh 0;
 }
 section.seventh-section .text-box {
+  display: inline-block;
+  margin: 0;
   position: relative;
   top: 0vh;
   left: 5vw;
 }
 section.seventh-section h3.text-box-heading {
+  display: inline-block;
   width: 69.45vw;
   height: 21.83vh;
   margin: 0;
@@ -60,7 +61,7 @@ section.seventh-section ul {
 }
 section.seventh-section ul li {
   font-weight: bold;
-  width: 86.11vw;
+  width: 83.11vw;
   height: 17.25vh;
 }
 section.seventh-section ul li h6 {
@@ -69,7 +70,9 @@ section.seventh-section ul li h6 {
   font-size: 1.17rem;
 }
 section.seventh-section ul li p {
+  display: inline-block;
   width: 79.44vw;
   height: 12.85vh;
+  margin: 0;
   text-align: justify;
 }
