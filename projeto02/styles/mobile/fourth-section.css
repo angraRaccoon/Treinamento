@@ -31,6 +31,9 @@ section.fourth-section {
   background-position-x: -40px;
   background-repeat: no-repeat;
 }
+section.fourth-section button {
+  padding: 5% 0;
+}
 section.fourth-section .text-box {
   position: relative;
   top: 0vh;

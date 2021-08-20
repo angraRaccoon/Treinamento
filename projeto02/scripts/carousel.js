@@ -31,7 +31,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
         h1.style.marginTop = '10%'
         h5.style.marginTop = '25%'
     }else{
-        h5.style.height = '46px'
+        h5.style.bottom = "-400px"
     }
 
 }

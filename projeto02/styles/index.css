@@ -365,6 +365,9 @@ section.fourth-section {
   background-position-x: -40px;
   background-repeat: no-repeat;
 }
+section.fourth-section button {
+  padding: 5% 0;
+}
 section.fourth-section .text-box {
   position: relative;
   top: 0vh;
@@ -1132,7 +1135,7 @@ footer p {
   }
   section.fourth-section .desktop-competence-container .content .button-container {
     width: 80%;
-    height: 5%;
+    height: 10%;
     margin: 7% 0;
     padding-left: 20%;
     background-color: #262626;
@@ -1141,6 +1144,7 @@ footer p {
     justify-content: flex-end;
   }
   section.fourth-section .desktop-competence-container .content .button-container button {
+    padding: 5% 0;
     font-style: italic;
     width: 90%;
     height: 5%;
