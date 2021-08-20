@@ -13,8 +13,9 @@ section.fifth-section .card-container .card {
 }
 
 section.fifth-section .text-box {
-  width: 30.71vw;
-  height: 18.49vh;
+  width: 32.71%;
+  height: 18.49%;
+  padding: 16.49% 0;
   background-color: inherit;
   border: 1px solid #FEC024;
   border-top: none;
@@ -53,8 +54,8 @@ section.fifth-section h3.text-box-heading {
   height: 21.83vh;
   margin: 0;
   position: relative;
-  top: -11vh;
-  left: 9vw;
+  top: -54px;
+  left: 3%;
 }
 section.fifth-section .card-container .card {
   margin-bottom: 3vh;

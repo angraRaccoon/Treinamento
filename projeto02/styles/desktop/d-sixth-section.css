@@ -39,6 +39,7 @@
     overflow: hidden;
   }
   section.sixth-section .carousel .carousel-border {
+    display: block;
     background: transparent;
     border: 0;
     position: absolute;
@@ -49,12 +50,12 @@
     border-right: 1px solid #F89D24;
     border-top: 1px solid #F89D24;
     top: 0;
-    right: 0;
+    right: 5%;
   }
   section.sixth-section .carousel .carousel-border.border-bottom {
     border-left: 1px solid #F89D24;
     border-bottom: 1px solid #F89D24;
-    bottom: 0;
+    bottom: 1.5%;
     left: 0;
   }
   section.sixth-section .carousel .carousel__track-container {
@@ -87,7 +88,7 @@
   section.sixth-section .carousel .carousel__button {
     display: block;
     position: absolute;
-    top: 35%;
+    top: 25%;
     width: 2.49vw;
     height: 4.43vh;
     transform: translateY(-50%);
@@ -111,10 +112,11 @@
     transform: rotate(90deg);
   }
   section.sixth-section .carousel .carousel__button--right {
-    right: 50px;
+    right: 70px;
     transform: rotate(-90deg);
   }
   section.sixth-section .carousel .carousel__nav {
+    width: 11.1%;
     position: absolute;
     bottom: 15%;
     left: 45%;
@@ -129,7 +131,7 @@
     background: transparent;
     position: relative;
     top: -10px;
-    margin: 0 8px;
+    margin: 0 12px;
     cursor: pointer;
   }
   section.sixth-section .carousel .carousel__nav .carousel__indicator::after {
@@ -139,10 +141,11 @@
   section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide {
     border: 0;
     border-radius: 0;
-    width: 50px;
-    height: 2.5px;
+    width: 52px;
+    height: 0;
+    padding: 2px 0;
     background: white;
-    margin: 0 8px;
+    margin: 10% 12px;
     top: 0px;
     transition: transform 500ms ease-in;
   }

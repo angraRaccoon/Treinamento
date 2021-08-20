@@ -20,8 +20,9 @@
   }
 
   section.fifth-section .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 15%;
+    height: 12.56%;
+    padding: 7.56% 0;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -39,18 +40,22 @@
   }
   section.fifth-section .text-box {
     position: relative;
-    top: 0vh;
-    left: -29vw;
+    top: 0%;
+    left: -29%;
   }
   section.fifth-section h3.text-box-heading {
     position: relative;
-    top: -10vh;
-    right: -19vw;
+    top: -78px;
+    left: 19.75%;
     margin: 0vw;
-    width: 18.3vw;
-    height: 21.61vh;
+    width: 23.94%;
+    height: 9.57%;
     font-size: 4rem;
     align-self: flex-start;
+  }
+  section.fifth-section .button-container button {
+    height: 3.41%;
+    padding: 3.2% 2%;
   }
   section.fifth-section .card-container {
     display: flex;
@@ -69,11 +74,12 @@
     line-height: 1rem;
   }
   section.fifth-section .card-container .card img {
-    width: 315px;
-    height: 234px;
+    width: 86.78%;
+    height: 46.89%;
   }
   section.fifth-section .card-container .card p {
-    width: 23.06vw;
-    height: 18.29vh;
+    padding: 2% 0;
+    width: 86.78%;
+    height: 36.1%;
   }
 }

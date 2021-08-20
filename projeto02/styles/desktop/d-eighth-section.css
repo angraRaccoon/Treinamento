@@ -1,7 +1,8 @@
 @media (min-width: 1024px) {
   section.eighth-section .content-container .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 30%;
+    height: 27.82%;
+    padding: 15% 0;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -36,20 +37,20 @@
   }
   section.eighth-section .content-container .text-box {
     position: relative;
-    top: -5vh;
-    right: -5vw;
+    top: -58px;
+    left: 17.5%;
   }
   section.eighth-section .content-container h3.text-box-heading {
     width: 17.42vw;
     height: 21.83vh;
     margin: 0;
     position: relative;
-    top: -15vh;
-    left: 8.5vw;
+    top: -124px;
+    left: -8%;
   }
   section.eighth-section .content-container p {
     position: relative;
-    top: -6vh;
+    top: -10vh;
     line-height: 2rem;
     margin: 0 2vw;
     width: 24.67vw;
@@ -58,6 +59,6 @@
   section.eighth-section .content-container .button-container {
     margin: 5vh 0;
     position: relative;
-    top: -6vh;
+    top: -10vh;
   }
 }

@@ -325,10 +325,12 @@ section.second-section {
   background-color: #F89D24;
 }
 .third-section .box-02 button {
+  padding: 0% 2%;
   border: 1px solid white;
   background-color: white;
   color: #F89D24;
-  width: 56.39vw;
+  width: 56.39%;
+  height: 22.4%;
 }
 
 .container, .container section, .button-container, section.fourth-section .competence-container {
@@ -341,8 +343,9 @@ section.second-section {
 }
 
 section.fourth-section .text-box {
-  width: 30.71vw;
-  height: 18.49vh;
+  width: 29.71%;
+  height: 30.54%;
+  padding: 15.54% 0;
   background-color: inherit;
   border: 1px solid #FEC024;
   border-top: none;
@@ -372,7 +375,7 @@ section.fourth-section h3.text-box-heading {
   height: 21.83vh;
   margin: 0;
   position: relative;
-  top: -8vh;
+  top: -60px;
   left: 6.5vw;
 }
 section.fourth-section h3 {
@@ -459,8 +462,9 @@ section.fifth-section .card-container .card {
 }
 
 section.fifth-section .text-box {
-  width: 30.71vw;
-  height: 18.49vh;
+  width: 32.71%;
+  height: 18.49%;
+  padding: 16.49% 0;
   background-color: inherit;
   border: 1px solid #FEC024;
   border-top: none;
@@ -499,8 +503,8 @@ section.fifth-section h3.text-box-heading {
   height: 21.83vh;
   margin: 0;
   position: relative;
-  top: -11vh;
-  left: 9vw;
+  top: -54px;
+  left: 3%;
 }
 section.fifth-section .card-container .card {
   margin-bottom: 3vh;
@@ -579,8 +583,8 @@ section.sixth-section .carousel .carousel__track-container .carousel__track .car
   width: 80vw;
   height: 8.1vh;
   position: absolute;
-  top: 65vh;
-  left: 6vw;
+  bottom: 8%;
+  right: 4%;
 }
 section.sixth-section .carousel .carousel__button {
   display: none;
@@ -606,8 +610,8 @@ section.sixth-section .carousel .carousel__button--right {
 }
 section.sixth-section .carousel .carousel__nav {
   position: absolute;
-  bottom: -10px;
-  left: 25%;
+  bottom: -2%;
+  left: 29%;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -629,10 +633,11 @@ section.sixth-section .carousel .carousel__nav .carousel__indicator::after {
 section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide {
   border: 0;
   border-radius: 0;
-  width: 50px;
-  height: 2.5px;
+  width: 52px;
+  height: 0px;
+  padding: 1.5% 0;
   background: white;
-  margin: 0 8px;
+  margin: 7% 8px;
   top: 0px;
   transition: transform 500ms ease-in;
 }
@@ -650,8 +655,9 @@ section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slid
 }
 
 section.seventh-section .text-box {
-  width: 30.71vw;
-  height: 18.49vh;
+  width: 34.5%;
+  height: 55.49%;
+  padding: 16.49% 0;
   background-color: inherit;
   border: 1px solid #FEC024;
   border-top: none;
@@ -685,7 +691,7 @@ section.seventh-section .text-box {
   display: inline-block;
   margin: 0;
   position: relative;
-  top: 0vh;
+  top: 0px;
   left: 5vw;
 }
 section.seventh-section h3.text-box-heading {
@@ -695,7 +701,7 @@ section.seventh-section h3.text-box-heading {
   margin: 0;
   position: relative;
   top: -11vh;
-  left: 9vw;
+  left: 8.7vw;
 }
 section.seventh-section p {
   line-height: 2rem;
@@ -737,8 +743,9 @@ section.seventh-section ul li p {
 }
 
 section.eighth-section .content-container .text-box {
-  width: 30.71vw;
-  height: 18.49vh;
+  width: 30.71%;
+  height: 50.49%;
+  padding: 16.49% 0;
   background-color: inherit;
   border: 1px solid #FEC024;
   border-top: none;
@@ -794,6 +801,9 @@ section.eighth-section .content-container p {
 }
 section.eighth-section .content-container .button-container {
   margin: 5vh 0;
+}
+section.eighth-section .content-container .button-container button {
+  padding: 5% 2%;
 }
 
 footer {
@@ -932,8 +942,8 @@ footer p {
 }
 @media (min-width: 1024px) {
   section.second-section .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 33%;
+    height: 29.82%;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -1025,9 +1035,9 @@ footer p {
     height: 18.22vh;
   }
   .container section.third-section .box-01 h1 {
-    margin: 0 6vw;
-    width: 53.57vw;
-    height: 18.22vh;
+    margin: 0 6%;
+    width: 99.57%;
+    height: 37.63%;
     text-align: center;
   }
   .container section.third-section .box-01::before {
@@ -1047,7 +1057,8 @@ footer p {
     width: 23.57vw;
   }
   .container section.third-section .box-02 button {
-    width: 14.86vw;
+    width: 37.73%;
+    height: 18.92%;
   }
   .container section.third-section::before {
     content: "";
@@ -1079,8 +1090,8 @@ footer p {
     display: flex;
   }
   section.fourth-section .desktop-competence-container {
-    width: 70.35vw;
-    height: 47.14vh;
+    width: 70.35%;
+    height: 59.25%;
     flex-direction: row;
     justify-content: center;
   }
@@ -1089,10 +1100,11 @@ footer p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
-    width: 27.67vw;
+    width: 39.33%;
     background-color: #686868;
   }
   section.fourth-section .desktop-competence-container .button-container button {
+    padding: 5% 0;
     padding-left: 0;
     font-size: 2rem;
     margin: 0;
@@ -1100,8 +1112,10 @@ footer p {
     background-color: #686868;
     border: none;
     border-radius: 0;
-    width: 23.27vw;
+    width: 75%;
+    height: 18%;
     text-align: start;
+    vertical-align: bottom;
   }
   section.fourth-section .desktop-competence-container .button-container .active {
     transition: all 0.5s ease;
@@ -1109,7 +1123,7 @@ footer p {
     border-bottom: 1px solid #F89D24;
   }
   section.fourth-section .desktop-competence-container .content {
-    width: 42.68vw;
+    width: 60.67%;
     background-color: #262626;
     display: flex;
     flex-direction: column;
@@ -1117,6 +1131,10 @@ footer p {
     align-items: center;
   }
   section.fourth-section .desktop-competence-container .content .button-container {
+    width: 80%;
+    height: 5%;
+    margin: 7% 0;
+    padding-left: 20%;
     background-color: #262626;
     display: flex;
     flex-direction: row;
@@ -1124,7 +1142,8 @@ footer p {
   }
   section.fourth-section .desktop-competence-container .content .button-container button {
     font-style: italic;
-    width: 10.1vw;
+    width: 90%;
+    height: 5%;
     font-size: 0.875rem;
     background-color: #262626;
     border: none;
@@ -1133,10 +1152,12 @@ footer p {
     color: #F89D24;
   }
   section.fourth-section .desktop-competence-container .content p {
+    margin: 0;
+    padding: 2% 0;
     color: white;
     font-size: 1.125rem;
-    width: 24.67vw;
-    height: 23.96vh;
+    width: 57.8%;
+    height: 50.83%;
     text-align: start;
   }
 }
@@ -1161,8 +1182,9 @@ footer p {
   }
 
   section.fifth-section .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 15%;
+    height: 12.56%;
+    padding: 7.56% 0;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -1180,18 +1202,22 @@ footer p {
   }
   section.fifth-section .text-box {
     position: relative;
-    top: 0vh;
-    left: -29vw;
+    top: 0%;
+    left: -29%;
   }
   section.fifth-section h3.text-box-heading {
     position: relative;
-    top: -10vh;
-    right: -19vw;
+    top: -78px;
+    left: 19.75%;
     margin: 0vw;
-    width: 18.3vw;
-    height: 21.61vh;
+    width: 23.94%;
+    height: 9.57%;
     font-size: 4rem;
     align-self: flex-start;
+  }
+  section.fifth-section .button-container button {
+    height: 3.41%;
+    padding: 3.2% 2%;
   }
   section.fifth-section .card-container {
     display: flex;
@@ -1210,12 +1236,13 @@ footer p {
     line-height: 1rem;
   }
   section.fifth-section .card-container .card img {
-    width: 315px;
-    height: 234px;
+    width: 86.78%;
+    height: 46.89%;
   }
   section.fifth-section .card-container .card p {
-    width: 23.06vw;
-    height: 18.29vh;
+    padding: 2% 0;
+    width: 86.78%;
+    height: 36.1%;
   }
 }
 @media (min-width: 1024px) {
@@ -1259,6 +1286,7 @@ footer p {
     overflow: hidden;
   }
   section.sixth-section .carousel .carousel-border {
+    display: block;
     background: transparent;
     border: 0;
     position: absolute;
@@ -1269,12 +1297,12 @@ footer p {
     border-right: 1px solid #F89D24;
     border-top: 1px solid #F89D24;
     top: 0;
-    right: 0;
+    right: 5%;
   }
   section.sixth-section .carousel .carousel-border.border-bottom {
     border-left: 1px solid #F89D24;
     border-bottom: 1px solid #F89D24;
-    bottom: 0;
+    bottom: 1.5%;
     left: 0;
   }
   section.sixth-section .carousel .carousel__track-container {
@@ -1307,7 +1335,7 @@ footer p {
   section.sixth-section .carousel .carousel__button {
     display: block;
     position: absolute;
-    top: 35%;
+    top: 25%;
     width: 2.49vw;
     height: 4.43vh;
     transform: translateY(-50%);
@@ -1331,10 +1359,11 @@ footer p {
     transform: rotate(90deg);
   }
   section.sixth-section .carousel .carousel__button--right {
-    right: 50px;
+    right: 70px;
     transform: rotate(-90deg);
   }
   section.sixth-section .carousel .carousel__nav {
+    width: 11.1%;
     position: absolute;
     bottom: 15%;
     left: 45%;
@@ -1349,7 +1378,7 @@ footer p {
     background: transparent;
     position: relative;
     top: -10px;
-    margin: 0 8px;
+    margin: 0 12px;
     cursor: pointer;
   }
   section.sixth-section .carousel .carousel__nav .carousel__indicator::after {
@@ -1359,10 +1388,11 @@ footer p {
   section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide {
     border: 0;
     border-radius: 0;
-    width: 50px;
-    height: 2.5px;
+    width: 52px;
+    height: 0;
+    padding: 2px 0;
     background: white;
-    margin: 0 8px;
+    margin: 10% 12px;
     top: 0px;
     transition: transform 500ms ease-in;
   }
@@ -1372,8 +1402,9 @@ footer p {
 }
 @media (min-width: 1024px) {
   section.seventh-section .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 23%;
+    height: 29.82%;
+    padding: 11.5% 0;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -1390,27 +1421,34 @@ footer p {
   }
   section.seventh-section .text-box {
     position: relative;
-    top: -13vh;
-    left: 0vw;
+    top: -165px;
+    left: 12%;
   }
   section.seventh-section h3.text-box-heading {
     position: relative;
-    top: -23vh;
-    left: 6vw;
+    top: -120px;
+    left: -2.8%;
     margin: 0vw;
-    width: 23.64vw;
-    height: 21.28vh;
+    width: 53.65%;
+    height: 21.61%;
     font-size: 4rem;
     align-self: flex-start;
   }
   section.seventh-section p {
+    text-align: justify;
     position: relative;
-    top: -16vh;
-    width: 24.67vw;
+    left: 4%;
+    top: -15px;
+    width: 40.62%;
+    height: 28.69%;
   }
   section.seventh-section .button-container {
     position: relative;
-    top: -16vh;
+    width: 60%;
+    top: 0%;
+  }
+  section.seventh-section .button-container button {
+    padding: 3% 2%;
   }
   section.seventh-section .desktop {
     display: block;
@@ -1426,26 +1464,28 @@ footer p {
     font-weight: bold;
     width: 32.43vw;
     height: 9.375vh;
-    margin: 7vh 0;
+    margin: 15% 0;
   }
   section.seventh-section ul li h6 {
+    margin-top: 2%;
     height: 1.95vh;
     text-transform: uppercase;
     color: #F89D24;
   }
   section.seventh-section ul li p {
     top: 0;
-    margin: 0;
+    margin-bottom: 10%;
     line-height: 1.25rem;
-    width: 30.67vw;
-    height: 9.375vh;
+    width: 80.67%;
+    height: 95.12%;
     text-align: justify;
   }
 }
 @media (min-width: 1024px) {
   section.eighth-section .content-container .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 30%;
+    height: 27.82%;
+    padding: 15% 0;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -1480,20 +1520,20 @@ footer p {
   }
   section.eighth-section .content-container .text-box {
     position: relative;
-    top: -5vh;
-    right: -5vw;
+    top: -58px;
+    left: 17.5%;
   }
   section.eighth-section .content-container h3.text-box-heading {
     width: 17.42vw;
     height: 21.83vh;
     margin: 0;
     position: relative;
-    top: -15vh;
-    left: 8.5vw;
+    top: -124px;
+    left: -8%;
   }
   section.eighth-section .content-container p {
     position: relative;
-    top: -6vh;
+    top: -10vh;
     line-height: 2rem;
     margin: 0 2vw;
     width: 24.67vw;
@@ -1502,7 +1542,7 @@ footer p {
   section.eighth-section .content-container .button-container {
     margin: 5vh 0;
     position: relative;
-    top: -6vh;
+    top: -10vh;
   }
 }
 @media (min-width: 1024px) {

@@ -52,8 +52,8 @@ section.sixth-section .carousel .carousel__track-container .carousel__track .car
   width: 80vw;
   height: 8.1vh;
   position: absolute;
-  top: 65vh;
-  left: 6vw;
+  bottom: 8%;
+  right: 4%;
 }
 section.sixth-section .carousel .carousel__button {
   display: none;
@@ -79,8 +79,8 @@ section.sixth-section .carousel .carousel__button--right {
 }
 section.sixth-section .carousel .carousel__nav {
   position: absolute;
-  bottom: -10px;
-  left: 25%;
+  bottom: -2%;
+  left: 29%;
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -102,10 +102,11 @@ section.sixth-section .carousel .carousel__nav .carousel__indicator::after {
 section.sixth-section .carousel .carousel__nav .carousel__indicator.current-slide {
   border: 0;
   border-radius: 0;
-  width: 50px;
-  height: 2.5px;
+  width: 52px;
+  height: 0px;
+  padding: 1.5% 0;
   background: white;
-  margin: 0 8px;
+  margin: 7% 8px;
   top: 0px;
   transition: transform 500ms ease-in;
 }

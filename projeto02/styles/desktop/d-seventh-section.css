@@ -1,7 +1,8 @@
 @media (min-width: 1024px) {
   section.seventh-section .text-box {
-    width: 15vw;
-    height: 26.82vh;
+    width: 23%;
+    height: 29.82%;
+    padding: 11.5% 0;
     background-color: inherit;
     border: 1px solid #FEC024;
     border-top: none;
@@ -18,27 +19,34 @@
   }
   section.seventh-section .text-box {
     position: relative;
-    top: -13vh;
-    left: 0vw;
+    top: -165px;
+    left: 12%;
   }
   section.seventh-section h3.text-box-heading {
     position: relative;
-    top: -23vh;
-    left: 6vw;
+    top: -120px;
+    left: -2.8%;
     margin: 0vw;
-    width: 23.64vw;
-    height: 21.28vh;
+    width: 53.65%;
+    height: 21.61%;
     font-size: 4rem;
     align-self: flex-start;
   }
   section.seventh-section p {
+    text-align: justify;
     position: relative;
-    top: -16vh;
-    width: 24.67vw;
+    left: 4%;
+    top: -15px;
+    width: 40.62%;
+    height: 28.69%;
   }
   section.seventh-section .button-container {
     position: relative;
-    top: -16vh;
+    width: 60%;
+    top: 0%;
+  }
+  section.seventh-section .button-container button {
+    padding: 3% 2%;
   }
   section.seventh-section .desktop {
     display: block;
@@ -54,19 +62,20 @@
     font-weight: bold;
     width: 32.43vw;
     height: 9.375vh;
-    margin: 7vh 0;
+    margin: 15% 0;
   }
   section.seventh-section ul li h6 {
+    margin-top: 2%;
     height: 1.95vh;
     text-transform: uppercase;
     color: #F89D24;
   }
   section.seventh-section ul li p {
     top: 0;
-    margin: 0;
+    margin-bottom: 10%;
     line-height: 1.25rem;
-    width: 30.67vw;
-    height: 9.375vh;
+    width: 80.67%;
+    height: 95.12%;
     text-align: justify;
   }
 }

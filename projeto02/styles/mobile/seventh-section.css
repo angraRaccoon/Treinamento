@@ -1,7 +1,8 @@
 @charset "UTF-8";
 section.seventh-section .text-box {
-  width: 30.71vw;
-  height: 18.49vh;
+  width: 34.5%;
+  height: 55.49%;
+  padding: 16.49% 0;
   background-color: inherit;
   border: 1px solid #FEC024;
   border-top: none;
@@ -35,7 +36,7 @@ section.seventh-section .text-box {
   display: inline-block;
   margin: 0;
   position: relative;
-  top: 0vh;
+  top: 0px;
   left: 5vw;
 }
 section.seventh-section h3.text-box-heading {
@@ -45,7 +46,7 @@ section.seventh-section h3.text-box-heading {
   margin: 0;
   position: relative;
   top: -11vh;
-  left: 9vw;
+  left: 8.7vw;
 }
 section.seventh-section p {
   line-height: 2rem;
