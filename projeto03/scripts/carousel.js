@@ -30,6 +30,8 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     if(vw >= 1024){
         h1.style.marginTop = '10%'
         h5.style.marginTop = '25%'
+    }else{
+        h5.style.bottom = "-400px"
     }
 
 }

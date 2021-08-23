@@ -5,6 +5,7 @@
 
 // Importando seções mobile
 @use './mobile/header' 
+@use './mobile/first-section'
 @use './mobile/second-section'
 @use './mobile/third-section'
 @use './mobile/fourth-section'
@@ -75,6 +76,7 @@ html
  font-size:  $font-size-normal
 
 body
+    overflow-x: hidden
     background-color: #0C0C0C
     color: white
 
@@ -91,7 +93,8 @@ h1, p
 /* Botão */
 button
     width: 46.94vw
-    height: 9.86vh
+    height: 9.84%
+    padding: 10% 0
     margin: 2vh 0
     color: white
     font-size: 1.33rem
@@ -105,11 +108,11 @@ span.card-title
 /* mobile */
 
 .container 
-    margin-right: 20px
-    margin-left: 20px
+    margin: 0
+    //margin-right: 20px
+    //margin-left: 20px
     @extend %flex-column-items-center
     section
-        width: $full-width
         @extend %flex-column-items-center
 
 .button-container
@@ -142,7 +145,39 @@ button.black
 
     /* Desktop */
 
+    /* Declarando variáveis para o uso no sass */
 
+    %flex-column-lg
+        display: flex
+        flex-direction: column
+
+    %flex-column-items-center-lg
+        @extend %flex-column-lg
+        align-items: center
+
+    %flex-justified-lg
+        @extend %flex-column-items-center-lg
+        justify-content: space-around
+
+
+
+    %card-border-lg
+        border: 1px solid #6E6E6E
+        border-radius: $card-border-radius
+
+    %text-box-base
+        width: 15vw
+        height: 26.82vh
+        background-color: inherit
+        border: 1px solid #FEC024
+        border-top: none
+        font-size: $font-heading-medium
+    %card-paragraph-lg
+        font-size: 1rem
+        text-align: justify
+
+    /* Texto que contém um 'U' nele */ 
+    
     /* Container dos botões da página
     .button-container
         display: flex
@@ -151,9 +186,12 @@ button.black
         button
             margin: 2vh 1.5vw
             width: 12.37vw
-            height: 7.29vh
+            padding: 0 2%
+            height: 95.29%
 
-    .container 
+    .container
+        margin: 0
+        padding: 0
         //margin-right: 80px
         //margin-left: 80px 
         h1
@@ -171,7 +209,9 @@ button.black
 
 @media (min-width: 1440px) 
     .container
-        margin-right: calc((100vw - 1350px) / 2)
-        margin-left: calc((100vw - 1350px) / 2)
+        margin: 0
+        padding: 0
+        //margin-right: calc((100vw - 1350px) / 2)
+        //margin-left: calc((100vw - 1350px) / 2)
     
 
