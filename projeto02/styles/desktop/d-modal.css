@@ -85,9 +85,11 @@
     padding: 0px 0;
   }
   .modal .modal-content .flex-container form button {
+    padding: 0;
     margin: 8% 0;
-    width: 16.84vw;
-    height: 7.27vh;
+    width: 60.16%;
+    height: 15.78%;
+    vertical-align: middle;
     background-color: #F89D24;
     color: white;
   }
